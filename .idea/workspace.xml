@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/templates/account/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Coursework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Coursework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/templates/registration/logged_out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coursework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/base.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +103,7 @@
       <updated>1585747357657</updated>
       <workItem from="1585747359653" duration="3817000" />
       <workItem from="1585757087889" duration="43000" />
-      <workItem from="1585760166679" duration="10113000" />
+      <workItem from="1585760166679" duration="12838000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -138,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585751237400</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Подъехало немного стилей для адекватности">
+      <created>1585772109426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585772109426</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,17 +151,22 @@
     <MESSAGE value="Add all applications" />
     <MESSAGE value="media settings" />
     <MESSAGE value="auth login" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth login" />
+    <MESSAGE value="Подъехало немного стилей для адекватности" />
+    <option name="LAST_COMMIT_MESSAGE" value="Подъехало немного стилей для адекватности" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1585769342619">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="72" y="188" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1585769342619" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1585751236191">
+    <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585778802997">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585751236191" />
+    <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1585772107017">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585772107017" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1585766883344">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
