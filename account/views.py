@@ -26,12 +26,12 @@ def login_user(request):
             else:
                 return HttpResponse('Аккаунт не активен')
         else:
-            return HttpResponse('Пользователя с таким именем не существует!')
+            return HttpResponse('Некорректный логин или пароль!')
     else:
         form = LoginForm
 
     return render(
         request,
-        'account.login.html',
+        'account/login.html',
         {'form': form}
     )

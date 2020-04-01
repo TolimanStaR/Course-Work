@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        OLYMPUS PROGRAMMING
+    </div>
+    <div class="account">
+        Account
+    </div>
+</div>
+<div class="navigation">
+    <ul class="navbar">
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Соревнования</a></li>
+        <li><a href="#">Архив задач</a></li>
+        <li><a href="#">Рейтинг</a></li>
+        <li><a href="#">Обучение</a></li>
+        <li><a href="#">Преподавание</a></li>
+    </ul>
+</div>
+<div class="content">
+    <div class="paragraph">
+        {% block content %}{% endblock %}
+    </div>
+</div>
+</body>
+</html>

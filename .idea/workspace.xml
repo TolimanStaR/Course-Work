@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/templates/account/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Coursework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Coursework.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coursework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
@@ -19,6 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -31,6 +40,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main/static/css/base.css" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1ZwPoUMNJCyDNly0eCAJJXkd6b2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -39,10 +51,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Manager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django social network" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -92,7 +106,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585747357657</updated>
-      <workItem from="1585747359653" duration="3639000" />
+      <workItem from="1585747359653" duration="3817000" />
+      <workItem from="1585757087889" duration="43000" />
+      <workItem from="1585760166679" duration="10113000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -115,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585750473124</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="auth login">
+      <created>1585751237400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585751237400</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,24 +148,33 @@
     <MESSAGE value="Start to do smth" />
     <MESSAGE value="Add all applications" />
     <MESSAGE value="media settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="media settings" />
+    <MESSAGE value="auth login" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth login" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1585750471634">
+    <state x="72" y="188" key="#Notifications" timestamp="1585769342619">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585750471634" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1585750311947">
+    <state x="72" y="188" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1585769342619" />
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1585751236191">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1585750311947" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585751236191" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1585766883344">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1585766883344" />
     <state x="491" y="169" key="SettingsEditor" timestamp="1585748578062">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1585748578062" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1585747967141">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1585760269311">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585747967141" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585760269311" />
+    <state x="202" y="442" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585768586733">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="202" y="442" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585768586733" />
   </component>
 </project>

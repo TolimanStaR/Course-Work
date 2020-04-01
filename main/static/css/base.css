@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", sans-serif;
+    background-color: #FFFFFF;
+}
+
+.header {
+    height: 130px;
+    margin: 0 10%;
+    background-color: #2c2c2c;
+    transition: 0.5s ease;
+}
+
+.header .account {
+    border: 1px #BBBBBB solid;
+    width: 300px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 110px;
+    color: white;
+    float: right;
+}
+
+.logo {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+}
+
+.navigation {
+    margin: 2% 10%;
+    background-color: #2c2c2c;
+}
+
+ul.navbar {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2c2c2c;
+}
+
+li {
+    float: left;
+    position: relative;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+li a:hover {
+    background-color: aquamarine;
+}
+
+div.content {
+    margin: 2% 10%;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #EEEEEE;
+}
+
+div.content .paragraph {
+    padding: 10px;
+}
