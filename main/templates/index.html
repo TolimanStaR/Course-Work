@@ -12,7 +12,12 @@
         OLYMPUS PROGRAMMING
     </div>
     <div class="account">
-        Account
+        {% if request.user.is_authenticated %}
+            <p><a href="{% url "profile" %}">{{ request.user.username }}</a></p>
+            <p><a href="{% url "logout" %}">Выйти</a></p>
+        {% else %}
+            <p><a href="{% url "login" %}">Войти</a></p>
+        {% endif %}
     </div>
 </div>
 <div class="navigation">
