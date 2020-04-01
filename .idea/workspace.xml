@@ -15,6 +15,11 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Daniel &lt;51836520+tolimanstar@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZwPoUMNJCyDNly0eCAJJXkd6b2" />
@@ -86,6 +91,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1585749017838">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585749017838" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1585748427500">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
