@@ -3,5 +3,12 @@
 {% block title %}Личный кабинет{% endblock %}
 
 {% block content %}
-    <h1>профиль пользователя</h1>
+    <div class="navigation">
+        <ul class="navbar">
+            <li><a href="{% url 'change_password' %}">Сменить пароль</a></li>
+            <li><a href="">Редактировать аккаунт</a></li>
+            <li><a href="">Посылки</a></li>
+        </ul>
+    </div>
+    <div class="content">Профиль пользователя {{ request.user.username }}</div>
 {% endblock %}

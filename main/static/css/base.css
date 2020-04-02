@@ -5,6 +5,10 @@ body {
     background-color: #FFFFFF;
 }
 
+div {
+    display: block;
+}
+
 .header {
     height: 130px;
     margin: 0 10%;
@@ -70,8 +74,6 @@ li a:hover {
 
 div.content {
     margin: 2% 10%;
-    border-style: solid;
-    border-width: 1px;
     background-color: #EEEEEE;
 }
 

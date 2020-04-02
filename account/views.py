@@ -1,3 +1,5 @@
+from functools import update_wrapper
+
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponse
