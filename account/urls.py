@@ -10,7 +10,9 @@ from . import views
 urlpatterns = [
     path('login/', authentication_views.LoginView.as_view(), name='login'),
     path('logout/', authentication_views.LogoutView.as_view(), name='logout'),
-    path('profile/', views.profile, name='profile'),
+    path('profile/', views.UserProfileView.as_view(), name='profile'),
+    path('profile/<username>/', views.UserProfileView.as_view(), name='profile'),
+    path('users/', views.UserListView.as_view(), name='user_list'),
     path('change-password/', authentication_views.PasswordChangeView.as_view(), name='change_password'),
     path('change-password/done/', authentication_views.PasswordChangeDoneView.as_view(), name='change_password_done'),
     path('reset-password/', authentication_views.PasswordResetView.as_view(), name='reset_password'),

@@ -1,4 +1,6 @@
 {% extends 'index.html' %}
+{% load static %}
+
 
 {% block title %}Личный кабинет{% endblock %}
 
@@ -8,9 +10,18 @@
             <li><a href="{% url 'change_password' %}">Сменить пароль</a></li>
             <li><a href="{% url 'edit' %}">Редактировать аккаунт</a></li>
             <li><a href="">Посылки</a></li>
+            <li><a href="">Курсы</a></li>
         </ul>
     </div>
-    <div>
-        Профиль пользователя {{ request.user.username }}
-    </div>
+    Профиль пользователя {{ user.username }}
+    <p>
+        {{ user.user_profile.about }}
+    </p>
+    <p>
+        Рейтинг: {{ user.user_profile.contest_rating }}
+    </p>
+    <p>
+        Звание: {{ user.user_profile.contest_rang }}
+    </p>
+    <img src="{{ user.user_profile.profile_image.url }}" style="width: 300px;" alt="Avatar">
 {% endblock %}

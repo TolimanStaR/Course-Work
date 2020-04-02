@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+        {% for user in object_list %}
+            <p>
+                <a href="{% url 'profile' username=user.username %}">{{ user.username }}</a>
+            </p>
+        {% empty %}
+                На сайте пока нет пользователей. <a href="{% url 'register' %}">Станьте первым!</a>
+        {% endfor %}
+{% endblock %}

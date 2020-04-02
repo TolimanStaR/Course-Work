@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/templates/account/users.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/users/2020/04/03/bfcfc91eca652d6c7dd8b48553d0a6a4a000e681.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -50,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django social network" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../educa" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -105,7 +111,8 @@
       <workItem from="1585757087889" duration="43000" />
       <workItem from="1585760166679" duration="14687000" />
       <workItem from="1585829436490" duration="21899000" />
-      <workItem from="1585860301747" duration="84000" />
+      <workItem from="1585860301747" duration="1906000" />
+      <workItem from="1585862229703" duration="2602000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -191,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585858675773</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="user image in profile div">
+      <created>1585860414236</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1585860414236</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +225,8 @@
     <MESSAGE value="user registration" />
     <MESSAGE value="user profile model" />
     <MESSAGE value="almost end account app" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost end account app" />
+    <MESSAGE value="user image in profile div" />
+    <option name="LAST_COMMIT_MESSAGE" value="user image in profile div" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1585769342619">
@@ -226,18 +241,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585858672884" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1585852399430">
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1585863078498">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1585852399430" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1585863078498" />
     <state x="491" y="169" key="SettingsEditor" timestamp="1585834391836">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1585834391836" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1585831038027">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1585862233322">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585831038027" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585862233322" />
     <state x="202" y="442" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585768586733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

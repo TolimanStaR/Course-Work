@@ -1,6 +1,8 @@
 from django.contrib.auth.models import User
 
 
+# Аутентификация с помощью e-mail вместо username
+
 class EmailAuthenticationBackend(object):
     def authenticate(self, request, username=None, password=None):
         try:

@@ -7,10 +7,10 @@ from django.contrib import messages
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 
-from django.views.generic import FormView
+from django.views.generic import FormView, DetailView, ListView
 
 from .forms import LoginForm, UserRegistrationForm, UserEditForm, UserProfileEditForm
-from .models import UserProfile
+from .models import UserProfile, User
 
 
 def login_user(request):
@@ -98,8 +98,20 @@ class UserEditProfile(FormView, LoginRequiredMixin):
         )
 
 
-@login_required
-def profile(request):
-    return render(request, 'account/profile.html', {'section': 'profile'})
+class UserListView(ListView):
+    template_name = 'account/users.html'
+    model = User
+
+
+class UserProfileView(DetailView, LoginRequiredMixin):
+    template_name = 'account/profile.html'
+
+    def get(self, request, *args, **kwargs):
+        if 'username' in kwargs:
+            user = User.objects.get(username=kwargs['username'])
+        else:
+            user = User.objects.get(username=request.user.username)
+
+        return render(request, self.template_name, {'user': user})
 
 # TODO: Заменить login_user на свой класс
