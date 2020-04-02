@@ -4,7 +4,7 @@
 
 {% block content %}
     <h2>Авторизуйтесь</h2>
-    <p>Форма для входа:</p>
+    <p>Заполните форму для входа в аккаунт. Если у вас его нет, <a href="{% url "register" %}">зарегистрируйтесь</a></p>
     <form action="" method="post">
         {{ form.as_p }}
         {% csrf_token %}
