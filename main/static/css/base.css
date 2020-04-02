@@ -88,3 +88,13 @@ div.content .paragraph {
 ::selection {
     background-color: aquamarine;
 }
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 195px;
+    float: right;
+    position: absolute;
+}

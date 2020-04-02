@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account/authentication.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/migrations/0002_auto_20200402_2020.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/migrations/0003_auto_20200402_2104.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/templates/account/edit_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/users/2020/04/02/0ff200186a3ff809ae46b92a03a4307e94004b65.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/users/2020/04/02/5c3f120a6d9eef94fa5ba4e037e4caf246adb8b6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/users/2020/04/02/6af9139f9748f7883643d25c3c9a345d29376651.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/users/2020/04/02/f9d8bb80c98edb8a60d93ad0a033c4a6ebf474eb.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coursework/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
     </list>
@@ -119,7 +104,8 @@
       <workItem from="1585747359653" duration="3817000" />
       <workItem from="1585757087889" duration="43000" />
       <workItem from="1585760166679" duration="14687000" />
-      <workItem from="1585829436490" duration="20543000" />
+      <workItem from="1585829436490" duration="21899000" />
+      <workItem from="1585860301747" duration="84000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -198,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585848076541</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="almost end account app">
+      <created>1585858675773</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585858675773</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +210,8 @@
     <MESSAGE value="password reset/change" />
     <MESSAGE value="user registration" />
     <MESSAGE value="user profile model" />
-    <option name="LAST_COMMIT_MESSAGE" value="user profile model" />
+    <MESSAGE value="almost end account app" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost end account app" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1585769342619">
@@ -228,10 +222,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1585848072749">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1585858672884">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585848072749" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585858672884" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1585852399430">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
