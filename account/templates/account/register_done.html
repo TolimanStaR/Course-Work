@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block title %}Добро пожаловать{% endblock %}
+
+{% block content %}
+    <p>
+        {{ new_user.username }}, добро пожаловать на Olympus!
+        Вы можете <a href="{% url "login" %}">войти в аккаунт</a>
+    </p>
+{% endblock %}
