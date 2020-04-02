@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block title %}Редактировать профиль{% endblock %}
+
+{% block content %}
+    <p>Редактирование вашего профиля</p>
+    <form action="" method="post" enctype="multipart/form-data">
+        {{ user_form.as_p }}
+        {{ user_profile_form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Сохранить изменения">
+    </form>
+    <p><a href="{% url "profile" %}">Вернуться в профиль</a></p>
+{% endblock %}

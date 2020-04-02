@@ -1,11 +1,13 @@
 from django.db import models
 from django.conf import settings
+from django.contrib.auth.models import User
 
 
 class UserProfile(models.Model):
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
+        related_name='user_profile',
     )
     register_date = models.DateTimeField(auto_now_add=True)
     profile_image = models.ImageField(upload_to='users/%Y/%m/%d/', blank=True, null=True)

@@ -31,6 +31,11 @@ div {
     color: white;
 }
 
+div.message {
+    margin: 2% 10%;
+    background-color: green;
+}
+
 .logo {
     position: absolute;
     font-size: 30px;

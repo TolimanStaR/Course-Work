@@ -30,6 +30,18 @@
         <li><a href="#">Преподавание</a></li>
     </ul>
 </div>
+{% if messages %}
+    <div class="navigation">
+        <ul class="navbar" style="background-color: #5fff5e">
+            {% for message in messages %}
+                <li style="color: white;">
+                    {{ message|safe }}
+                    <a href="#">x</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}
 <div class="content">
     {% block content %}{% endblock %}
 </div>

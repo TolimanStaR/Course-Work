@@ -30,6 +30,11 @@ DEFAULT_FILE_STORAGE = 'django_hashedfilenamestorage.storage.HashedFilenameFileS
 
 # Application definition
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authentication.EmailAuthenticationBackend',
+]
+
 INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'archive.apps.ArchiveConfig',
