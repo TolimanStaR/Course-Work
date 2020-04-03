@@ -1,3 +1,30 @@
 from django.db import models
+from django.utils import timezone
 
-# Create your models here.
+from account.models import UserProfile
+
+
+class Article(models.Model):
+    title = models.CharField(max_length=300)
+    author = models.ForeignKey(
+        UserProfile,
+        on_delete=models.CASCADE,
+        related_name='user_articles',
+    )
+
+    STATUS_CHOICES = (
+        ('moderated', 'Moderated'),
+        ('published', 'Published'),
+    )
+
+    status = models.CharField(choices=STATUS_CHOICES, default='moderated', max_length=20)
+    content = models.TextField()
+    publish = models.DateTimeField(default=timezone.now)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f'Статья {self.title}'
+
+    class Meta:
+        ordering = ('-publish',)
