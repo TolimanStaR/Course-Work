@@ -13,38 +13,6 @@ from .forms import LoginForm, UserRegistrationForm, UserEditForm, UserProfileEdi
 from .models import UserProfile, User
 
 
-def login_user(request):
-    if request.method == "POST":
-        form = LoginForm(request.POST)
-
-        user = None
-
-        if form.is_valid():
-            clean_data = form.cleaned_data
-            user = authenticate(
-                request,
-                username=clean_data['username'],
-                password=clean_data['password'],
-            )
-
-        if user is not None:
-            if user.is_active:
-                login(request, user)
-                return HttpResponse('Вы вошли в аккаунт')
-            else:
-                return HttpResponse('Аккаунт не активен')
-        else:
-            return HttpResponse('Некорректный логин или пароль!')
-    else:
-        form = LoginForm
-
-    return render(
-        request,
-        'account/login.html',
-        {'form': form}
-    )
-
-
 class UserRegistration(FormView):
     template_name = 'account/register.html'
     form_class = UserRegistrationForm
@@ -114,4 +82,4 @@ class UserProfileView(DetailView, LoginRequiredMixin):
 
         return render(request, self.template_name, {'user': user})
 
-# TODO: Заменить login_user на свой класс
+# TODO: Заменить login view на свой класс
