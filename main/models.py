@@ -28,3 +28,18 @@ class Article(models.Model):
 
     class Meta:
         ordering = ('-publish',)
+
+
+class Comment(models.Model):
+    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='comments')
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='comments')
+    body = models.TextField()
+    created = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = (
+            '-created',
+        )
+
+    def __str__(self):
+        return f'Комментарий пользователя {self.user} под постом {self.article}'

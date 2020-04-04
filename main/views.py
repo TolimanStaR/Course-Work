@@ -1,7 +1,7 @@
 from django.contrib.postgres.search import TrigramSimilarity, SearchVector, SearchQuery, SearchRank
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, FormView
-from .models import Article
+from .models import Article, Comment
 from .forms import SearchForm
 
 
@@ -50,5 +50,11 @@ class ArticleListView(ListView, FormView):
                       {'object_list': article_list, 'form': search_form, 'search_text': search_text})
 
 
-class ArticleDetailView(DetailView):
-    pass
+class ArticleDetailView(DetailView, FormView):
+    template_name = 'articles/detail.html'
+    Model = Article
+
+    def get_context_data(self, **kwargs):
+        context = super(ArticleDetailView, self).get_context_data(**kwargs)
+        context['comments'] = Comment.objects.filter(article=self.object).order_by('-created')
+        return context
