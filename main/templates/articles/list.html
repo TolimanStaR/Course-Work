@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+    <p>Новости:</p>
+
+    <form action="" method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Искать">
+    </form>
+    {% if search_text %}
+        <p>
+            Поиск по запросу "{{ search_text }}":
+        </p>
+    {% endif %}
+    {% for article in object_list %}
+        <p>
+            <a href="{% url 'article_detail' pk=article.pk %}">{{ article.title }}</a>
+        </p>
+    {% empty %}
+        <p>Пока новостей нет</p>
+    {% endfor %}
+{% endblock %}

@@ -1,7 +1,7 @@
 from functools import update_wrapper
 
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from django.http import HttpResponse
@@ -76,7 +76,7 @@ class UserProfileView(DetailView, LoginRequiredMixin):
 
     def get(self, request, *args, **kwargs):
         if 'username' in kwargs:
-            user = User.objects.get(username=kwargs['username'])
+            user = get_object_or_404(User, username=kwargs['username'])
         else:
             user = User.objects.get(username=request.user.username)
 

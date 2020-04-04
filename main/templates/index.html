@@ -20,7 +20,7 @@
                             {% static 'images/default_avatar.png' %}
                     {% endif %}"
                  alt="Аватар">
-            <p><a href="{% url "profile" %}">{{ request.user.username }}</a></p>
+            <p><a href="{% url "profile" request.user.username %}">{{ request.user.username }}</a></p>
             <p><a href="{% url "logout" %}">Выйти</a></p>
         {% else %}
             <p><a href="{% url "login" %}">Войти</a></p>
@@ -29,7 +29,7 @@
 </div>
 <div class="navigation">
     <ul class="navbar">
-        <li><a href="#">Новости</a></li>
+        <li><a href="{% url 'article_list' %}">Новости</a></li>
         <li><a href="#">Соревнования</a></li>
         <li><a href="#">Архив задач</a></li>
         <li><a href="#">Рейтинг</a></li>
