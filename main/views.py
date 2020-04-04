@@ -50,11 +50,6 @@ class ArticleListView(ListView, FormView):
                       {'object_list': article_list, 'form': search_form, 'search_text': search_text})
 
 
-class ArticleDetailView(DetailView, FormView):
+class ArticleDetailView(DetailView):
     template_name = 'articles/detail.html'
-    Model = Article
-
-    def get_context_data(self, **kwargs):
-        context = super(ArticleDetailView, self).get_context_data(**kwargs)
-        context['comments'] = Comment.objects.filter(article=self.object).order_by('-created')
-        return context
+    model = Article
