@@ -1,8 +1,9 @@
 from django.contrib.postgres.search import TrigramSimilarity, SearchVector, SearchQuery, SearchRank
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, FormView
 from .models import Article, Comment
-from .forms import SearchForm
+from .forms import SearchForm, CommentForm
 
 
 def search_queryset(text):
@@ -50,6 +51,26 @@ class ArticleListView(ListView, FormView):
                       {'object_list': article_list, 'form': search_form, 'search_text': search_text})
 
 
-class ArticleDetailView(DetailView):
+class ArticleDetailView(DetailView, FormView):
     template_name = 'articles/detail.html'
     model = Article
+    form_class = CommentForm
+
+    def get(self, request, *args, **kwargs):
+        form = self.form_class
+        pk = kwargs['pk'] if 'pk' in kwargs else 1
+        article = Article.objects.get(pk=pk)
+        return render(request, self.template_name, {'article': article, 'form': form})
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
+        pk = kwargs['pk'] if 'pk' in kwargs else 1
+        article = Article.objects.get(pk=pk)
+        if form.is_valid():
+            comment = Comment.objects.create(body=form.cleaned_data['body'], user=request.user.user_profile,
+                                             article=article)
+            comment.save()
+            return HttpResponseRedirect(request.path)
+        else:
+            form = self.form_class
+        return render(request, self.template_name, {'article': article, 'form': form})

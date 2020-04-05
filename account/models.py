@@ -17,4 +17,4 @@ class UserProfile(models.Model):
     contest_rang_color = models.PositiveIntegerField(default=0xAAAAAA)
 
     def __str__(self):
-        return f'Профиль пользователя {self.user.username}'
+        return f'[{self.contest_rang}] {self.user.username}'

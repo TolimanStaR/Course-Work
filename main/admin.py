@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Article
+from .models import Article, Comment
 
 
 @admin.register(Article)
@@ -11,5 +11,15 @@ class ArticleAdmin(admin.ModelAdmin):
         'publish',
         'created',
         'updated',
-        'status'
+        'status',
+    ]
+
+
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = [
+        'article',
+        'user',
+        'body',
+        'created',
     ]
