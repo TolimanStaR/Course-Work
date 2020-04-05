@@ -19,7 +19,9 @@ def search_queryset(text):
     return result
 
 
-def paginate_page(paginator, page):
+def paginate_page(article_list, request, paginate_by):
+    paginator = Paginator(article_list, paginate_by)
+    page = request.GET.get('page')
     try:
         article_list = paginator.page(page)
     except PageNotAnInteger:
@@ -33,6 +35,7 @@ def paginate_page(paginator, page):
 class ArticleListView(ListView, FormView):
     template_name = 'articles/list.html'
     Model = Article
+    paginate_by = 1
 
     def get(self, request, *args, **kwargs):
 
@@ -45,9 +48,7 @@ class ArticleListView(ListView, FormView):
             search_form = SearchForm
             search_text = None
 
-        paginator = Paginator(article_list, 1)
-        page = request.GET.get('page')
-        article_list = paginate_page(paginator, page)
+        article_list = paginate_page(article_list, request, self.paginate_by)
 
         return render(request, self.template_name,
                       {'object_list': article_list, 'form': search_form, 'search_text': search_text})
@@ -63,9 +64,7 @@ class ArticleListView(ListView, FormView):
             article_list = Article.objects.all()
             search_text = None
 
-        paginator = Paginator(article_list, 1)
-        page = request.GET.get('page')
-        article_list = paginate_page(paginator, page)
+        article_list = paginate_page(article_list, request, self.paginate_by)
 
         return render(request, self.template_name,
                       {'object_list': article_list, 'form': search_form, 'search_text': search_text})
