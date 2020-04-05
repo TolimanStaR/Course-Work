@@ -5,6 +5,12 @@
 {% block content %}
     <p>{{ article.title }}</p>
     <p>{{ article.created }}</p>
+    <p>Теги:
+        {% for tag in article.tags.all %}
+            {{ tag.name }}
+        {% empty %}
+        {% endfor %}
+    </p>
     <p>{{ article.content }}</p>
     {% if request.user.is_authenticated %}
         <form action="" method="post">
@@ -13,7 +19,8 @@
             <p><input type="submit" value="Оставить комментарий"></p>
         </form>
     {% else %}
-        <p>Чтобы оставлять комментарии, вам нужно <a href="{% url 'login' %}?next={{ request.path }}">войти в аккаунт</a></p>
+        <p>Чтобы оставлять комментарии, вам нужно <a href="{% url 'login' %}?next={{ request.path }}">войти в
+            аккаунт</a></p>
     {% endif %}
     {% for  comment in article.comments.all %}
         <p>{{ comment.user }}</p>

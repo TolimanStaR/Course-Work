@@ -4,6 +4,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, FormView
 from .models import Article, Comment
 from .forms import SearchForm, CommentForm
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def search_queryset(text):
@@ -16,6 +17,17 @@ def search_queryset(text):
     ).filter(rank__gte=0.3).order_by('-rank')
 
     return result
+
+
+def paginate_page(paginator, page):
+    try:
+        article_list = paginator.page(page)
+    except PageNotAnInteger:
+        article_list = paginator.page(1)
+    except EmptyPage:
+        article_list = paginator.page(paginator.num_pages)
+
+    return article_list
 
 
 class ArticleListView(ListView, FormView):
@@ -33,6 +45,10 @@ class ArticleListView(ListView, FormView):
             search_form = SearchForm
             search_text = None
 
+        paginator = Paginator(article_list, 1)
+        page = request.GET.get('page')
+        article_list = paginate_page(paginator, page)
+
         return render(request, self.template_name,
                       {'object_list': article_list, 'form': search_form, 'search_text': search_text})
 
@@ -47,6 +63,10 @@ class ArticleListView(ListView, FormView):
             article_list = Article.objects.all()
             search_text = None
 
+        paginator = Paginator(article_list, 1)
+        page = request.GET.get('page')
+        article_list = paginate_page(paginator, page)
+
         return render(request, self.template_name,
                       {'object_list': article_list, 'form': search_form, 'search_text': search_text})
 
@@ -59,16 +79,19 @@ class ArticleDetailView(DetailView, FormView):
     def get(self, request, *args, **kwargs):
         form = self.form_class
         pk = kwargs['pk'] if 'pk' in kwargs else 1
-        article = Article.objects.get(pk=pk)
+        article = get_object_or_404(Article, pk=pk)
         return render(request, self.template_name, {'article': article, 'form': form})
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
         pk = kwargs['pk'] if 'pk' in kwargs else 1
-        article = Article.objects.get(pk=pk)
+        article = get_object_or_404(Article, pk=pk)
         if form.is_valid():
-            comment = Comment.objects.create(body=form.cleaned_data['body'], user=request.user.user_profile,
-                                             article=article)
+            comment = Comment.objects.create(
+                body=form.cleaned_data['body'],
+                user=request.user.user_profile,
+                article=article
+            )
             comment.save()
             return HttpResponseRedirect(request.path)
         else:

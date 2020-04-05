@@ -22,4 +22,5 @@
     {% empty %}
         <p>Пока новостей нет</p>
     {% endfor %}
+    {% include "pagination.html" with page=object_list %}
 {% endblock %}

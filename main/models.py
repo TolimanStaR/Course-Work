@@ -3,6 +3,8 @@ from django.utils import timezone
 
 from account.models import UserProfile
 
+from taggit.managers import TaggableManager
+
 
 class Article(models.Model):
     title = models.CharField(max_length=300)
@@ -22,6 +24,8 @@ class Article(models.Model):
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+    tags = TaggableManager()
 
     def __str__(self):
         return f'Статья {self.title}'
