@@ -34,6 +34,7 @@ class SolutionCaseBase(models.Model):
 
 class TestBase(models.Model):
     content = models.TextField()
+    answer = models.TextField()
 
     class Meta:
         abstract = True

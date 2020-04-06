@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0002_auto_20200406_1743.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0003_auto_20200406_1834.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0004_contestparticipant_stats.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,7 @@
       <workItem from="1585937466490" duration="2483000" />
       <workItem from="1586005942320" duration="11660000" />
       <workItem from="1586100272837" duration="12431000" />
-      <workItem from="1586179134278" duration="8061000" />
+      <workItem from="1586179134278" duration="9731000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -283,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586184187935</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="participant model and some fields in others">
+      <created>1586187745741</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1586187745741</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +320,8 @@
     <MESSAGE value="Pagination" />
     <MESSAGE value="Main app is ready to battle!!!" />
     <MESSAGE value="Contest, abstract models: task, sol.case, test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contest, abstract models: task, sol.case, test" />
+    <MESSAGE value="participant model and some fields in others" />
+    <option name="LAST_COMMIT_MESSAGE" value="participant model and some fields in others" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1585769342619">
@@ -326,10 +332,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586184185334">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586187743923">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586184185334" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586187743923" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586181545407">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

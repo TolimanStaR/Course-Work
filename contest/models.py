@@ -9,13 +9,16 @@ import datetime
 
 class Contest(models.Model):
     starts_at = models.DateTimeField()
-    duration = models.DateTimeField(default=datetime.timedelta(hours=2))
+    duration = models.DateTimeField(default=datetime.timedelta(hours=2, minutes=30))
 
     title = models.CharField(max_length=300)
     problem_set_size = models.PositiveIntegerField(default=1)
 
+    active = models.BooleanField(default=False)
+    completed = models.BooleanField(default=False)
+
     def __str__(self):
-        return f'Раунд {self.pk + 1}. {self.title}'
+        return f'Раунд {self.pk}. {self.title}'
 
 
 class ContestTask(TaskBase):
@@ -68,3 +71,13 @@ class ContestSolutionCase(SolutionCaseBase):
         return f'Посылка участника {self.participant.user.user.username}, ' \
                f'задача {self.task.title}, ' \
                f'вердикт: {self.verdict}'
+
+    class Meta:
+        ordering = '-package_time'
+
+
+class ContestTest(TestBase):
+    task = models.ForeignKey(ContestTask, on_delete=models.CASCADE, related_name='tests')
+
+    def __str__(self):
+        return f'Тест задачи {self.task.title}'
