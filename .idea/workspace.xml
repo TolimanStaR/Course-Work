@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/contest/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/articles/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/articles/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coursework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -50,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Example DJ project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Manager" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -110,7 +113,8 @@
       <workItem from="1585902903564" duration="1511000" />
       <workItem from="1585937466490" duration="2483000" />
       <workItem from="1586005942320" duration="11660000" />
-      <workItem from="1586100272837" duration="12377000" />
+      <workItem from="1586100272837" duration="12431000" />
+      <workItem from="1586179134278" duration="4501000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -266,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586113542905</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Main app is ready to battle!!!">
+      <created>1586114689572</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1586114689572</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +307,8 @@
     <MESSAGE value="ammm... idk" />
     <MESSAGE value="Comment system" />
     <MESSAGE value="Pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pagination" />
+    <MESSAGE value="Main app is ready to battle!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main app is ready to battle!!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1585769342619">
@@ -307,22 +319,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586113537102">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586114687700">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586113537102" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586100931773">
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586114687700" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586181545407">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1586100931773" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1586181545407" />
     <state x="491" y="169" key="SettingsEditor" timestamp="1586105391418">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586105391418" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586100283130">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586179214354">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586100283130" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586179214354" />
     <state x="1103" y="245" key="search.everywhere.popup" timestamp="1586112222935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
