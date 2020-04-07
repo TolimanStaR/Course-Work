@@ -23,5 +23,5 @@
     <p>
         Звание: {{ user.user_profile.contest_rang }}
     </p>
-    <img src="{{ user.user_profile.profile_image.url }}" style="width: 300px;" alt="Avatar">
+    <img src="{{ request.user.user_profile.profile_image.url }}" style="width: 300px;" alt="Avatar">
 {% endblock %}

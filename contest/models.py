@@ -9,7 +9,7 @@ import datetime
 
 class Contest(models.Model):
     starts_at = models.DateTimeField()
-    duration = models.DateTimeField(default=datetime.timedelta(hours=2, minutes=30))
+    duration_minutes = models.PositiveIntegerField(default=120)
 
     title = models.CharField(max_length=300)
     problem_set_size = models.PositiveIntegerField(default=1)
@@ -57,7 +57,7 @@ class ContestParticipant(models.Model):
     user = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
     penalty = models.IntegerField(default=0)
     task_solved = models.PositiveIntegerField(default=0)
-    stats = ArrayField(models.BooleanField(default=None), size=16, default=list([None] * 16))
+    stats = ArrayField(models.BooleanField(default=None), size=16, blank=True)
 
     class Meta:
         ordering = ('-task_solved', 'penalty')
@@ -73,7 +73,7 @@ class ContestSolutionCase(SolutionCaseBase):
                f'вердикт: {self.verdict}'
 
     class Meta:
-        ordering = '-package_time'
+        ordering = ('-package_time', )
 
 
 class ContestTest(TestBase):

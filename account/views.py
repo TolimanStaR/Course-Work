@@ -23,8 +23,12 @@ class UserRegistration(FormView):
             new_user = user_form.save(commit=False)
             new_user.set_password(user_form.cleaned_data['password'])
             new_user.save()
-            UserProfile.objects.create(user=new_user)
+            UserProfile.objects.create(user=new_user, profile_image='images/default_avatar.png')
             return render(request, 'account/register_done.html', {'new_user': new_user})
+        else:
+            messages.error(request, 'Пользователь с таким ником уже зарегистрирован. Пожалуйста, выберите другой ник.')
+            user_form = self.form_class
+            return render(request, 'account/register.html', {'user_form': user_form})
 
     def get(self, request, *args, **kwargs):
         user_form = self.form_class

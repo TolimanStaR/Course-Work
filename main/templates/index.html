@@ -13,12 +13,7 @@
     </div>
     <div class="account">
         {% if request.user.is_authenticated %}
-            <img class="image" src="
-                    {% if request.user.user_profile.profile_image %}
-                            {{ request.user.user_profile.profile_image.url }}
-                    {% else %}
-                            {% static 'images/default_avatar.png' %}
-                    {% endif %}"
+            <img class="image" src="{{ request.user.user_profile.profile_image.url }}"
                  alt="Аватар">
             <p><a href="{% url "profile" request.user.username %}">{{ request.user.username }}</a></p>
             <p><a href="{% url "logout" %}">Выйти</a></p>
