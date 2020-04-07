@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'management.apps.ManagementConfig',
     'rating.apps.RatingConfig',
     'teaching.apps.TeachingConfig',
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+{% block title %}Соревнования{% endblock %}
+
+{% block content %}
+    <p>Анонс соревнований:</p>
+    {% for contest in object_list %}
+        {% if not contest.active and not contest.completed %}
+            <p><a href="#">{{ contest.title }}</a></p>
+        {% endif %}
+    {% endfor %}
+    <p>Текущие соревнования:</p>
+    {% for contest in object_list %}
+        {% if contest.active %}
+            <p><a href="#">{{ contest.title }}</a></p>
+        {% endif %}
+    {% endfor %}
+    <p>Прошедшие соревнования:</p>
+    {% for contest in object_list %}
+        {% if contest.completed %}
+            <p><a href="#">{{ contest.title }}</a></p>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
