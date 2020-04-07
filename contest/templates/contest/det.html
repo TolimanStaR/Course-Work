@@ -4,5 +4,13 @@
 
 {% block content %}
     <p>Страница соревнования</p>
-    <p><span id="my_timer">01:10:00</span></p>
+    <script type="text/javascript">
+        let now = new Date();
+        let after = new Date;
+        after.setSeconds(now.getSeconds() + 2);
+        setTimeout(function F() {
+            alert('Соревнование завершено');
+            window.location.replace("http://127.0.0.1:8000");
+        }, 1000 * (after.getSeconds() - now.getSeconds()));
+    </script>
 {% endblock %}
