@@ -1,7 +1,12 @@
 {% extends 'index.html' %}
 
-{% block title %}{% endblock %}
+{% block title %}Регистрация на {{ contest.title }}{% endblock %}
 
 {% block content %}
-
+    <p>Регистрация на раунд {{ contest.title }}</p>
+    <form action="" method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Зарегистрироваться">
+    </form>
 {% endblock %}

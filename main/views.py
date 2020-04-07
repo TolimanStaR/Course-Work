@@ -35,7 +35,7 @@ def paginate_page(article_list, request, paginate_by):
 class ArticleListView(ListView, FormView):
     template_name = 'articles/list.html'
     Model = Article
-    paginate_by = 1
+    paginate_by = 2
 
     def get(self, request, *args, **kwargs):
 

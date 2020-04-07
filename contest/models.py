@@ -4,8 +4,6 @@ from django.db import models
 from management.models import TaskBase, SolutionCaseBase, TestBase
 from account.models import UserProfile
 
-import datetime
-
 
 class Contest(models.Model):
     starts_at = models.DateTimeField()
@@ -73,7 +71,7 @@ class ContestSolutionCase(SolutionCaseBase):
                f'вердикт: {self.verdict}'
 
     class Meta:
-        ordering = ('-package_time', )
+        ordering = ('-package_time',)
 
 
 class ContestTest(TestBase):
