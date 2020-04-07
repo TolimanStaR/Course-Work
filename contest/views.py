@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, FormView
@@ -21,7 +22,7 @@ class ContestDetail(DetailView):
     model = Contest
 
 
-class ContestRegistrationView(FormView):
+class ContestRegistrationView(LoginRequiredMixin, FormView):
     template_name = 'contest/contest_register.html'
     form_class = ContestRegistrationForm
 

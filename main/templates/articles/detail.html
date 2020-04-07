@@ -23,7 +23,8 @@
             аккаунт</a></p>
     {% endif %}
     {% for  comment in article.comments.all %}
-        <p>{{ comment.user }}</p>
+        <p><a href="{% url 'profile' comment.user.user %}">{{ comment.user }}</a></p>
+        <p>{{ comment.created }}</p>
         <p>{{ comment.body }}</p>
     {% endfor %}
 {% endblock %}
