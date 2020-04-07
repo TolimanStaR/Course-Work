@@ -6,7 +6,8 @@
     <p>Анонс соревнований:</p>
     {% for contest in object_list %}
         {% if not contest.active and not contest.completed %}
-            <p><a href="#">{{ contest.title }}</a></p>
+            <p><a href="{% url 'contest_detail' contest.pk %}">{{ contest.title }}</a></p>
+            <p>{{ contest.starts_at }}</p>
         {% endif %}
     {% endfor %}
     <p>Текущие соревнования:</p>

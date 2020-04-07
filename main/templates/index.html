@@ -6,7 +6,61 @@
     <title>{% block title %}{% endblock %}</title>
     <link href="{% static "css/base.css" %}" rel="stylesheet">
 </head>
-<body>
+<script type="text/javascript">
+        let now = new Date();
+        let starts_at = new Date(
+            {{ contest.starts_at.year }},
+            {{ contest.starts_at.month }},
+            {{ contest.starts_at.day }},
+            {{ contest.starts_at.hour }} +3,
+            {{ contest.starts_at.minute }}
+        );
+        let ends_at = new Date(
+            {{ contest.starts_at.year }},
+            {{ contest.starts_at.month }},
+            {{ contest.starts_at.day }},
+            {{ contest.starts_at.hour }} +3,
+            {{ contest.starts_at.minute }} + {{ contest.duration_minutes }}
+        );
+
+        console.log(starts_at);
+        console.log(ends_at);
+        console.log(now);
+
+        starts_at.getDay() = now.getDay();
+
+        function Timer() {
+            if (now > starts_at) {
+                document.getElementById("my_timer").innerHTML = "Соревнование еще не началось";
+            } else if (starts_at < now && now < ends_at) {
+                let my_timer = document.getElementById("my_timer");
+                let h = ends_at.getHours() - now.getHours();
+                let m = ends_at.getMinutes() - now.getMinutes();
+                let s = ends_at.getSeconds() - now.getSeconds();
+
+                if (!s) {
+                    if (!m) {
+                        if (!h) {
+                            alert("Соревнование завершено.");
+                            window.location.href = "127.0.0.1:8000/";
+                        }
+                        --h;
+                        m = 60;
+                        if (h < 10) h = "0" + h;
+                    }
+                    --m;
+                    if (m < 10) m = "0" + m;
+                    s = 59;
+                } else --s;
+                if (s < 10) s = "0" + s;
+                document.getElementById("my_timer").innerHTML = h + ":" + m + ":" + s;
+                setTimeout(Timer, 1000);
+            } else {
+                document.getElementById("my_timer").innerHTML = "Соревнование завершено";
+            }
+        }
+    </script>
+<body onload="Timer()">
 <div class="header">
     <div class="logo">
         OLYMPUS PROGRAMMING
