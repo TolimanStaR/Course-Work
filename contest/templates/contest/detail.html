@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block title %}{{ contest.title }}{% endblock %}
+
+{% block content %}
+    <div class="navigation" style="margin: 0; padding: 0;">
+        <ul class="navbar">
+            <li><a href="{% url 'contest_task_list' object.pk %}">Задачи</a></li>
+            <li><a href="#">Посылки</a></li>
+            <li><a href="{% url 'contest_rating' object.pk %}">Текущий рейтинг</a></li>
+        </ul>
+    </div>
+    <p>{{ object.title }}</p>
+    {% block contest_detail %}
+    {% endblock %}
+
+
+    {#    <script type="text/javascript">#}
+    {#        let now = new Date();#}
+    {#        let after = new Date;#}
+    {#        after.setSeconds(now.getSeconds() + 2);#}
+    {#        setTimeout(function F() {#}
+    {#            alert('Соревнование завершено');#}
+    {#            window.location.replace("http://127.0.0.1:8000");#}
+    {#        }, 1000 * (after.getSeconds() - now.getSeconds()));#}
+    {#    </script>#}
+{% endblock %}

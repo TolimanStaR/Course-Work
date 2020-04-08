@@ -7,7 +7,7 @@ from .models import Contest
 from .forms import ContestRegistrationForm
 
 from account.models import UserProfile
-from contest.models import ContestParticipant
+from contest.models import ContestParticipant, Contest, ContestTask
 
 from django.core.exceptions import ObjectDoesNotExist
 
@@ -17,9 +17,63 @@ class ContestList(ListView):
     model = Contest
 
 
-class ContestDetail(DetailView):
-    template_name = 'contest/det.html'
+class ContestDetail(LoginRequiredMixin, DetailView):
+    template_name = 'contest/detail.html'
     model = Contest
+
+    class ContestTaskListView(DetailView):
+        template_name = 'contest/task_list.html'
+        model = Contest
+
+    class ContestRatingView(DetailView):
+        template_name = 'contest/rating.html'
+        model = Contest
+
+    class ContestPackageView(DetailView):
+        pass
+
+    # def task_list(self, *args, **kwargs):
+    #     contest = Contest.objects.get(pk=kwargs['pk'])
+    #     task_list = ContestTask.objects.filter(contest=contest)
+    #     user_profile = UserProfile.objects.get(user=self.request.user)
+    #     template = 'contest/task_list.html'
+    #     return render(self.request, template, {'contest': contest,
+    #                                            'task_list': task_list,
+    #                                            'user_profile': user_profile
+    #                                            }
+    #                   )
+
+
+# class ContestTaskListView(LoginRequiredMixin, ListView):
+#     template_name = 'contest/task_list.html'
+#
+#     def get_queryset(self):
+#         contest = Contest.objects.get(pk=self.kwargs['pk'])
+#         print('Hello world')
+#         print(self.kwargs)
+#         queryset = ContestTask.objects.filter(contest=contest)
+#
+#         return queryset
+
+
+class ContestTaskDetailView(LoginRequiredMixin):
+    pass
+
+
+class ContestPackagesListView(LoginRequiredMixin):
+    pass
+
+
+class ContestPackagesDetailView(LoginRequiredMixin):
+    pass
+
+
+class ContestPackagesView(LoginRequiredMixin):
+    pass
+
+
+class ContestRatingView(ListView):
+    pass
 
 
 class ContestRegistrationView(LoginRequiredMixin, FormView):

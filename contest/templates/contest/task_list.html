@@ -1,7 +1,9 @@
-{% extends 'index.html' %}
+{% extends 'contest/detail.html' %}
 
-{% block title %}{% endblock %}
+{% block title %}Задачи{% endblock %}
 
-{% block content %}
-
+{% block contest_detail %}
+    {% for task in contest.tasks.all %}
+        <p>{{ task.title }}</p>
+    {% endfor %}
 {% endblock %}

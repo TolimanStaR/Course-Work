@@ -52,13 +52,16 @@ class ContestTask(TaskBase):
 
 class ContestParticipant(models.Model):
     contest = models.ForeignKey(Contest, on_delete=models.CASCADE, related_name='participants')
-    user = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
+    user = models.OneToOneField(UserProfile, on_delete=models.CASCADE, related_name='member')
     penalty = models.IntegerField(default=0)
     task_solved = models.PositiveIntegerField(default=0)
     stats = ArrayField(models.BooleanField(default=None), size=16, blank=True)
 
     class Meta:
         ordering = ('-task_solved', 'penalty')
+
+    def __str__(self):
+        return f'{self.user} - {self.contest.title}'
 
 
 class ContestSolutionCase(SolutionCaseBase):

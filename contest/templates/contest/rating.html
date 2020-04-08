@@ -1,7 +1,34 @@
-{% extends 'index.html' %}
+{% extends 'contest/detail.html' %}
 
-{% block title %}{% endblock %}
+{% block title %}Рейтинг участников{% endblock %}
 
-{% block content %}
-
+{% block contest_detail %}
+    <table style="border: 1px solid #2c2c2c;">
+        <tr>
+            <th>Место</th>
+            <th>Никнейм</th>
+            <th>Штраф</th>
+            {% for task in contest.tasks.all %}
+                <th>{{ task.title }}</th>
+            {% endfor %}
+        </tr>
+        {% for participant in contest.participants.all %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ participant.user }}</td>
+                <td>{{ participant.penalty }}</td>
+                {% for res in participant.stats %}
+                    {% if forloop.counter <= contest.tasks.count %}
+                        {% if res == None %}
+                            <td></td>
+                        {% elif res == True %}
+                            <td>+</td>
+                        {% else %}
+                            <td>-</td>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
 {% endblock %}
