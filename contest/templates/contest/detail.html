@@ -5,9 +5,9 @@
 {% block content %}
     <div class="navigation" style="margin: 0; padding: 0;">
         <ul class="navbar">
-            <li><a href="{% url 'contest_task_list' object.pk %}">Задачи</a></li>
-            <li><a href="{% url 'contest_packages' object.pk %}">Посылки</a></li>
-            <li><a href="{% url 'contest_rating' object.pk %}">Текущий рейтинг</a></li>
+            <li><a href="{% url 'contest_task_list' contest.pk %}">Задачи</a></li>
+            <li><a href="{% url 'contest_packages' contest.pk %}">Посылки</a></li>
+            <li><a href="{% url 'contest_rating' contest.pk %}">Текущий рейтинг</a></li>
         </ul>
     </div>
     <p>{{ contest.title }}</p>

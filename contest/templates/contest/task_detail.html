@@ -1,7 +1,18 @@
-{% extends 'index.html' %}
+{% extends 'contest/detail.html' %}
 
 {% block title %}hello{% endblock %}
 
-{% block content %}
-    <p>Привет</p>
+{% block contest_detail %}
+    <h1>{{ task.title }}</h1>
+    <p>Ограничение по времени: {{ task.time_limit }} сек.</p>
+    <p>{{ task.body }}</p>
+    <h4>Входные данные</h4>
+    <p>{{ task.input }}</p>
+    <h4>Выходные данные</h4>
+    <p>{{ task.output }}</p>
+    <form action="" method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="Отправить">
+    </form>
 {% endblock %}
