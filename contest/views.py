@@ -1,10 +1,12 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, get_object_or_404
+from django.urls import reverse
 from django.views.generic import ListView, DetailView, FormView
 from .models import Contest
-from .forms import ContestRegistrationForm
+from .forms import ContestRegistrationForm, SolutionSendForm
 
 from account.models import UserProfile
 from contest.models import ContestParticipant, Contest, ContestTask, ContestSolutionCase
@@ -33,32 +35,25 @@ class ContestDetail(LoginRequiredMixin, DetailView):
         template_name = 'contest/packages.html'
         model = Contest
 
-    # def task_list(self, *args, **kwargs):
-    #     contest = Contest.objects.get(pk=kwargs['pk'])
-    #     task_list = ContestTask.objects.filter(contest=contest)
-    #     user_profile = UserProfile.objects.get(user=self.request.user)
-    #     template = 'contest/task_list.html'
-    #     return render(self.request, template, {'contest': contest,
-    #                                            'task_list': task_list,
-    #                                            'user_profile': user_profile
-    #                                            }
-    #                   )
+    class ContestTaskDetailView(DetailView, FormView):
+        template_name = 'contest/task_detail.html'
 
+        def get(self, request, *args, **kwargs):
+            if 'pk' in kwargs:
+                contest = Contest.objects.get(pk=kwargs['pk'])
+                task = ContestTask.objects.get(contest=contest, difficulty=kwargs['difficulty'])
+                participant = ContestParticipant.objects.get(contest=contest, user=request.user.user_profile)
+                form = SolutionSendForm
 
-# class ContestTaskListView(LoginRequiredMixin, ListView):
-#     template_name = 'contest/task_list.html'
-#
-#     def get_queryset(self):
-#         contest = Contest.objects.get(pk=self.kwargs['pk'])
-#         print('Hello world')
-#         print(self.kwargs)
-#         queryset = ContestTask.objects.filter(contest=contest)
-#
-#         return queryset
+                return render(request, self.template_name,
+                              {'contest': contest, 'task': task, 'participant': participant, 'form': form})
 
+            return HttpResponse('Hello')
+            # else:
+            #     return HttpResponseRedirect(reverse('contest_detail', args=(1, )))
 
-class ContestTaskDetailView(LoginRequiredMixin):
-    pass
+        def post(self, request, *args, **kwargs):
+            return HttpResponse('Hello')
 
 
 class ContestPackagesListView(LoginRequiredMixin):

@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0008_auto_20200408_1955.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0009_auto_20200408_1959.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0010_auto_20200409_0030.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0011_auto_20200409_0040.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coursework/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/templates/contest/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/task_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/task_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/task_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/task_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
     </list>
@@ -57,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Example DJ project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Manager" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -125,7 +124,7 @@
       <workItem from="1586100272837" duration="12431000" />
       <workItem from="1586179134278" duration="10378000" />
       <workItem from="1586246455188" duration="28011000" />
-      <workItem from="1586355823713" duration="9316000" />
+      <workItem from="1586355823713" duration="20698000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -365,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586361603078</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Bug fix + base rating/packages/tasks list for contest app">
+      <created>1586365312223</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1586365312223</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +379,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="user registration" />
     <MESSAGE value="user profile model" />
     <MESSAGE value="almost end account app" />
     <MESSAGE value="user image in profile div" />
@@ -398,7 +403,8 @@
     <MESSAGE value="Simple contest registration (participant creation)" />
     <MESSAGE value="little changes" />
     <MESSAGE value="All templates for contest" />
-    <option name="LAST_COMMIT_MESSAGE" value="All templates for contest" />
+    <MESSAGE value="Bug fix + base rating/packages/tasks list for contest app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fix + base rating/packages/tasks list for contest app" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1585769342619">
@@ -409,14 +415,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586361598664">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586365310111">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586361598664" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586255119752">
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586365310111" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586381094576">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1586255119752" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1586381094576" />
     <state x="491" y="169" key="SettingsEditor" timestamp="1586256124750">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

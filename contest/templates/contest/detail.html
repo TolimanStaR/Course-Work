@@ -10,7 +10,7 @@
             <li><a href="{% url 'contest_rating' object.pk %}">Текущий рейтинг</a></li>
         </ul>
     </div>
-    <p>{{ object.title }}</p>
+    <p>{{ contest.title }}</p>
     {% block contest_detail %}
     {% endblock %}
 
