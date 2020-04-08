@@ -7,7 +7,7 @@ from .models import Contest
 from .forms import ContestRegistrationForm
 
 from account.models import UserProfile
-from contest.models import ContestParticipant, Contest, ContestTask
+from contest.models import ContestParticipant, Contest, ContestTask, ContestSolutionCase
 
 from django.core.exceptions import ObjectDoesNotExist
 
@@ -30,7 +30,8 @@ class ContestDetail(LoginRequiredMixin, DetailView):
         model = Contest
 
     class ContestPackageView(DetailView):
-        pass
+        template_name = 'contest/packages.html'
+        model = Contest
 
     # def task_list(self, *args, **kwargs):
     #     contest = Contest.objects.get(pk=kwargs['pk'])
@@ -65,14 +66,6 @@ class ContestPackagesListView(LoginRequiredMixin):
 
 
 class ContestPackagesDetailView(LoginRequiredMixin):
-    pass
-
-
-class ContestPackagesView(LoginRequiredMixin):
-    pass
-
-
-class ContestRatingView(ListView):
     pass
 
 

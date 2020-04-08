@@ -65,8 +65,8 @@ class ContestParticipant(models.Model):
 
 
 class ContestSolutionCase(SolutionCaseBase):
-    participant = models.OneToOneField(ContestParticipant, on_delete=models.CASCADE, related_name='packages')
-    task = models.OneToOneField(ContestTask, on_delete=models.CASCADE, related_name='packages')
+    participant = models.ForeignKey(ContestParticipant, on_delete=models.CASCADE, related_name='packages')
+    task = models.ForeignKey(ContestTask, on_delete=models.CASCADE, related_name='packages')
 
     def __str__(self):
         return f'Посылка участника {self.participant.user.user.username}, ' \

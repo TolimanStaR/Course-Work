@@ -3,4 +3,12 @@
 {% block title %}Посылки {{ request.user }}{% endblock %}
 
 {% block contest_detail %}
+    Посылки участника {{ request.user }}
+    {% for participant in contest.participants.all %}
+        {% if participant.user.user == request.user %}
+            {% for package in participant.packages.all %}
+                <p>{{ package }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
 {% endblock %}

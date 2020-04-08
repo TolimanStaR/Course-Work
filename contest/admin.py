@@ -16,6 +16,11 @@ class ContestParticipantInLine(admin.StackedInline):
     model = ContestParticipant
 
 
+class ContestParticipantSolutionCaseInLine(admin.StackedInline):
+    model = ContestSolutionCase
+    extra = 3
+
+
 @admin.register(Contest)
 class ContestAdmin(admin.ModelAdmin):
     list_display = [
@@ -58,6 +63,10 @@ class ContestParticipantAdmin(admin.ModelAdmin):
         'task_solved',
         'penalty',
         'stats',
+    ]
+
+    inlines = [
+        ContestParticipantSolutionCaseInLine,
     ]
 
 
