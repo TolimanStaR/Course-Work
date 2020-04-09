@@ -1,0 +1,1 @@
+print('Yes' if list(map(int, input().split()))[1] in list(map(int, input().split())) else 'No')

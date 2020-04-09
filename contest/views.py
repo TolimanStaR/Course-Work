@@ -68,12 +68,14 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                 print('checkpoint')
                 participant_file = form.cleaned_data['participant_file']
                 lang = form.cleaned_data['language']
+                code = participant_file.open('r').read()
 
                 package = ContestSolutionCase.objects.create(
                     participant=participant,
                     task=task,
                     task_file=participant_file,
                     language=lang,
+                    task_code=code,
                 )
 
                 # Здесь отправка на проверку
@@ -94,19 +96,29 @@ class ContestDetail(LoginRequiredMixin, DetailView):
         model = Contest
         template_name = 'contest/packages_list.html'
 
-        def get(self, request, pk=None, difficulty=None):
+        def get(self, request, pk=None, difficulty=None, id=None):
             if pk and difficulty:
                 contest = get_object_or_404(Contest, pk=pk)
                 task = get_object_or_404(ContestTask, difficulty=difficulty)
                 participant = ContestParticipant.objects.get(user=request.user.user_profile)
                 packages = ContestSolutionCase.objects.filter(task=task, participant=participant)
 
-                return render(request, self.template_name, {
-                    'contest': contest,
-                    'task': task,
-                    'participant': participant,
-                    'packages': packages,
-                })
+                if id:
+                    package = get_object_or_404(ContestSolutionCase, id=id)
+
+                    return render(request, 'contest/packages_detail.html', {
+                        'contest': contest,
+                        'task': task,
+                        'participant': participant,
+                        'package': package,
+                    })
+                else:
+                    return render(request, self.template_name, {
+                        'contest': contest,
+                        'task': task,
+                        'participant': participant,
+                        'packages': packages,
+                    })
 
 
 class ContestPackagesDetailView(LoginRequiredMixin):

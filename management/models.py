@@ -23,6 +23,7 @@ class SolutionCaseBase(models.Model):
     package_time = models.DateTimeField(default=timezone.now)
     language = models.CharField(max_length=30, blank=True)
     task_file = models.FileField(upload_to='code_files/')
+    task_code = models.TextField(default='<Code>')
     verdict = models.CharField(max_length=150, default='Выполняется проверка')
     solved = models.BooleanField(default=False)
 

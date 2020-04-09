@@ -1,7 +1,29 @@
-{% extends 'index.html' %}
+{% extends 'contest/detail.html' %}
 
 {% block title %}{% endblock %}
 
-{% block content %}
-
+{% block contest_detail %}
+    <p>Детали посылки:</p>
+    <table>
+        <tr>
+            <th>Участник</th>
+            <th>Посылка</th>
+            <th>Время посылки</th>
+            <th>Задача</th>
+            <th>Язык</th>
+            <th>Вердикт</th>
+        </tr>
+        <tr>
+            <td>{{ request.user }}</td>
+            <td>{{ package.id }}</td>
+            <td>{{ package.package_time }}</td>
+            <td>{{ task.title }}</td>
+            <td>{{ package.language }}</td>
+            <td>{{ package.verdict }}</td>
+        </tr>
+    </table>
+    <br>
+    <div style="border: 1px #2c2c2c solid;">
+        {{ package.task_code|linebreaksbr }}
+    </div>
 {% endblock %}

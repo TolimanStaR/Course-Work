@@ -4,23 +4,27 @@
 
 {% block contest_detail %}
     <table>
-    <tr>
-        <th>Участник</th>
-        <th>Время посылки</th>
-        <th>Задача</th>
-        <th>Язык</th>
-        <th>Вердикт</th>
-    </tr>
-    {% for package in packages %}
         <tr>
-        <td>{{ request.user }}</td>
-        <td>{{ package.package_time }}</td>
-        <td>{{ task.title }}</td>
-        <td>{{ package.language }}</td>
-        <td>{{ package.verdict }}</td>
+            <th>Участник</th>
+            <th>ID посылки</th>
+            <th>Время посылки</th>
+            <th>Задача</th>
+            <th>Язык</th>
+            <th>Вердикт</th>
         </tr>
-    {% empty %}
-        <p>Вы пока не отправляли решение этой задачи на проверку</p>
-    {% endfor %}
+        {% for package in packages %}
+            <tr>
+                <td>{{ request.user }}</td>
+                <td>
+                    <a href="{% url 'contest_package_detail' pk=contest.pk difficulty=task.difficulty id=package.id %}">{{ package.id }}</a>
+                </td>
+                <td>{{ package.package_time }}</td>
+                <td>{{ task.title }}</td>
+                <td>{{ package.language }}</td>
+                <td>{{ package.verdict }}</td>
+            </tr>
+        {% empty %}
+            <p>Вы пока не отправляли решение этой задачи на проверку</p>
+        {% endfor %}
     </table>
 {% endblock %}

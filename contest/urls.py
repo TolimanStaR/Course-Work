@@ -12,4 +12,6 @@ urlpatterns = [
     path('<int:pk>/packages/', views.ContestDetail.ContestPackageView.as_view(), name='contest_packages'),
     path('<int:pk>/problem/<difficulty>/packages/', views.ContestDetail.ContestPackageListView.as_view(),
          name='contest_packages_list'),
+    path('<int:pk>/problem/<difficulty>/packages/<int:id>/', views.ContestDetail.ContestPackageListView.as_view(),
+         name='contest_package_detail'),
 ]

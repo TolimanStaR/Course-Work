@@ -6,9 +6,30 @@
     Посылки участника {{ request.user }}
     {% for participant in contest.participants.all %}
         {% if participant.user.user == request.user %}
-            {% for package in participant.packages.all %}
-                <p>{{ package }}</p>
-            {% endfor %}
+            <table>
+                <tr>
+                    <th>Участник</th>
+                    <th>ID Посылки</th>
+                    <th>Время посылки</th>
+                    <th>Задача</th>
+                    <th>Язык</th>
+                    <th>Вердикт</th>
+                </tr>
+                {% for package in participant.packages.all %}
+                    <tr>
+                        <td>{{ request.user }}</td>
+                        <td>
+                            <a href="{% url 'contest_package_detail' pk=contest.pk difficulty=package.task.difficulty id=package.id %}">{{ package.id }}</a>
+                        </td>
+                        <td>{{ package.package_time }}</td>
+                        <td>{{ package.task.title }}</td>
+                        <td>{{ package.language }}</td>
+                        <td>{{ package.verdict }}</td>
+                    </tr>
+                {% empty %}
+                    <p>Вы пока не отправляли решение этой задачи на проверку</p>
+                {% endfor %}
+            </table>
         {% endif %}
     {% endfor %}
 {% endblock %}
