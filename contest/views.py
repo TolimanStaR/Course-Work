@@ -79,7 +79,12 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                 # Здесь отправка на проверку
 
                 package.verdict = 'Ok'
+
+                # *****
+
                 package.solved = True
+                participant.stats[task.number - 1] = 1
+                participant.save()
                 package.save()
                 return HttpResponseRedirect(reverse('contest_packages_list', args=(contest.pk, task.difficulty)))
 
@@ -132,9 +137,10 @@ class ContestRegistrationView(LoginRequiredMixin, FormView):
         form = self.form_class(request.POST)
         user_profile = UserProfile.objects.get(user=request.user)
         contest = Contest.objects.get(pk=kwargs['pk'])
+
         if form.is_valid():
             try:
-                ContestParticipant.objects.get(user=user_profile, contest=contest, stats=[None] * 16)
+                ContestParticipant.objects.get(user=user_profile, contest=contest)
                 message = f'Вы уже регистрировались на соревнование {contest.title} под этим ником'
             except ObjectDoesNotExist:
                 ContestParticipant.objects.create(

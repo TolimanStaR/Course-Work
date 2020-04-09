@@ -12,7 +12,13 @@
         <th>Вердикт</th>
     </tr>
     {% for package in packages %}
-        <p>{{ package }}</p>
+        <tr>
+        <td>{{ request.user }}</td>
+        <td>{{ package.package_time }}</td>
+        <td>{{ task.title }}</td>
+        <td>{{ package.language }}</td>
+        <td>{{ package.verdict }}</td>
+        </tr>
     {% empty %}
         <p>Вы пока не отправляли решение этой задачи на проверку</p>
     {% endfor %}
