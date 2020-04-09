@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0012_contesttask_number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0013_auto_20200409_1243.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0014_auto_20200409_1246.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0015_auto_20200409_1248.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/code_files/d8de8725dc2eacc2596a473c89fc3f9b7051696e.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/rating.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/rating.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/templates/contest/task_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/task_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +127,8 @@
       <workItem from="1586100272837" duration="12431000" />
       <workItem from="1586179134278" duration="10378000" />
       <workItem from="1586246455188" duration="28011000" />
-      <workItem from="1586355823713" duration="21142000" />
+      <workItem from="1586355823713" duration="23028000" />
+      <workItem from="1586418424338" duration="9023000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -372,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586382126107</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Fixed detail view, now it works how it must works">
+      <created>1586382616160</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1586382616160</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +397,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="almost end account app" />
     <MESSAGE value="user image in profile div" />
     <MESSAGE value="+ custom user profile and users list" />
     <MESSAGE value="Ура у меня день рождения)))" />
@@ -405,7 +421,8 @@
     <MESSAGE value="All templates for contest" />
     <MESSAGE value="Bug fix + base rating/packages/tasks list for contest app" />
     <MESSAGE value="waste time for detail view" />
-    <option name="LAST_COMMIT_MESSAGE" value="waste time for detail view" />
+    <MESSAGE value="Fixed detail view, now it works how it must works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed detail view, now it works how it must works" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1585769342619">
@@ -416,26 +433,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586382123435">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586382614286">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586382123435" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586381094576">
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586382614286" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586422374958">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1586381094576" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1586422374958" />
     <state x="491" y="169" key="SettingsEditor" timestamp="1586256124750">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586256124750" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586355835989">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586418519354">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586355835989" />
-    <state x="1103" y="245" key="search.everywhere.popup" timestamp="1586112222935">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586418519354" />
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1586418889454">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1103" y="245" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1586112222935" />
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1586418889454" />
     <state x="202" y="442" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585768586733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

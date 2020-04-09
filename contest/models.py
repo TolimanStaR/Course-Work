@@ -49,13 +49,15 @@ class ContestTask(TaskBase):
 
     difficulty = models.CharField(choices=DIFFICULT_CHOICES, default='a', max_length=3)
 
+    number = models.PositiveIntegerField(default=1)
+
 
 class ContestParticipant(models.Model):
     contest = models.ForeignKey(Contest, on_delete=models.CASCADE, related_name='participants')
     user = models.OneToOneField(UserProfile, on_delete=models.CASCADE, related_name='member')
     penalty = models.IntegerField(default=0)
     task_solved = models.PositiveIntegerField(default=0)
-    stats = ArrayField(models.BooleanField(default=None), size=16, blank=True)
+    stats = ArrayField(models.PositiveIntegerField(default=0), size=16, blank=True)
 
     class Meta:
         ordering = ('-task_solved', 'penalty')

@@ -19,9 +19,9 @@
                 <td>{{ participant.penalty }}</td>
                 {% for res in participant.stats %}
                     {% if forloop.counter <= contest.tasks.count %}
-                        {% if res == None %}
+                        {% if res == 0 %}
                             <td></td>
-                        {% elif res == True %}
+                        {% elif res == 1 %}
                             <td>+</td>
                         {% else %}
                             <td>-</td>

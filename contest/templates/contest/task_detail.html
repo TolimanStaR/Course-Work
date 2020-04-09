@@ -5,14 +5,24 @@
 {% block contest_detail %}
     <h1>{{ task.title }}</h1>
     <p>Ограничение по времени: {{ task.time_limit }} сек.</p>
-    <p>{{ task.body }}</p>
+    <p>{{ task.body|linebreaksbr }}</p>
     <h4>Входные данные</h4>
-    <p>{{ task.input }}</p>
+    <p>{{ task.input|linebreaksbr }}</p>
     <h4>Выходные данные</h4>
-    <p>{{ task.output }}</p>
-    <form action="" method="post">
-    {{ form.as_p }}
-    {% csrf_token %}
-    <input type="submit" value="Отправить">
+    <p>{{ task.output|linebreaksbr }}</p>
+    <table>
+    <tr>
+        <th>Пример входных данных</th>
+        <th>Результат</th>
+    </tr>
+    <tr>
+        <td>{{ first_test.content|linebreaksbr }}</td>
+        <td>{{ first_test.answer|linebreaksbr }}</td>
+    </tr>
+    </table>
+    <form action="" method="post" enctype="multipart/form-data">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Отправить">
     </form>
 {% endblock %}

@@ -5,11 +5,13 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from django.views.generic import ListView, DetailView, FormView
+from django.views.generic.base import TemplateResponseMixin, View
+
 from .models import Contest
 from .forms import ContestRegistrationForm, SolutionSendForm
 
 from account.models import UserProfile
-from contest.models import ContestParticipant, Contest, ContestTask, ContestSolutionCase
+from contest.models import ContestParticipant, Contest, ContestTask, ContestSolutionCase, ContestTest
 
 from django.core.exceptions import ObjectDoesNotExist
 
@@ -37,23 +39,67 @@ class ContestDetail(LoginRequiredMixin, DetailView):
 
     class ContestTaskDetailView(DetailView, FormView):
         template_name = 'contest/task_detail.html'
+        model = Contest
+        context_object_name = 'con'
 
         def get(self, request, *args, **kwargs):
-            if 'pk' in kwargs:
+            if 'pk' in kwargs and 'difficulty' in kwargs:
                 contest = Contest.objects.get(pk=kwargs['pk'])
-                task = ContestTask.objects.get(contest=contest, difficulty=kwargs['difficulty'])
-                participant = ContestParticipant.objects.get(contest=contest, user=request.user.user_profile)
+                task = get_object_or_404(ContestTask, contest=contest, difficulty=kwargs['difficulty'])
+                task_tests = ContestTest.objects.filter(task=task)
+                first_test = task_tests[0]
+                # participant = ContestParticipant.objects.get(contest=contest, user=request.user.user_profile)
                 form = SolutionSendForm
 
                 return render(request, self.template_name,
-                              {'contest': contest, 'task': task, 'participant': participant, 'form': form})
-
-            return HttpResponse('Hello')
-            # else:
-            #     return HttpResponseRedirect(reverse('contest_detail', args=(1, )))
+                              {'contest': contest,
+                               'task': task,
+                               'first_test': first_test,
+                               'form': form})
 
         def post(self, request, *args, **kwargs):
-            return HttpResponse('Hello')
+            contest = Contest.objects.get(pk=kwargs['pk'])
+            task = get_object_or_404(ContestTask, contest=contest, difficulty=kwargs['difficulty'])
+            task_tests = ContestTest.objects.filter(task=task)
+            participant = ContestParticipant.objects.get(contest=contest, user=request.user.user_profile)
+            form = SolutionSendForm(request.POST, request.FILES)
+
+            if form.is_valid():
+                print('checkpoint')
+                participant_file = form.cleaned_data['participant_file']
+
+                package = ContestSolutionCase.objects.create(
+                    participant=participant,
+                    task=task,
+                    task_file=participant_file,
+                )
+
+                # Здесь отправка на проверку
+
+                package.verdict = 'Ok'
+                package.solved = True
+                package.save()
+                return HttpResponseRedirect(reverse('contest_packages_list', args=(contest.pk, task.difficulty)))
+
+            return HttpResponse('Correct')
+
+    class ContestPackageListView(TemplateResponseMixin, View):
+        model = Contest
+        template_name = 'contest/packages_list.html'
+
+        def get(self, request, pk=None, difficulty=None):
+            if pk and difficulty:
+                contest = get_object_or_404(Contest, pk=pk)
+                task = get_object_or_404(ContestTask, difficulty=difficulty)
+                participant = ContestParticipant.objects.get(user=request.user.user_profile)
+                packages = ContestSolutionCase.objects.filter(task=task, participant=participant)
+
+                return render(request, self.template_name, {
+                    'contest': contest,
+                    'task': task,
+                    'participant': participant,
+                    'packages': packages,
+                })
 
 
 class ContestPackagesListView(LoginRequiredMixin):
@@ -96,7 +142,7 @@ class ContestRegistrationView(LoginRequiredMixin, FormView):
                 ContestParticipant.objects.create(
                     user=user_profile,
                     contest=contest,
-                    stats=[None] * 16
+                    stats=[0] * 16
                 )
                 message = f'Вы успешно зарегистрировались на соревнование {contest.title} под ником {user_profile.user.username}'
 

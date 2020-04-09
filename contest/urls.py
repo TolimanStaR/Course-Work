@@ -10,4 +10,6 @@ urlpatterns = [
     path('<int:pk>/problemset/', views.ContestDetail.ContestTaskListView.as_view(), name='contest_task_list'),
     path('<int:pk>/rating/', views.ContestDetail.ContestRatingView.as_view(), name='contest_rating'),
     path('<int:pk>/packages/', views.ContestDetail.ContestPackageView.as_view(), name='contest_packages'),
+    path('<int:pk>/problem/<difficulty>/packages/', views.ContestDetail.ContestPackageListView.as_view(),
+         name='contest_packages_list'),
 ]
