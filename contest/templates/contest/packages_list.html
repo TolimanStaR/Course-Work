@@ -3,5 +3,18 @@
 {% block title %}Послыки{% endblock %}
 
 {% block contest_detail %}
-    <p>it works</p>
+    <table>
+    <tr>
+        <th>Участник</th>
+        <th>Время посылки</th>
+        <th>Задача</th>
+        <th>Язык</th>
+        <th>Вердикт</th>
+    </tr>
+    {% for package in packages %}
+        <p>{{ package }}</p>
+    {% empty %}
+        <p>Вы пока не отправляли решение этой задачи на проверку</p>
+    {% endfor %}
+    </table>
 {% endblock %}

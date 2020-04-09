@@ -67,11 +67,13 @@ class ContestDetail(LoginRequiredMixin, DetailView):
             if form.is_valid():
                 print('checkpoint')
                 participant_file = form.cleaned_data['participant_file']
+                lang = form.cleaned_data['language']
 
                 package = ContestSolutionCase.objects.create(
                     participant=participant,
                     task=task,
                     task_file=participant_file,
+                    language=lang,
                 )
 
                 # Здесь отправка на проверку
@@ -100,10 +102,6 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                     'participant': participant,
                     'packages': packages,
                 })
-
-
-class ContestPackagesListView(LoginRequiredMixin):
-    pass
 
 
 class ContestPackagesDetailView(LoginRequiredMixin):
