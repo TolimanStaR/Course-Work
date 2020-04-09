@@ -15,6 +15,19 @@ from contest.models import ContestParticipant, Contest, ContestTask, ContestSolu
 
 from django.core.exceptions import ObjectDoesNotExist
 
+import multiprocessing
+import time
+
+
+def check(case):
+    for i in range(5):
+        time.sleep(1)
+        case.verdict = f'Выполнаяется на тесте {i}'
+        case.save()
+
+    case.verdict = 'Ok'
+    case.save()
+
 
 class ContestList(ListView):
     template_name = 'list.html'
@@ -68,7 +81,7 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                 print('checkpoint')
                 participant_file = form.cleaned_data['participant_file']
                 lang = form.cleaned_data['language']
-                code = participant_file.open('r').read()
+                code = participant_file.open('r').read().decode('cp866')
 
                 package = ContestSolutionCase.objects.create(
                     participant=participant,
@@ -88,6 +101,7 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                 participant.stats[task.number - 1] = 1
                 participant.save()
                 package.save()
+
                 return HttpResponseRedirect(reverse('contest_packages_list', args=(contest.pk, task.difficulty)))
 
             return HttpResponse('Correct')

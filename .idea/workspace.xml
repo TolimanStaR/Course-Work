@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0017_contestsolutioncase_task_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/code_files/0affae77f6dd1df58dbc166df4a4e0fb9b89a558.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/articles/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/articles/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +121,7 @@
       <workItem from="1586179134278" duration="10378000" />
       <workItem from="1586246455188" duration="28011000" />
       <workItem from="1586355823713" duration="23028000" />
-      <workItem from="1586418424338" duration="18952000" />
+      <workItem from="1586418424338" duration="21110000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -407,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586430585739</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Contest detail">
+      <created>1586458722401</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1586458722401</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +418,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Account App is ready to battle!!!" />
     <MESSAGE value="add Article model" />
     <MESSAGE value="Articles list and search" />
     <MESSAGE value="detail view but not at all" />
@@ -440,7 +442,8 @@
     <MESSAGE value="Contest solution sending and package list but now it have no effect" />
     <MESSAGE value="Some models upgrade" />
     <MESSAGE value="register bug fixed (not correct orm request linked with last participant stats array initialising)" />
-    <option name="LAST_COMMIT_MESSAGE" value="register bug fixed (not correct orm request linked with last participant stats array initialising)" />
+    <MESSAGE value="Contest detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contest detail" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -451,10 +454,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586430583330">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586458719643">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586430583330" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586458719643" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586422374958">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
