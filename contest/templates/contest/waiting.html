@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}{{ contest.title }}{% endblock %}
+
+{% block content %}
+    <div class="navigation" style="margin: 0; padding: 0;">
+        <ul class="navbar">
+            <li><a>{{ contest.title }}</a></li>
+        </ul>
+        <div>
+        </div>
+    </div>
+{% endblock %}

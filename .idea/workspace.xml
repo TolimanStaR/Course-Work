@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/code_files/0affae77f6dd1df58dbc166df4a4e0fb9b89a558.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/templates/contest/waiting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/static/js/timer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +23,7 @@
         <option value="CSS File" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -121,7 +123,8 @@
       <workItem from="1586179134278" duration="10378000" />
       <workItem from="1586246455188" duration="28011000" />
       <workItem from="1586355823713" duration="23028000" />
-      <workItem from="1586418424338" duration="21110000" />
+      <workItem from="1586418424338" duration="21732000" />
+      <workItem from="1586534621422" duration="2966000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -410,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586458722401</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Packages done">
+      <created>1586465870416</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1586465870416</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +428,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add Article model" />
     <MESSAGE value="Articles list and search" />
     <MESSAGE value="detail view but not at all" />
     <MESSAGE value="ammm... idk" />
@@ -443,7 +452,8 @@
     <MESSAGE value="Some models upgrade" />
     <MESSAGE value="register bug fixed (not correct orm request linked with last participant stats array initialising)" />
     <MESSAGE value="Contest detail" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contest detail" />
+    <MESSAGE value="Packages done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Packages done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -454,10 +464,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586458719643">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586547351068">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586458719643" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586547351068" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586422374958">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -466,10 +476,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586256124750" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586418519354">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586544093303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586418519354" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586544093303" />
     <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1586418889454">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

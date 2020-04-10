@@ -34,6 +34,11 @@ class ContestList(ListView):
     model = Contest
 
 
+class ContestWaiting(DetailView):
+    template_name = 'contest/waiting.html'
+    model = Contest
+
+
 class ContestDetail(LoginRequiredMixin, DetailView):
     template_name = 'contest/detail.html'
     model = Contest

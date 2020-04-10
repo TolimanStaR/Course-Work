@@ -4,6 +4,7 @@ from . import views
 urlpatterns = [
     path('', views.ContestList.as_view(), name='contest_list'),
     path('<int:pk>/', views.ContestDetail.as_view(), name='contest_detail'),
+    path('<int:pk>/waiting/', views.ContestWaiting.as_view(), name='contest_waiting'),
     path('<int:pk>/register/', views.ContestRegistrationView.as_view(), name='contest_register'),
     path('<int:pk>/problem/<difficulty>/', views.ContestDetail.ContestTaskDetailView.as_view(),
          name='contest_task_detail'),
