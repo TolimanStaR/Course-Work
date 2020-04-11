@@ -72,6 +72,18 @@ def check_participant_solution(package, task, tests):
         except subprocess.TimeoutExpired:
             participant_solution_process.kill()
             package.verdict = set_verdict(f'Превышено ограничение по времени на тесте {test_number + 1}')
+            return package
+
+        participant_solution_process.kill()
+        stdout, stderr = participant_solution_process.communicate()
+
+        if stderr:
+            package.verdict = set_verdict(f'Ошибка исполнения на тесте {test_number + 1}')
+            return package
+        else:
+            pass
+
+            # Пока все идет успешно, осталось сравнить вывод
 
     os.chdir(work_path)
 
@@ -118,7 +130,7 @@ def get_judge_answer(test, judge_sol_abs_path, input_, output_):
     process = subprocess.call(
         launch_command,
         shell=True,
-        timeout=5,
+        timeout=2,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
     )
