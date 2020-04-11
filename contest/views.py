@@ -138,14 +138,14 @@ class ContestDetail(LoginRequiredMixin, DetailView):
 
                 # Здесь отправка на проверку
 
-                package.verdict = 'Ok'
-
-                check_participant_solution(package, task, task_tests)
+                package = check_participant_solution(package, task, task_tests)
 
                 # *****
+                if package.solved:
+                    participant.stats[task.number - 1] = 1
+                else:
+                    participant.stats[task.number - 1] = 2
 
-                package.solved = True
-                participant.stats[task.number - 1] = 1
                 participant.save()
                 package.save()
 
