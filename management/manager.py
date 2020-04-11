@@ -6,15 +6,14 @@ import os
 solution_lang = {
     'GNU GCC': 'c',
     'GNU G++': 'cpp',
-    'Kotlin': 'kt',
+    # 'Kotlin': 'kt',
     'Python 3': 'py',
-    'Ruby 2.7': 'rb',
+    # 'Ruby 2.7': 'rb',
 }
 
 
 def check_participant_solution(package, task, tests):
     jury_solution_lang = task.solution.name.split('.')[-1]
-    print(jury_solution_lang)
 
     env_dir_name = get_unique_name()
     work_path = os.getcwd()
@@ -34,6 +33,52 @@ def check_participant_solution(package, task, tests):
     input_file_name = f'{env_dir_abspath}/input.txt'
     output_file_name = f'{env_dir_abspath}/output.txt'
     participant_output_file_name = f'{env_dir_abspath}/solution_output.txt'
+
+    os.chdir(env_dir_abspath)  # Смена рабочей директории на нашу
+
+    command = get_launch_command(package, env_participant_solution_path)
+    print(command)
+
+    for test_number, test in enumerate(tests):
+        pass
+
+        # проверка
+
+    os.chdir(work_path)
+
+
+def get_launch_command(package, env_part_sol_path):
+    command = None
+
+    if solution_lang[package.language] == 'py':
+        return f'python {env_part_sol_path}'
+
+    if solution_lang[package.language] == 'c':
+        create_exe = subprocess.call(
+            f'gcc -o participant_solution {env_part_sol_path}',
+            shell=True,
+            timeout=10,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+
+        if create_exe == 0:
+            return f'./participant_solution'
+        else:
+            return command
+
+    if solution_lang[package.language] == 'cpp':
+        create_exe = subprocess.call(
+            f'g++ -o participant_solution {env_part_sol_path}',
+            shell=True,
+            timeout=10,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+        if create_exe == 0:
+            return f'./participant_solution'
+        else:
+            return command
 
 
 def get_unique_name():

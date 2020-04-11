@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/management/manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/a46022e7-150c-4d6c-b09d-6be4a567f57e/participant_solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/a46022e7-150c-4d6c-b09d-6be4a567f57e/solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/054820d2-7354-4b00-bbdf-996d0c0c2000/participant_solution.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/054820d2-7354-4b00-bbdf-996d0c0c2000/participant_solution.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/054820d2-7354-4b00-bbdf-996d0c0c2000/solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/071d9cc3-4734-45bb-a7bb-477315b104f5/solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/18d7d447-5d98-4518-908c-a6cce7394367/participant_solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/31a1eae0-23e2-4ca2-8351-2929bd1325d5/participant_solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/31a1eae0-23e2-4ca2-8351-2929bd1325d5/solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/48f4f4b9-e4b5-49a6-9520-301be8e004f2/participant_solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/48f4f4b9-e4b5-49a6-9520-301be8e004f2/solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/ba630097-5721-4314-86a7-77bd3dd1f33d/participant_solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/ba630097-5721-4314-86a7-77bd3dd1f33d/solution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/waiting.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/waiting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/management/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/task-check-env/a46022e7-150c-4d6c-b09d-6be4a567f57e/participant_solution.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/management/task-check-env/071d9cc3-4734-45bb-a7bb-477315b104f5/participant_solution.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/task-check-env/a46022e7-150c-4d6c-b09d-6be4a567f57e/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/task-check-env/18d7d447-5d98-4518-908c-a6cce7394367/solution.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +138,7 @@
       <workItem from="1586418424338" duration="21732000" />
       <workItem from="1586534621422" duration="7270000" />
       <workItem from="1586554215452" duration="150000" />
-      <workItem from="1586606568553" duration="13222000" />
+      <workItem from="1586606568553" duration="17880000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -440,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586611307556</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="start to develop management app">
+      <created>1586621748876</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1586621748876</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +463,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ammm... idk" />
     <MESSAGE value="Comment system" />
     <MESSAGE value="Pagination" />
     <MESSAGE value="Main app is ready to battle!!!" />
@@ -473,21 +487,26 @@
     <MESSAGE value="Packages done" />
     <MESSAGE value="Contest list changes and waiting room" />
     <MESSAGE value="Contest start and end custom handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contest start and end custom handler" />
+    <MESSAGE value="start to develop management app" />
+    <option name="LAST_COMMIT_MESSAGE" value="start to develop management app" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="72" y="188" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1586454812093" />
+    <state x="576" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586623297373">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="576" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1586623297373" />
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585778802997">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586611303853">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586621745966">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586611303853" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586621745966" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586618800510">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

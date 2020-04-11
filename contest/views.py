@@ -128,7 +128,6 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                 lang = form.cleaned_data['language']
                 code = participant_file.open('r').read().decode('cp866')
 
-
                 package = ContestSolutionCase.objects.create(
                     participant=participant,
                     task=task,

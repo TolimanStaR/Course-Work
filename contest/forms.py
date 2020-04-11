@@ -9,9 +9,9 @@ class SolutionSendForm(forms.Form):
     LANG_CHOICES = (
         ('GNU GCC', 'GNU GCC'),
         ('GNU G++', 'GNU G++'),
-        ('Kotlin', 'Kotlin'),
+        # ('Kotlin', 'Kotlin'),
         ('Python 3', 'Python 3'),
-        ('Ruby 2.7', 'Ruby 2.7'),
+        # ('Ruby 2.7', 'Ruby 2.7'),
     )
 
     language = forms.ChoiceField(choices=LANG_CHOICES)

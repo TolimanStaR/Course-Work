@@ -42,7 +42,7 @@ class SolutionCaseBase(models.Model):
 
 class TestBase(models.Model):
     content = models.TextField()
-    answer = models.TextField()
+    answer = models.TextField(default=None)
 
     class Meta:
         abstract = True
