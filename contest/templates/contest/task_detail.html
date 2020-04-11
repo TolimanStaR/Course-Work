@@ -1,6 +1,6 @@
 {% extends 'contest/detail.html' %}
 
-{% block title %}hello{% endblock %}
+{% block title %}{{ task.difficulty }}. {{ task.title }}{% endblock %}
 
 {% block contest_detail %}
     <h1>{{ task.title }}</h1>
@@ -11,14 +11,14 @@
     <h4>Выходные данные</h4>
     <p>{{ task.output|linebreaksbr }}</p>
     <table>
-    <tr>
-        <th>Пример входных данных</th>
-        <th>Результат</th>
-    </tr>
-    <tr>
-        <td>{{ first_test.content|linebreaksbr }}</td>
-        <td>{{ first_test.answer|linebreaksbr }}</td>
-    </tr>
+        <tr>
+            <th>Пример входных данных</th>
+            <th>Результат</th>
+        </tr>
+        <tr>
+            <td>{{ first_test.content|linebreaksbr }}</td>
+            <td>{{ first_test.answer|linebreaksbr }}</td>
+        </tr>
     </table>
     <form action="" method="post" enctype="multipart/form-data">
         {{ form.as_p }}

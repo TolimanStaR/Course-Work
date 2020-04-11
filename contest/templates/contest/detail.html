@@ -3,17 +3,26 @@
 {% block title %}{{ contest.title }}{% endblock %}
 
 {% block content %}
-    <div class="navigation" style="margin: 0; padding: 0;">
-        <ul class="navbar">
-            <li><a href="{% url 'contest_task_list' contest.pk %}">Задачи</a></li>
-            <li><a href="{% url 'contest_packages' contest.pk %}">Посылки</a></li>
-            <li><a href="{% url 'contest_rating' contest.pk %}">Текущий рейтинг</a></li>
-        </ul>
-    </div>
-    <p>{{ contest.title }}</p>
-    {% block contest_detail %}
-    {% endblock %}
-
+    {% if request.user.user_profile.member %}
+        <div class="navigation" style="margin: 0; padding: 0;">
+            <ul class="navbar">
+                <li><a href="{% url 'contest_task_list' contest.pk %}">Задачи</a></li>
+                <li><a href="{% url 'contest_packages' contest.pk %}">Посылки</a></li>
+                <li><a href="{% url 'contest_rating' contest.pk %}">Текущий рейтинг</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+        <p>{{ contest.title }}</p>
+        {% block contest_detail %}
+        {% endblock %}
+    {% else %}
+        <p>
+            Для участия в соревновании необходимо
+            <a href="{% url 'contest_register' contest.pk %}?next={{ request.path }}">
+                Зарегистрироваться
+            </a>
+        </p>
+    {% endif %}
 
     {#    <script type="text/javascript">#}
     {#        let now = new Date();#}

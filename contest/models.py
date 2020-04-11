@@ -54,7 +54,7 @@ class ContestTask(TaskBase):
 
 class ContestParticipant(models.Model):
     contest = models.ForeignKey(Contest, on_delete=models.CASCADE, related_name='participants')
-    user = models.OneToOneField(UserProfile, on_delete=models.CASCADE, related_name='member')
+    user = models.OneToOneField(UserProfile, on_delete=models.SET_DEFAULT, related_name='member', default=None)
     penalty = models.IntegerField(default=0)
     task_solved = models.PositiveIntegerField(default=0)
     stats = ArrayField(models.PositiveIntegerField(default=0), size=16, blank=True)

@@ -4,6 +4,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
+from django.utils import timezone
 from django.views.generic import ListView, DetailView, FormView
 from django.views.generic.base import TemplateResponseMixin, View
 
@@ -17,21 +18,52 @@ from django.core.exceptions import ObjectDoesNotExist
 
 import multiprocessing
 import time
-
-
-def check(case):
-    for i in range(5):
-        time.sleep(1)
-        case.verdict = f'Выполнаяется на тесте {i}'
-        case.save()
-
-    case.verdict = 'Ok'
-    case.save()
+import datetime
 
 
 class ContestList(ListView):
     template_name = 'list.html'
     model = Contest
+
+
+def contest_list(request, pk=None):
+    if pk:
+        contest = get_object_or_404(Contest, pk=pk)
+        cur_time = datetime.datetime.now()
+
+        if cur_time < contest.starts_at:
+            return HttpResponseRedirect(reverse('contest_waiting', args=(pk,)))
+
+        if contest.starts_at <= cur_time <= contest.starts_at + datetime.timedelta(hours=contest.duration_minutes):
+            if not contest.active:
+                contest.active = True
+                contest.save()
+
+            return render(request, 'contest/task_list.html', {'contest': contest})
+
+        if cur_time > contest.starts_at + datetime.timedelta(hours=contest.duration_minutes):
+            if contest.active:
+                contest.active = False
+
+            if not contest.completed:
+                contest.completed = True
+
+            contest.save()
+
+            '''
+            
+            Что нужно сделать?
+            1) Пересчитать рейтинг участников согласно таблице результатов
+            2) Перенести задачи с раунда в архив
+            3) Удалить участников, так как это OneToOneField 
+            
+            '''
+
+            # TODO: Management app: contest complete manager
+
+            # *****
+
+            return HttpResponseRedirect(reverse('contest_rating', args=(pk,)))
 
 
 class ContestWaiting(DetailView):
@@ -58,7 +90,6 @@ class ContestDetail(LoginRequiredMixin, DetailView):
     class ContestTaskDetailView(DetailView, FormView):
         template_name = 'contest/task_detail.html'
         model = Contest
-        context_object_name = 'con'
 
         def get(self, request, *args, **kwargs):
             if 'pk' in kwargs and 'difficulty' in kwargs:
@@ -119,7 +150,7 @@ class ContestDetail(LoginRequiredMixin, DetailView):
             if pk and difficulty:
                 contest = get_object_or_404(Contest, pk=pk)
                 task = get_object_or_404(ContestTask, difficulty=difficulty)
-                participant = ContestParticipant.objects.get(user=request.user.user_profile)
+                participant = get_object_or_404(ContestParticipant, user=request.user.user_profile)
                 packages = ContestSolutionCase.objects.filter(task=task, participant=participant)
 
                 if id:
