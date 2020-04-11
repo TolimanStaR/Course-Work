@@ -8,7 +8,10 @@ urlpatterns = [
     path('<int:pk>/register/', views.ContestRegistrationView.as_view(), name='contest_register'),
     path('<int:pk>/problem/<difficulty>/', views.ContestDetail.ContestTaskDetailView.as_view(),
          name='contest_task_detail'),
-    path('<int:pk>/problemset/', views.ContestDetail.ContestTaskListView.as_view(), name='contest_task_list'),
+
+    # path('<int:pk>/problemset/', views.ContestDetail.ContestTaskListView.as_view(), name='contest_task_list'),
+    path('<int:pk>/problemset/', views.contest_list, name='contest_task_list'),
+
     path('<int:pk>/rating/', views.ContestDetail.ContestRatingView.as_view(), name='contest_rating'),
     path('<int:pk>/packages/', views.ContestDetail.ContestPackageView.as_view(), name='contest_packages'),
     path('<int:pk>/problem/<difficulty>/packages/', views.ContestDetail.ContestPackageListView.as_view(),

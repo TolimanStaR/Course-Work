@@ -13,12 +13,14 @@ from .forms import ContestRegistrationForm, SolutionSendForm
 
 from account.models import UserProfile
 from contest.models import ContestParticipant, Contest, ContestTask, ContestSolutionCase, ContestTest
+from management.manager import check_participant_solution
 
 from django.core.exceptions import ObjectDoesNotExist
 
 import multiprocessing
 import time
 import datetime
+import pytz
 
 
 class ContestList(ListView):
@@ -29,19 +31,20 @@ class ContestList(ListView):
 def contest_list(request, pk=None):
     if pk:
         contest = get_object_or_404(Contest, pk=pk)
-        cur_time = datetime.datetime.now()
+        cur_time = datetime.datetime.now(datetime.timezone.utc)  # + datetime.timedelta(hours=3)
 
         if cur_time < contest.starts_at:
             return HttpResponseRedirect(reverse('contest_waiting', args=(pk,)))
 
-        if contest.starts_at <= cur_time <= contest.starts_at + datetime.timedelta(hours=contest.duration_minutes):
+        if contest.starts_at <= cur_time <= contest.starts_at + datetime.timedelta(minutes=contest.duration_minutes):
             if not contest.active:
                 contest.active = True
                 contest.save()
 
             return render(request, 'contest/task_list.html', {'contest': contest})
 
-        if cur_time > contest.starts_at + datetime.timedelta(hours=contest.duration_minutes):
+        if cur_time > contest.starts_at + datetime.timedelta(minutes=contest.duration_minutes):
+            print('hello')
             if contest.active:
                 contest.active = False
 
@@ -53,9 +56,10 @@ def contest_list(request, pk=None):
             '''
             
             Что нужно сделать?
-            1) Пересчитать рейтинг участников согласно таблице результатов
+            
+            1) Пересчитать рейтинг участников согласно таблице результатов и изменить звания
             2) Перенести задачи с раунда в архив
-            3) Удалить участников, так как это OneToOneField 
+            3) Удалить участников, так как это OneToOneField
             
             '''
 
@@ -64,6 +68,9 @@ def contest_list(request, pk=None):
             # *****
 
             return HttpResponseRedirect(reverse('contest_rating', args=(pk,)))
+
+    else:
+        return HttpResponseRedirect(reverse('contest_list'))
 
 
 class ContestWaiting(DetailView):
@@ -94,10 +101,13 @@ class ContestDetail(LoginRequiredMixin, DetailView):
         def get(self, request, *args, **kwargs):
             if 'pk' in kwargs and 'difficulty' in kwargs:
                 contest = Contest.objects.get(pk=kwargs['pk'])
+
+                if not contest.active:
+                    return HttpResponseRedirect(reverse('contest_waiting', args=(kwargs['pk'],)))
+
                 task = get_object_or_404(ContestTask, contest=contest, difficulty=kwargs['difficulty'])
                 task_tests = ContestTest.objects.filter(task=task)
                 first_test = task_tests[0]
-                # participant = ContestParticipant.objects.get(contest=contest, user=request.user.user_profile)
                 form = SolutionSendForm
 
                 return render(request, self.template_name,
@@ -114,10 +124,10 @@ class ContestDetail(LoginRequiredMixin, DetailView):
             form = SolutionSendForm(request.POST, request.FILES)
 
             if form.is_valid():
-                print('checkpoint')
                 participant_file = form.cleaned_data['participant_file']
                 lang = form.cleaned_data['language']
                 code = participant_file.open('r').read().decode('cp866')
+
 
                 package = ContestSolutionCase.objects.create(
                     participant=participant,
@@ -130,6 +140,8 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                 # Здесь отправка на проверку
 
                 package.verdict = 'Ok'
+
+                check_participant_solution(package, task, task_tests)
 
                 # *****
 

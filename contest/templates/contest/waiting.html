@@ -9,43 +9,59 @@
             <li><a>{{ contest.title }}</a></li>
         </ul>
     </div>
-    {% if request.user.user_profile.member %}
-        <p id="timer"></p>
-        <script type="text/javascript">
-            Timer();
+    {% if not contest.active and not contest.completed %}
+        {% if request.user.user_profile.member %}
+            <p id="timer"></p>
+            <script type="text/javascript">
+                Timer();
 
-            function Timer() {
-                let now = new Date();
-                let h = (3 + {{ contest.starts_at.hour }} -now.getHours() + 24) % 24;
-                let m = ({{ contest.starts_at.minute }} -now.getMinutes() + 60) % 60;
-                let s = ({{ contest.starts_at.second }} -now.getSeconds() + 60) % 60;
+                function Timer() {
+                    let now = new Date();
+                    let h = (3 + {{ contest.starts_at.hour }} -now.getHours() + 24) % 24;
+                    let m = ({{ contest.starts_at.minute }} -now.getMinutes() + 60) % 60;
+                    let s = ({{ contest.starts_at.second }} -now.getSeconds() + 60) % 60;
 
-                if (s === 0) {
-                    if (m === 0) {
-                        if (h === 0) {
-                            alert("Соревнование началось. Пожалуйста, перейдите к списку задач.");
-                            window.location.replace("http://127.0.0.1:8000/contest/{{ contest.pk }}/problemset/");
-                            return;
+                    if (s === 0) {
+                        if (m === 0) {
+                            if (h === 0) {
+                                alert("Соревнование началось. Пожалуйста, перейдите к списку задач.");
+                                window.location.replace("http://127.0.0.1:8000/contest/{{ contest.pk }}/problemset/");
+                                return;
+                            }
+                            --h;
+                            m = 60;
+                            if (h < 10) h = '0' + h;
                         }
-                        --h;
-                        m = 60;
-                        if (h < 10) h = "0" + h;
-                    }
-                    --m;
-                    if (m < 10) m = "0" + m;
-                    s = 59;
-                } else --s;
-                if (s < 10) s = "0" + s;
-                document.getElementById('timer').innerHTML = h + ':' + m + ':' + s;
-                setTimeout(Timer, 1000);
-            }
-        </script>
+                        --m;
+                        if (m < 10) m = '0' + m;
+                        s = 59;
+                    } else --s;
+                    if (s < 10) s = '0' + s;
+                    document.getElementById('timer').innerHTML = h + ':' + m + ':' + s;
+                    setTimeout(Timer, 1000);
+                }
+            </script>
+        {% else %}
+            <p>
+                Для участия в соревновании необходимо
+                <a href="{% url 'contest_register' contest.pk %}">
+                    Зарегистрироваться
+                </a>
+            </p>
+        {% endif %}
+    {% elif contest.active %}
+        {% if request.user.user_profile.member %}
+            <script type="text/javascript">
+                window.location.replace("http://127.0.0.1:8000/contest/{{ contest.pk }}/problemset/");
+            </script>
+        {% else %}
+            <script type="text/javascript">
+                window.location.replace("http://127.0.0.1:8000/contest/");
+            </script>
+        {% endif %}
     {% else %}
-        <p>
-            Для участия в соревновании необходимо
-            <a href="{% url 'contest_register' contest.pk %}">
-                Зарегистрироваться
-            </a>
-        </p>
+        <script type="text/javascript">
+            window.location.replace("http://127.0.0.1:8000/contest/{{ contest.pk }}/rating/");
+        </script>
     {% endif %}
 {% endblock %}
