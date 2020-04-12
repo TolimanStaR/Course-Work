@@ -13,7 +13,7 @@ from .forms import ContestRegistrationForm, SolutionSendForm
 
 from account.models import UserProfile
 from contest.models import ContestParticipant, Contest, ContestTask, ContestSolutionCase, ContestTest
-from management.manager import check_participant_solution
+from management.manager import check_participant_solution, verdict
 
 from django.core.exceptions import ObjectDoesNotExist
 
@@ -108,6 +108,7 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                 task = get_object_or_404(ContestTask, contest=contest, difficulty=kwargs['difficulty'])
                 task_tests = ContestTest.objects.filter(task=task)
                 first_test = task_tests[0]
+
                 form = SolutionSendForm
 
                 return render(request, self.template_name,
@@ -140,25 +141,15 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                 # Здесь отправка на проверку
 
                 package.verdict = check_participant_solution(package, task, task_tests)
-                if package.verdict == 'Ok!':
+                if package.verdict == verdict[True]:
                     package.solved = True
 
-                # *****
                 if package.solved:
                     participant.stats[task.number - 1] = 1
                 else:
                     participant.stats[task.number - 1] = 2
 
-                participant.penalty += ((cur_time.minute - contest.starts_at.minute + 60) % 60 +
-                                        60 * ((cur_time.hour - contest.starts_at.hour + 24) % 24))
-
-                print('Penalty: >>> ')
-                print((cur_time.minute - contest.starts_at.minute + 60) % 60)
-                print(60 * ((cur_time.hour - contest.starts_at.hour + 24) % 24))
-                print(cur_time)
-                print(contest.starts_at)
-
-                # TODO: Пофиксить штраф
+                participant.penalty += int((cur_time - contest.starts_at).total_seconds() // 60)
 
                 participant.save()
                 package.save()

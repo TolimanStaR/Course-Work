@@ -43,7 +43,6 @@ class SolutionCaseBase(models.Model):
 class TestBase(models.Model):
     content = models.TextField()
     answer = models.TextField(default=None, blank=True)
-    judge_answer = models.CharField(blank=True, max_length=1000000)
 
     class Meta:
         abstract = True

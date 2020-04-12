@@ -12,6 +12,10 @@ solution_lang = {
     # 'Ruby 2.7': 'rb',
 }
 
+verdict = {
+    True: 'Правильное решение',
+}
+
 
 def check_participant_solution(package, task, tests):
     judge_solution_lang = task.solution.name.split('.')[-1]
@@ -38,7 +42,7 @@ def check_participant_solution(package, task, tests):
     write_mode = 'w'
     read_mode = 'r'
 
-    os.chdir(env_dir_abspath)  # Смена рабочей директории на нашу
+    os.chdir(env_dir_abspath)
 
     participant_launch_command = get_launch_command(env_participant_solution_path,
                                                     input_file_name,
@@ -46,7 +50,7 @@ def check_participant_solution(package, task, tests):
 
     if participant_launch_command is None:
         os.chdir(work_path)
-        return set_verdict('Ошибка компиляции')
+        return set_verdict('Ошибка компиляции', work_dir=work_path, env_dir=env_dir_abspath)
 
     for test_number, test in enumerate(tests):
         input_file = open(input_file_name, write_mode)
@@ -55,8 +59,6 @@ def check_participant_solution(package, task, tests):
             input_file.write(line)
 
         input_file.close()
-
-        print(f'Test: {test.content}')
 
         if len(test.answer) == 0:
             test.answer = get_judge_answer(test, env_solution_path, input_file_name, output_file_name)
@@ -73,34 +75,28 @@ def check_participant_solution(package, task, tests):
             participant_solution_process.wait(task.time_limit)
         except subprocess.TimeoutExpired:
             participant_solution_process.kill()
-            os.chdir(work_path)
-            return set_verdict(f'Превышено ограничение по времени на тесте {test_number + 1}')
+            return set_verdict(f'Превышено ограничение по времени на тесте {test_number + 1}', work_dir=work_path,
+                               env_dir=env_dir_abspath)
 
         participant_solution_process.kill()
         stdout, stderr = participant_solution_process.communicate()
 
         if stderr:
-            os.chdir(work_path)
-            return set_verdict(f'Ошибка исполнения на тесте {test_number + 1}')
-        else:
+            return set_verdict(f'Ошибка исполнения на тесте {test_number + 1}', work_dir=work_path,
+                               env_dir=env_dir_abspath)
 
+        else:
             participant_out = open(participant_output_file_name, read_mode)
 
-            participant_answer = participant_out.readlines()
+            participant_answer = []
+
+            for line in participant_out.readlines():
+                participant_answer.append(line.replace('\n', ''))
+
             judge_answer = test.answer.split('\n')
-
-            a = participant_answer.copy()
-            b = test.answer
-
-            print(a)
-            print(b)
+            judge_answer.remove('')
 
             participant_out.close()
-
-            if '' in judge_answer:
-                judge_answer.remove('')
-            if '' in participant_answer:
-                participant_answer.remove('')
 
             participant_solution_length = len(participant_answer)
             judge_solution_length = len(judge_answer)
@@ -110,29 +106,19 @@ def check_participant_solution(package, task, tests):
             if participant_solution_length == judge_solution_length:
                 for participant_line, judge_line in zip(participant_answer, judge_answer):
 
-                    participant_line.replace('\n', '')
-                    participant_line.replace('\r', '')
-                    judge_line.replace('\n', '')
-                    judge_line.replace('\r', '')
-
                     if participant_line.split() == judge_line.split():
                         correct_lines_counter += 1
                     else:
-                        os.chdir(work_path)
-                        return set_verdict(f'Неправильный ответ на тесте {test_number + 1}')
+                        return set_verdict(f'Неправильный ответ на тесте {test_number + 1}', work_dir=work_path,
+                                           env_dir=env_dir_abspath)
 
             else:
-                os.chdir(work_path)
-                return set_verdict(f'Неправильный ответ на тесте {test_number + 1}')
+                return set_verdict(f'Неправильный ответ на тесте {test_number + 1}', work_dir=work_path,
+                                   env_dir=env_dir_abspath)
 
             participant_out.close()
 
-            # Пока все идет успешно, осталось сравнить вывод
-
-    os.chdir(work_path)
-    return 'Ok!'
-
-    os.chdir(work_path)
+    return set_verdict(verdict[True], work_dir=work_path, env_dir=env_dir_abspath)
 
 
 def get_launch_command(env_part_sol_path, input_, output_):
@@ -185,9 +171,8 @@ def get_judge_answer(test, judge_sol_abs_path, input_, output_):
     if process == 0:
         output = open(output_, 'r')
 
-        for line in output:
-            if len(line) > 0:
-                test.answer += line
+        for line in output.readlines():
+            test.answer += line
 
         output.close()
 
@@ -205,5 +190,8 @@ def get_unique_name():
 
 def set_verdict(message, work_dir=None, env_dir=None):
     # TODO: Изменить рабочую директорию и удалить временное окружеие
+
+    os.chdir(work_dir)
+    shutil.rmtree(env_dir)
 
     return message
