@@ -1,6 +1,6 @@
 {% extends 'contest/detail.html' %}
 
-{% block title %}{{ task.difficulty }}. {{ task.title }}{% endblock %}
+{% block title %}{{ task.difficulty|upper }}. {{ task.title }}{% endblock %}
 
 {% block contest_detail %}
     <h1>{{ task.title }}</h1>

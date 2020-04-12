@@ -22,7 +22,11 @@
                             <a href="{% url 'contest_package_detail' pk=contest.pk difficulty=package.task.difficulty id=package.id %}">{{ package.id }}</a>
                         </td>
                         <td>{{ package.package_time }}</td>
-                        <td>{{ package.task.title }}</td>
+                        <td>
+                            <a href="{% url 'contest_task_detail' pk=contest.pk difficulty=package.task.difficulty %}">
+                                {{ package.task.title }}
+                            </a>
+                        </td>
                         <td>{{ package.language }}</td>
                         <td>{{ package.verdict }}</td>
                     </tr>

@@ -17,7 +17,11 @@
             <td>{{ request.user }}</td>
             <td>{{ package.id }}</td>
             <td>{{ package.package_time }}</td>
-            <td>{{ task.title }}</td>
+            <td>
+                <a href="{% url 'contest_task_detail' pk=contest.pk difficulty=task.difficulty %}">
+                    {{ task.title }}
+                </a>
+            </td>
             <td>{{ package.language }}</td>
             <td>{{ package.verdict }}</td>
         </tr>

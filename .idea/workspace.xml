@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0021_contesttest_judge_answer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/3424e9ff-0e91-4782-8582-e9c55149a24b/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/3424e9ff-0e91-4782-8582-e9c55149a24b/participant_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/3424e9ff-0e91-4782-8582-e9c55149a24b/participant_solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/3424e9ff-0e91-4782-8582-e9c55149a24b/participant_solution.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/3424e9ff-0e91-4782-8582-e9c55149a24b/solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/914bc3cd-023e-4dcb-b2ec-f7a50f51056c/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/914bc3cd-023e-4dcb-b2ec-f7a50f51056c/participant_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/914bc3cd-023e-4dcb-b2ec-f7a50f51056c/participant_solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/914bc3cd-023e-4dcb-b2ec-f7a50f51056c/participant_solution.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/914bc3cd-023e-4dcb-b2ec-f7a50f51056c/solution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/code_files/5539b6c337c14bd2d367e4e94c0eb13d4521daab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/code_files/cf5a308ebe5fb7ce82e0f69827c3cefd3326b98b.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/code_files/e6828982235132acffe22b0ec48148669db33872.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/task_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/task_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/task_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/task_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/management/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +53,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/main/static/css/base.css" root0="FORCE_HIGHLIGHTING" />
@@ -122,7 +145,8 @@
       <workItem from="1586418424338" duration="21732000" />
       <workItem from="1586534621422" duration="7270000" />
       <workItem from="1586554215452" duration="150000" />
-      <workItem from="1586606568553" duration="26177000" />
+      <workItem from="1586606568553" duration="27811000" />
+      <workItem from="1586694795466" duration="10159000" />
     </task>
     <task id="LOCAL-00001" summary="Start to do smth">
       <created>1585749019506</created>
@@ -460,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586644392555</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Task check manager almost ready">
+      <created>1586645106763</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1586645106763</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +499,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Contest, abstract models: task, sol.case, test" />
     <MESSAGE value="participant model and some fields in others" />
     <MESSAGE value="All models has created (contest app)" />
     <MESSAGE value="Register models. Now thinking about foreign keys" />
@@ -493,7 +523,8 @@
     <MESSAGE value="Поддержка python, c, c++" />
     <MESSAGE value="Added pypy :)" />
     <MESSAGE value="fix launch command and add subprocess usage for launch solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix launch command and add subprocess usage for launch solutions" />
+    <MESSAGE value="Task check manager almost ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task check manager almost ready" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -508,22 +539,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586644390157">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586645105069">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586644390157" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586618800510">
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586645105069" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586697025873">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1586618800510" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1586697025873" />
     <state x="491" y="169" key="SettingsEditor" timestamp="1586611797941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586611797941" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586606584725">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586694889405">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586606584725" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586694889405" />
+    <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586715494792">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1586715494792" />
     <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1586642551549">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

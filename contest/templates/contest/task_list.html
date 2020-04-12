@@ -4,6 +4,6 @@
 
 {% block contest_detail %}
     {% for task in contest.tasks.all %}
-        <p><a href="{% url 'contest_task_detail' pk=contest.pk difficulty=task.difficulty %}">{{ task.title }}</a></p>
+        <p><a href="{% url 'contest_task_detail' pk=contest.pk difficulty=task.difficulty %}">{{ task.difficulty|upper }}. {{ task.title }}</a></p>
     {% endfor %}
 {% endblock %}

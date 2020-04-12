@@ -11,7 +11,7 @@ class SolutionSendForm(forms.Form):
         ('GNU G++', 'GNU G++'),
         # ('Kotlin', 'Kotlin'),
         ('Python 3', 'Python 3'),
-        ('PyPy', 'Python 3'),
+        ('PyPy', 'PyPy'),
         # ('Ruby 2.7', 'Ruby 2.7'),
     )
 

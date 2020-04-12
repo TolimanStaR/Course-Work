@@ -21,6 +21,7 @@ import multiprocessing
 import time
 import datetime
 import pytz
+import os
 
 
 class ContestList(ListView):
@@ -44,7 +45,6 @@ def contest_list(request, pk=None):
             return render(request, 'contest/task_list.html', {'contest': contest})
 
         if cur_time > contest.starts_at + datetime.timedelta(minutes=contest.duration_minutes):
-            print('hello')
             if contest.active:
                 contest.active = False
 
@@ -127,6 +127,7 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                 participant_file = form.cleaned_data['participant_file']
                 lang = form.cleaned_data['language']
                 code = participant_file.open('r').read().decode('cp866')
+                cur_time = datetime.datetime.now(datetime.timezone.utc)
 
                 package = ContestSolutionCase.objects.create(
                     participant=participant,
@@ -138,13 +139,26 @@ class ContestDetail(LoginRequiredMixin, DetailView):
 
                 # Здесь отправка на проверку
 
-                package = check_participant_solution(package, task, task_tests)
+                package.verdict = check_participant_solution(package, task, task_tests)
+                if package.verdict == 'Ok!':
+                    package.solved = True
 
                 # *****
                 if package.solved:
                     participant.stats[task.number - 1] = 1
                 else:
                     participant.stats[task.number - 1] = 2
+
+                participant.penalty += ((cur_time.minute - contest.starts_at.minute + 60) % 60 +
+                                        60 * ((cur_time.hour - contest.starts_at.hour + 24) % 24))
+
+                print('Penalty: >>> ')
+                print((cur_time.minute - contest.starts_at.minute + 60) % 60)
+                print(60 * ((cur_time.hour - contest.starts_at.hour + 24) % 24))
+                print(cur_time)
+                print(contest.starts_at)
+
+                # TODO: Пофиксить штраф
 
                 participant.save()
                 package.save()
