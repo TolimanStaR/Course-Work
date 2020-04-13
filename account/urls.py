@@ -23,4 +23,5 @@ urlpatterns = [
     path('reset/done/', authentication_views.PasswordResetCompleteView.as_view(), name='reset_password_complete'),
     path('register/', views.UserRegistration.as_view(), name='register'),
     path('edit-profile/', views.UserEditProfile.as_view(), name='edit'),
+    path('profile/<username>/packages/', views.UserPackageView.as_view(), name='profile_packages'),
 ]

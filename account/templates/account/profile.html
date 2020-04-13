@@ -1,18 +1,8 @@
-{% extends 'index.html' %}
-{% load static %}
-
+{% extends 'account_detail_frame.html' %}
 
 {% block title %}Личный кабинет{% endblock %}
 
-{% block content %}
-    <div class="navigation" style="margin: 0; padding: 0;">
-        <ul class="navbar">
-            <li><a href="{% url 'change_password' %}">Сменить пароль</a></li>
-            <li><a href="{% url 'edit' %}">Редактировать аккаунт</a></li>
-            <li><a href="">Посылки</a></li>
-            <li><a href="">Курсы</a></li>
-        </ul>
-    </div>
+{% block account_detail %}
     Профиль пользователя {{ user.username }}
     <p>
         {{ user.user_profile.about }}
@@ -23,5 +13,5 @@
     <p>
         Звание: {{ user.user_profile.contest_rang }}
     </p>
-    <img src="{{ request.user.user_profile.profile_image.url }}" style="width: 300px;" alt="Avatar">
+    <img src="{{ user.user_profile.profile_image.url }}" style="width: 300px;" alt="Avatar">
 {% endblock %}

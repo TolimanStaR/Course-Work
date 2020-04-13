@@ -19,7 +19,7 @@ class UserProfile(models.Model):
         ("Черниговский батон", "Черниговский батон"),
         ("Сыр косичка", "Сыр косичка"),
         ("Масленок", "Масленок"),
-        ("Простой советский forik", "Простой советский forik"),
+        ("Советский for'ик", "Советский for'ик"),
         ("Живой огурец", "Живой огурец"),
         ("Мафиозник", "Мафиозник"),
         ("Олимпиадник", "Олимпиадник"),
@@ -48,4 +48,4 @@ class UserProfile(models.Model):
     contest_rang_color = models.CharField(default=COLOR_CHOICES[0][0], max_length=10, choices=COLOR_CHOICES)
 
     def __str__(self):
-        return f'[{self.contest_rang}] {self.user.username}'
+        return f'{self.user.username}'

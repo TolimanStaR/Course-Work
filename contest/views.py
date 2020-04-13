@@ -193,13 +193,15 @@ class ContestDetail(LoginRequiredMixin, DetailView):
 
                 if id:
                     package = get_object_or_404(ContestSolutionCase, id=id)
-
-                    return render(request, 'contest/packages_detail.html', {
-                        'contest': contest,
-                        'task': task,
-                        'participant': participant,
-                        'package': package,
-                    })
+                    if request.user.user_profile == package.participant.user:
+                        return render(request, 'contest/packages_detail.html', {
+                            'contest': contest,
+                            'task': task,
+                            'participant': participant,
+                            'package': package,
+                        })
+                    else:
+                        return HttpResponseRedirect(reverse('contest_task_detail', args=(contest.pk, task.difficulty,)))
                 else:
                     return render(request, self.template_name, {
                         'contest': contest,

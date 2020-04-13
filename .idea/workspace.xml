@@ -2,23 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account/migrations/0005_auto_20200413_1719.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/migrations/0003_auto_20200413_1704.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/templates/archive_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/templates/archive_detail_frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/templates/archive_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/code_files/2401c2b3d9a6c5b50c89d0f3f734dcefb3749a12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/templates/account/account_packages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/templates/account_detail_frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/6fdb4d80-83c1-4267-9385-83aa5cf4ab41/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/6fdb4d80-83c1-4267-9385-83aa5cf4ab41/participant_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/6fdb4d80-83c1-4267-9385-83aa5cf4ab41/participant_solution.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/6fdb4d80-83c1-4267-9385-83aa5cf4ab41/participant_solution.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/6fdb4d80-83c1-4267-9385-83aa5cf4ab41/solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/8e161885-286e-468c-9184-c9df6ca4c90f/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/8e161885-286e-468c-9184-c9df6ca4c90f/participant_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/8e161885-286e-468c-9184-c9df6ca4c90f/participant_solution.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/8e161885-286e-468c-9184-c9df6ca4c90f/participant_solution.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/task-check-env/8e161885-286e-468c-9184-c9df6ca4c90f/solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/code_files/a3aa5a40893c2edde249f5a99e7791bd0bf88449.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Coursework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/edit_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/edit_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/registration/password_change_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/registration/password_change_done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/registration/password_change_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/registration/password_change_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/archive_detail_frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/archive_detail_frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/packages/archive_package_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/archive/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/rating.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/rating.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/task_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/task_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +88,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Проекты\Coursework\account\templates" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Проекты\Coursework\media\images" />
     </key>
@@ -140,14 +160,8 @@
       <workItem from="1586554215452" duration="150000" />
       <workItem from="1586606568553" duration="27811000" />
       <workItem from="1586694795466" duration="22370000" />
-      <workItem from="1586774015287" duration="11524000" />
-    </task>
-    <task id="LOCAL-00005" summary="Подъехало немного стилей для адекватности">
-      <created>1585772109426</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1585772109426</updated>
+      <workItem from="1586774015287" duration="12765000" />
+      <workItem from="1586798795351" duration="6474000" />
     </task>
     <task id="LOCAL-00006" summary="Standart login handler">
       <created>1585778904403</created>
@@ -485,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586786606307</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Archive app almost ready">
+      <created>1586793666356</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1586793666356</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +514,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Contest app templates #1" />
     <MESSAGE value="Some javascript shitcode" />
     <MESSAGE value="JAVASKiRPT FAKKK YOOOOUUU!!!!!11!!1!" />
     <MESSAGE value="Simple contest registration (participant creation)" />
@@ -518,7 +538,8 @@
     <MESSAGE value="Fixed penalty calculation" />
     <MESSAGE value="Get handler for waiting room" />
     <MESSAGE value="Start to do archive app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start to do archive app" />
+    <MESSAGE value="Archive app almost ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Archive app almost ready" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -533,10 +554,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586786603307">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586793663488">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586786603307" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586793663488" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -545,10 +566,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586611797941" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586774017908">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586798799446">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586774017908" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586798799446" />
     <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586715494792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -8,9 +8,12 @@ from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 
 from django.views.generic import FormView, DetailView, ListView
+from django.views.generic.base import TemplateResponseMixin, View
 
 from .forms import LoginForm, UserRegistrationForm, UserEditForm, UserProfileEditForm
 from .models import UserProfile, User
+
+from archive.models import ArchiveSolutionCase
 
 
 class UserRegistration(FormView):
@@ -85,5 +88,17 @@ class UserProfileView(DetailView, LoginRequiredMixin):
             user = User.objects.get(username=request.user.username)
 
         return render(request, self.template_name, {'user': user})
+
+
+class UserPackageView(TemplateResponseMixin, View):
+    model = UserProfile
+    template_name = 'account/account_packages.html'
+
+    def get(self, request, username=None):
+        if username:
+            user = get_object_or_404(User, username=username)
+            profile = get_object_or_404(UserProfile, user=user)
+            packages = ArchiveSolutionCase.objects.filter(user=profile)
+            return render(request, self.template_name, {'user': user, 'packages': packages})
 
 # TODO: Заменить login view на свой класс

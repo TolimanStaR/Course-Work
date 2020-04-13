@@ -14,7 +14,10 @@
             <th>Вердикт</th>
         </tr>
         <tr>
-            <td>{{ request.user }}</td>
+            <td>
+                <a href="{% url 'profile' package.user %}">
+                    {{ package.user }}
+                </a></td>
             <td>{{ package.id }}</td>
             <td>{{ package.package_time }}</td>
             <td>

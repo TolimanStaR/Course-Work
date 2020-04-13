@@ -36,7 +36,7 @@ class ContestParticipant(models.Model):
         ordering = ('-task_solved', 'penalty')
 
     def __str__(self):
-        return f'{self.user} - {self.contest.title}'
+        return f'{self.user}'
 
 
 class ContestSolutionCase(SolutionCaseBase):

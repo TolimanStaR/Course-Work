@@ -1,8 +1,8 @@
-{% extends 'index.html' %}
+{% extends 'account_detail_frame.html' %}
 
 {% block title %}Редактировать профиль{% endblock %}
 
-{% block content %}
+{% block account_detail %}
     <p>Редактирование вашего профиля</p>
     <form action="" method="post" enctype="multipart/form-data">
         {{ user_form.as_p }}

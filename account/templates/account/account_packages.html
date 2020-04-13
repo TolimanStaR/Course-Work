@@ -1,8 +1,8 @@
-{% extends 'archive_detail_frame.html' %}
+{% extends 'account_detail_frame.html' %}
 
 {% block title %}Посылки пользователя {{ request.user }}{% endblock %}
 
-{% block archive_detail %}
+{% block account_detail %}
     <table>
         <tr>
             <th>Пользователь</th>
@@ -14,25 +14,21 @@
         </tr>
         {% for package in packages %}
             <tr>
+                <td>{{ package.user }}</td>
                 <td>
-                    <a href="{% url 'profile' package.user %}">
-                        {{ package.user }}
-                    </a>
-                </td>
-                <td>
-                    <a href="{% url 'archive_package_detail' pk=task.pk id=package.id %}">{{ package.id }}</a>
+                    <a href="{% url 'archive_package_detail' pk=package.task.pk id=package.id %}">{{ package.id }}</a>
                 </td>
                 <td>{{ package.package_time }}</td>
                 <td>
-                    <a href="{% url 'archive_task_detail' pk=task.pk %}">
-                        {{ task.title }}
+                    <a href="{% url 'archive_task_detail' pk=package.task.pk %}">
+                        {{ package.task.title }}
                     </a>
                 </td>
                 <td>{{ package.language }}</td>
                 <td>{{ package.verdict }}</td>
             </tr>
         {% empty %}
-            <p>Вы пока не отправляли решение этой задачи на проверку</p>
+            <p>У пользователя пока что нет посылок с решениями.</p>
         {% endfor %}
     </table>
 {% endblock %}

@@ -17,7 +17,7 @@
                 </tr>
                 {% for package in participant.packages.all %}
                     <tr>
-                        <td>{{ request.user }}</td>
+                        <td><a href="{% url 'profile' package.participant %}">{{ package.participant }}</a></td>
                         <td>
                             <a href="{% url 'contest_package_detail' pk=contest.pk difficulty=package.task.difficulty id=package.id %}">{{ package.id }}</a>
                         </td>

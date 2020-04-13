@@ -60,7 +60,7 @@ class TaskDetailView(LoginRequiredMixin, FormView):
 
             package.save()
 
-            return HttpResponseRedirect(reverse(''))
+            return HttpResponseRedirect(reverse('archive_package_list', args=(task.pk,)))
 
         else:
             return HttpResponseRedirect(reverse('archive_task_list', args=()))
@@ -80,3 +80,4 @@ class ArchivePackageView(LoginRequiredMixin, TemplateResponseMixin, View):
                 return render(request, 'packages/archive_package_detail.html', {'task': task, 'package': package})
             else:
                 return render(request, self.template_name, {'task': task, 'packages': packages})
+

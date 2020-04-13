@@ -22,7 +22,6 @@ read_mode = 'r'
 
 
 def check_participant_solution(package, task, tests):
-    print('check')
     judge_solution_lang = task.solution.name.split('.')[-1]
 
     env_dir_name = get_unique_name()
@@ -101,7 +100,8 @@ def check_participant_solution(package, task, tests):
             participant_out.close()
 
             judge_answer = test.answer.split('\n')
-            judge_answer.remove('')
+            if type(judge_answer) == type(list):
+                judge_answer.remove('')
 
             participant_solution_length = len(participant_answer)
             judge_solution_length = len(judge_answer)
