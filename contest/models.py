@@ -30,7 +30,7 @@ class ContestParticipant(models.Model):
     user = models.OneToOneField(UserProfile, on_delete=models.SET_DEFAULT, related_name='member', default=None)
     penalty = models.IntegerField(default=0)
     task_solved = models.PositiveIntegerField(default=0)
-    stats = ArrayField(models.PositiveIntegerField(default=0), size=16, blank=True)
+    stats = ArrayField(models.IntegerField(default=0), size=16, blank=True)
 
     class Meta:
         ordering = ('-task_solved', 'penalty')
@@ -57,3 +57,18 @@ class ContestTest(TestBase):
 
     def __str__(self):
         return f'Тест задачи {self.task.title}'
+
+
+class ContestPastParticipant(models.Model):
+    place = models.PositiveIntegerField()
+    user = models.CharField(max_length=50)
+    penalty = models.PositiveIntegerField()
+    stats = ArrayField(models.IntegerField(default=0), size=16)
+    tasks_solved = models.IntegerField(default=0)
+
+    class Meta:
+        abstract = True
+        ordering = ('-tasks_solved', 'penalty')
+
+    def __str__(self):
+        return f'{self.user}'

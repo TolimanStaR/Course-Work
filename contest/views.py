@@ -14,6 +14,7 @@ from .forms import ContestRegistrationForm, SolutionSendForm
 from account.models import UserProfile
 from contest.models import ContestParticipant, Contest, ContestTask, ContestSolutionCase, ContestTest
 from management.task_manager import *
+# from management.complete_contest import complete_contest
 
 from django.core.exceptions import ObjectDoesNotExist
 
@@ -35,12 +36,17 @@ def contest_list(request, pk=None):
         cur_time = datetime.datetime.now(datetime.timezone.utc)
 
         if cur_time < contest.starts_at:
+            contest.active = False
+            contest.completed = False
+            contest.save()
             return HttpResponseRedirect(reverse('contest_waiting', args=(pk,)))
 
         if contest.starts_at <= cur_time <= contest.starts_at + datetime.timedelta(minutes=contest.duration_minutes):
             if not contest.active:
                 contest.active = True
-                contest.save()
+            if contest.completed:
+                contest.completed = False
+            contest.save()
 
             return render(request, 'contest/task_list.html', {'contest': contest})
 
@@ -67,7 +73,7 @@ def contest_list(request, pk=None):
 
             # *****
 
-            return HttpResponseRedirect(reverse('contest_rating', args=(pk,)))
+            return HttpResponseRedirect(reverse('contest_result', args=(pk,)))
 
     else:
         return HttpResponseRedirect(reverse('contest_list'))
@@ -83,18 +89,26 @@ class ContestWaiting(DetailView):
             cur_time = datetime.datetime.now(datetime.timezone.utc)
 
             if cur_time < contest.starts_at:
+                contest.active = False
+                contest.completed = False
+                contest.save()
                 return render(request, 'contest/waiting.html', {'contest': contest})
 
             elif contest.starts_at <= cur_time <= contest.starts_at + datetime.timedelta(
                     minutes=contest.duration_minutes):
                 contest.active = True
+                contest.completed = False
                 contest.save()
                 return HttpResponseRedirect(reverse('contest_task_list', args=(kwargs['pk'],)))
 
             else:
                 contest.active = False
                 contest.completed = True
-                return HttpResponseRedirect(reverse('contest_rating', args=(kwargs['pk'],)))
+                contest.save()
+
+                # Здесь будет операция завершения соревнования
+
+                return HttpResponseRedirect(reverse('contest_result', args=(kwargs['pk'],)))
 
 
 class ContestDetail(LoginRequiredMixin, DetailView):
@@ -258,3 +272,11 @@ class ContestRegistrationView(LoginRequiredMixin, FormView):
             messages.error(request, 'Необходимо согласиться с правилами!')
             return render(request, self.template_name,
                           {'user_profile': user_profile, 'contest': contest, 'form': form})
+
+
+class ContestResultView(TemplateResponseMixin, View):
+    template_name = 'contest/contest_result.html'
+    model = Contest
+
+    def get(self, request, pk=None):
+        pass

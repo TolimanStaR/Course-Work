@@ -8,9 +8,19 @@
             <ul class="navbar">
                 <li><a href="{% url 'contest_task_list' contest.pk %}">Задачи</a></li>
                 <li><a href="{% url 'contest_packages' contest.pk %}">Посылки</a></li>
-                <li><a href="{% url 'contest_rating' contest.pk %}">Текущий рейтинг</a></li>
+                <li>
+                    {% if not contest.completed %}
+                        <a href="{% url 'contest_rating' contest.pk %}">
+                            Текущий рейтинг
+                        </a>
+                    {% else %}
+                        <a href="{% url 'contest_result' contest.pk %}">
+                            Результаты
+                        </a>
+                    {% endif %}
+                </li>
                 {% if contest.active %}
-                    <li><a id="timer" href=""></a></li>
+                    <li><a id="timer" href="#"></a></li>
                 {% endif %}
             </ul>
         </div>
