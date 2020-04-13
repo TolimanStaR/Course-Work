@@ -25,3 +25,9 @@ class ArchiveTest(TestBase):
 class ArchiveSolutionCase(SolutionCaseBase):
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='packages')
     task = models.ForeignKey(ArchiveTask, on_delete=models.CASCADE, related_name='packages')
+
+    class Meta:
+        ordering = ('-package_time',)
+
+    def __str__(self):
+        return f'Посылка {self.user.user.username} к задаче {self.task.title}'

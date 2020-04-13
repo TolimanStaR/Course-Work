@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block title %}Архив задач{% endblock %}
+
+{% block content %}
+    {% for task in object_list %}
+        <p>
+            <a href="{% url 'archive_task_detail' task.pk %}">{{ task.difficulty|upper }}. {{ task.title }}</a>
+            (Решивших: {{ task.solved_by }})
+        </p>
+    {% endfor %}
+    {% include "pagination.html" with page=page_obj %}
+{% endblock %}

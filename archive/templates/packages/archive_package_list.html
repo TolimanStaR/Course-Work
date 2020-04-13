@@ -1,0 +1,34 @@
+{% extends 'archive_detail_frame.html' %}
+
+{% block title %}Посылки пользователя {{ request.user }}{% endblock %}
+
+{% block archive_detail %}
+    <table>
+        <tr>
+            <th>Пользователь</th>
+            <th>ID посылки</th>
+            <th>Время посылки</th>
+            <th>Задача</th>
+            <th>Язык</th>
+            <th>Вердикт</th>
+        </tr>
+        {% for package in packages %}
+            <tr>
+                <td>{{ request.user }}</td>
+                <td>
+                    <a href="{% url 'archive_package_detail' pk=task.pk id=package.id %}">{{ package.id }}</a>
+                </td>
+                <td>{{ package.package_time }}</td>
+                <td>
+                    <a href="{% url 'archive_task_detail' pk=task.pk %}">
+                        {{ task.title }}
+                    </a>
+                </td>
+                <td>{{ package.language }}</td>
+                <td>{{ package.verdict }}</td>
+            </tr>
+        {% empty %}
+            <p>Вы пока не отправляли решение этой задачи на проверку</p>
+        {% endfor %}
+    </table>
+{% endblock %}

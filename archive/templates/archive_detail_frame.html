@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+    <div class="navigation" style="margin: 0; padding: 0;">
+        <ul class="navbar">
+            <li><a href="{% url 'archive_task_detail' task.pk %}">Условие задачи</a></li>
+            <li><a href="{% url 'archive_package_list' pk=task.pk %}">Посылки</a></li>
+        </ul>
+    </div>
+    {% block archive_detail %}
+    {% endblock %}
+{% endblock %}

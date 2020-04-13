@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account/migrations/0004_auto_20200413_1640.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/templates/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/templates/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0023_contesttask_solved_by.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/complete_contest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/rating_counter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Coursework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Coursework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/migrations/0005_auto_20200413_1719.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/migrations/0003_auto_20200413_1704.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/templates/archive_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/templates/archive_detail_frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/templates/archive_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/code_files/2401c2b3d9a6c5b50c89d0f3f734dcefb3749a12.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coursework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/archive/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/task_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/task_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +33,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -140,14 +140,7 @@
       <workItem from="1586554215452" duration="150000" />
       <workItem from="1586606568553" duration="27811000" />
       <workItem from="1586694795466" duration="22370000" />
-      <workItem from="1586774015287" duration="5438000" />
-    </task>
-    <task id="LOCAL-00004" summary="auth login">
-      <created>1585751237400</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1585751237400</updated>
+      <workItem from="1586774015287" duration="11524000" />
     </task>
     <task id="LOCAL-00005" summary="Подъехало немного стилей для адекватности">
       <created>1585772109426</created>
@@ -485,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586775268137</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Start to do archive app">
+      <created>1586786606307</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1586786606307</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Contest app templates" />
     <MESSAGE value="Contest app templates #1" />
     <MESSAGE value="Some javascript shitcode" />
     <MESSAGE value="JAVASKiRPT FAKKK YOOOOUUU!!!!!11!!1!" />
@@ -518,7 +517,8 @@
     <MESSAGE value="Fix string compare" />
     <MESSAGE value="Fixed penalty calculation" />
     <MESSAGE value="Get handler for waiting room" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get handler for waiting room" />
+    <MESSAGE value="Start to do archive app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start to do archive app" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -533,10 +533,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586775264941">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586786603307">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586775264941" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586786603307" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
