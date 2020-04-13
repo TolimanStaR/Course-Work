@@ -13,7 +13,7 @@ from .forms import ContestRegistrationForm, SolutionSendForm
 
 from account.models import UserProfile
 from contest.models import ContestParticipant, Contest, ContestTask, ContestSolutionCase, ContestTest
-from management.manager import check_participant_solution, verdict
+from management.task_manager import *
 
 from django.core.exceptions import ObjectDoesNotExist
 
@@ -24,6 +24,11 @@ import pytz
 import os
 
 
+# def redirect_to_package_list(contest_pk, task_difficulty):
+#     print('redirect')
+#     return HttpResponseRedirect(reverse('contest_packages_list', args=(contest_pk, task_difficulty)))
+
+
 class ContestList(ListView):
     template_name = 'list.html'
     model = Contest
@@ -32,7 +37,7 @@ class ContestList(ListView):
 def contest_list(request, pk=None):
     if pk:
         contest = get_object_or_404(Contest, pk=pk)
-        cur_time = datetime.datetime.now(datetime.timezone.utc)  # + datetime.timedelta(hours=3)
+        cur_time = datetime.datetime.now(datetime.timezone.utc)
 
         if cur_time < contest.starts_at:
             return HttpResponseRedirect(reverse('contest_waiting', args=(pk,)))
@@ -76,6 +81,25 @@ def contest_list(request, pk=None):
 class ContestWaiting(DetailView):
     template_name = 'contest/waiting.html'
     model = Contest
+
+    def get(self, request, *args, **kwargs):
+        if 'pk' in kwargs:
+            contest = get_object_or_404(Contest, pk=kwargs['pk'])
+            cur_time = datetime.datetime.now(datetime.timezone.utc)
+
+            if cur_time < contest.starts_at:
+                return render(request, 'contest/waiting.html', {'contest': contest})
+
+            elif contest.starts_at <= cur_time <= contest.starts_at + datetime.timedelta(
+                    minutes=contest.duration_minutes):
+                contest.active = True
+                contest.save()
+                return HttpResponseRedirect(reverse('contest_task_list', args=(kwargs['pk'],)))
+
+            else:
+                contest.active = False
+                contest.completed = True
+                return HttpResponseRedirect(reverse('contest_rating', args=(kwargs['pk'],)))
 
 
 class ContestDetail(LoginRequiredMixin, DetailView):
@@ -138,16 +162,27 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                     task_code=code,
                 )
 
-                # Здесь отправка на проверку
+                # arguments = (package, task, task_tests)
+                #
+                # check_process = multiprocessing.Process(target=check_participant_solution, args=arguments)
+                # redirect_process = multiprocessing.Process(target=redirect_to_package_list,
+                #                                            args=(contest.pk, task.difficulty))
+                #
+                # check_process.start()
+                # redirect_process.start()
+                # check_process.join()
+                # redirect_process.join()
 
                 package.verdict = check_participant_solution(package, task, task_tests)
+
                 if package.verdict == verdict[True]:
                     package.solved = True
 
                 if package.solved:
                     participant.stats[task.number - 1] = 1
                 else:
-                    participant.stats[task.number - 1] = 2
+                    if participant.stats[task.number - 1] != 1:
+                        participant.stats[task.number - 1] = 2
 
                 participant.penalty += int((cur_time - contest.starts_at).total_seconds() // 60)
 
@@ -156,7 +191,7 @@ class ContestDetail(LoginRequiredMixin, DetailView):
 
                 return HttpResponseRedirect(reverse('contest_packages_list', args=(contest.pk, task.difficulty)))
 
-            return HttpResponse('Correct')
+            return HttpResponse('Please try again')
 
     class ContestPackageListView(TemplateResponseMixin, View):
         model = Contest

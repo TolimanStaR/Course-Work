@@ -1,5 +1,6 @@
 import subprocess
 import shutil
+import time
 import uuid
 import os
 
@@ -16,8 +17,12 @@ verdict = {
     True: 'Правильное решение',
 }
 
+write_mode = 'w'
+read_mode = 'r'
+
 
 def check_participant_solution(package, task, tests):
+    print('check')
     judge_solution_lang = task.solution.name.split('.')[-1]
 
     env_dir_name = get_unique_name()
@@ -39,9 +44,6 @@ def check_participant_solution(package, task, tests):
     output_file_name = f'{env_dir_abspath}/output.txt'
     participant_output_file_name = f'{env_dir_abspath}/participant_output.txt'
 
-    write_mode = 'w'
-    read_mode = 'r'
-
     os.chdir(env_dir_abspath)
 
     participant_launch_command = get_launch_command(env_participant_solution_path,
@@ -53,6 +55,9 @@ def check_participant_solution(package, task, tests):
         return set_verdict('Ошибка компиляции', work_dir=work_path, env_dir=env_dir_abspath)
 
     for test_number, test in enumerate(tests):
+        package.verdict = f'Выполняется на тесте {test_number + 1}'
+        package.save()
+
         input_file = open(input_file_name, write_mode)
 
         for line in test.content.split('\n'):
@@ -93,10 +98,10 @@ def check_participant_solution(package, task, tests):
             for line in participant_out.readlines():
                 participant_answer.append(line.replace('\n', ''))
 
+            participant_out.close()
+
             judge_answer = test.answer.split('\n')
             judge_answer.remove('')
-
-            participant_out.close()
 
             participant_solution_length = len(participant_answer)
             judge_solution_length = len(judge_answer)
@@ -169,7 +174,7 @@ def get_judge_answer(test, judge_sol_abs_path, input_, output_):
     )
 
     if process == 0:
-        output = open(output_, 'r')
+        output = open(output_, read_mode)
 
         for line in output.readlines():
             test.answer += line
@@ -189,9 +194,6 @@ def get_unique_name():
 
 
 def set_verdict(message, work_dir=None, env_dir=None):
-    # TODO: Изменить рабочую директорию и удалить временное окружеие
-
     os.chdir(work_dir)
     shutil.rmtree(env_dir)
-
     return message

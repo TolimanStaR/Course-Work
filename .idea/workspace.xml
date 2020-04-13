@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0022_remove_contesttest_judge_answer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/3424e9ff-0e91-4782-8582-e9c55149a24b/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/3424e9ff-0e91-4782-8582-e9c55149a24b/participant_output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/3424e9ff-0e91-4782-8582-e9c55149a24b/participant_solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/3424e9ff-0e91-4782-8582-e9c55149a24b/participant_solution.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/3424e9ff-0e91-4782-8582-e9c55149a24b/solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/3734ad8c-5a0b-42f1-bae7-e3e18bb33d5f/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/3734ad8c-5a0b-42f1-bae7-e3e18bb33d5f/participant_output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/3734ad8c-5a0b-42f1-bae7-e3e18bb33d5f/participant_solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/3734ad8c-5a0b-42f1-bae7-e3e18bb33d5f/participant_solution.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/3734ad8c-5a0b-42f1-bae7-e3e18bb33d5f/solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/914bc3cd-023e-4dcb-b2ec-f7a50f51056c/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/914bc3cd-023e-4dcb-b2ec-f7a50f51056c/participant_output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/914bc3cd-023e-4dcb-b2ec-f7a50f51056c/participant_solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/914bc3cd-023e-4dcb-b2ec-f7a50f51056c/participant_solution.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/914bc3cd-023e-4dcb-b2ec-f7a50f51056c/solution.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/task_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,14 +125,8 @@
       <workItem from="1586534621422" duration="7270000" />
       <workItem from="1586554215452" duration="150000" />
       <workItem from="1586606568553" duration="27811000" />
-      <workItem from="1586694795466" duration="17496000" />
-    </task>
-    <task id="LOCAL-00002" summary="Add all applications">
-      <created>1585749950472</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1585749950472</updated>
+      <workItem from="1586694795466" duration="22370000" />
+      <workItem from="1586774015287" duration="1094000" />
     </task>
     <task id="LOCAL-00003" summary="media settings">
       <created>1585750473124</created>
@@ -488,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586717069192</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Fixed penalty calculation">
+      <created>1586726776572</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1586726776572</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +479,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="All models has created (contest app)" />
     <MESSAGE value="Register models. Now thinking about foreign keys" />
     <MESSAGE value="Contest app templates" />
     <MESSAGE value="Contest app templates #1" />
@@ -521,7 +503,8 @@
     <MESSAGE value="fix launch command and add subprocess usage for launch solutions" />
     <MESSAGE value="Task check manager almost ready" />
     <MESSAGE value="Fix string compare" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix string compare" />
+    <MESSAGE value="Fixed penalty calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed penalty calculation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -536,10 +519,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586717063634">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586726773265">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586717063634" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586726773265" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -548,10 +531,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586611797941" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586694889405">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586774017908">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586694889405" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586774017908" />
     <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586715494792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
