@@ -24,11 +24,6 @@ import pytz
 import os
 
 
-# def redirect_to_package_list(contest_pk, task_difficulty):
-#     print('redirect')
-#     return HttpResponseRedirect(reverse('contest_packages_list', args=(contest_pk, task_difficulty)))
-
-
 class ContestList(ListView):
     template_name = 'list.html'
     model = Contest
@@ -162,23 +157,15 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                     task_code=code,
                 )
 
-                # arguments = (package, task, task_tests)
-                #
-                # check_process = multiprocessing.Process(target=check_participant_solution, args=arguments)
-                # redirect_process = multiprocessing.Process(target=redirect_to_package_list,
-                #                                            args=(contest.pk, task.difficulty))
-                #
-                # check_process.start()
-                # redirect_process.start()
-                # check_process.join()
-                # redirect_process.join()
-
                 package.verdict = check_participant_solution(package, task, task_tests)
 
                 if package.verdict == verdict[True]:
                     package.solved = True
 
                 if package.solved:
+                    if participant.stats[task.number - 1] != 1:
+                        task.solved_by += 1
+                        task.save()
                     participant.stats[task.number - 1] = 1
                 else:
                     if participant.stats[task.number - 1] != 1:

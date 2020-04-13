@@ -10,7 +10,36 @@ class TaskBase(models.Model):
     time_limit = models.PositiveIntegerField(default=1)
     memory_limit = models.PositiveIntegerField()
 
+    solved_by = models.IntegerField(default=0)
+
     solution = models.FileField(upload_to='code_files/')
+
+    DIFFICULT_CHOICES = (
+        ('a', 'A'),
+        ('b', 'B'),
+        ('b1', 'B1'),
+        ('b2', 'B2'),
+        ('c', 'C'),
+        ('c1', 'C1'),
+        ('c2', 'C2'),
+        ('d', 'D'),
+        ('d1', 'D1'),
+        ('d2', 'D2'),
+        ('e', 'E'),
+        ('e1', 'E1'),
+        ('e2', 'E2'),
+        ('f', 'F'),
+        ('f1', 'F1'),
+        ('f2', 'F2'),
+        ('g', 'G'),
+        ('h', 'H'),
+        ('i', 'I'),
+        ('j', 'J'),
+        ('k', 'K'),
+        ('l', 'L'),
+    )
+
+    difficulty = models.CharField(choices=DIFFICULT_CHOICES, default='a', max_length=3)
 
     class Meta:
         abstract = True

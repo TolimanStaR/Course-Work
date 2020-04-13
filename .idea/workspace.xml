@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/account/migrations/0004_auto_20200413_1640.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/templates/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0023_contesttask_solved_by.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/complete_contest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/rating_counter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Coursework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Coursework.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/task_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/task_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/task_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -126,14 +140,7 @@
       <workItem from="1586554215452" duration="150000" />
       <workItem from="1586606568553" duration="27811000" />
       <workItem from="1586694795466" duration="22370000" />
-      <workItem from="1586774015287" duration="1094000" />
-    </task>
-    <task id="LOCAL-00003" summary="media settings">
-      <created>1585750473124</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1585750473124</updated>
+      <workItem from="1586774015287" duration="5438000" />
     </task>
     <task id="LOCAL-00004" summary="auth login">
       <created>1585751237400</created>
@@ -471,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586726776572</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Get handler for waiting room">
+      <created>1586775268137</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1586775268137</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Register models. Now thinking about foreign keys" />
     <MESSAGE value="Contest app templates" />
     <MESSAGE value="Contest app templates #1" />
     <MESSAGE value="Some javascript shitcode" />
@@ -504,7 +517,8 @@
     <MESSAGE value="Task check manager almost ready" />
     <MESSAGE value="Fix string compare" />
     <MESSAGE value="Fixed penalty calculation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed penalty calculation" />
+    <MESSAGE value="Get handler for waiting room" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get handler for waiting room" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -519,10 +533,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586726773265">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586775264941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586726773265" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586775264941" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
