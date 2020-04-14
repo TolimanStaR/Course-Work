@@ -60,6 +60,7 @@ class ContestTest(TestBase):
 
 
 class ContestPastParticipant(models.Model):
+    contest = models.ForeignKey(Contest, on_delete=models.CASCADE, related_name='past_participants')
     place = models.PositiveIntegerField()
     user = models.CharField(max_length=50)
     penalty = models.PositiveIntegerField()
@@ -67,7 +68,6 @@ class ContestPastParticipant(models.Model):
     tasks_solved = models.IntegerField(default=0)
 
     class Meta:
-        abstract = True
         ordering = ('-tasks_solved', 'penalty')
 
     def __str__(self):

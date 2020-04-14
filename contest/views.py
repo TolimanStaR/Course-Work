@@ -173,17 +173,20 @@ class ContestDetail(LoginRequiredMixin, DetailView):
 
                 package.verdict = check_participant_solution(package, task, task_tests)
 
+                participant.stats[task.number - 1] += 1
+
                 if package.verdict == verdict[True]:
                     package.solved = True
+                    participant.stats[task.number - 1] = abs(participant.stats[task.number - 1])
 
-                if package.solved:
-                    if participant.stats[task.number - 1] != 1:
-                        task.solved_by += 1
-                        task.save()
-                    participant.stats[task.number - 1] = 1
-                else:
-                    if participant.stats[task.number - 1] != 1:
-                        participant.stats[task.number - 1] = 2
+                # if package.solved:
+                #     if participant.stats[task.number - 1] != 1:
+                #         task.solved_by += 1
+                #         task.save()
+                #     participant.stats[task.number - 1] = 1
+                # else:
+                #     if participant.stats[task.number - 1] != 1:
+                #         participant.stats[task.number - 1] = 2
 
                 participant.penalty += int((cur_time - contest.starts_at).total_seconds() // 60)
 
@@ -264,7 +267,8 @@ class ContestRegistrationView(LoginRequiredMixin, FormView):
                     contest=contest,
                     stats=[0] * 16
                 )
-                message = f'Вы успешно зарегистрировались на соревнование {contest.title} под ником {user_profile.user.username}'
+                message = f'Вы успешно зарегистрировались на соревнование {contest.title} ' \
+                          f'под ником {user_profile.user.username}'
 
             return render(request, 'contest/contest_register_done.html',
                           {'user_profile': user_profile, 'message': message})
@@ -279,4 +283,5 @@ class ContestResultView(TemplateResponseMixin, View):
     model = Contest
 
     def get(self, request, pk=None):
-        pass
+        contest = get_object_or_404(Contest, pk=pk)
+        return render(request, self.template_name, {'contest': contest})

@@ -5,7 +5,7 @@
 {% block content %}
     {% for task in object_list %}
         <p>
-            <a href="{% url 'archive_task_detail' task.pk %}">{{ task.difficulty|upper }}. {{ task.title }}</a>
+            <a href="{% url 'archive_task_detail' task.pk %}">{{ task.title }}</a>
             (Решивших: {{ task.solved_by }})
         </p>
     {% endfor %}

@@ -12,7 +12,7 @@
                 <th>{{ task.title }}</th>
             {% endfor %}
         </tr>
-        {% for participant in contest.participants.all %}
+        {% for participant in contest.past_participants.all %}
             <tr>
                 <td>{{ forloop.counter }}</td>
                 <td><a href="{% url 'profile' participant.user %}">{{ participant }}</a></td>
