@@ -173,25 +173,21 @@ class ContestDetail(LoginRequiredMixin, DetailView):
 
                 package.verdict = check_participant_solution(package, task, task_tests)
 
-                participant.stats[task.number - 1] += 1
-
                 if package.verdict == verdict[True]:
                     package.solved = True
-                    participant.stats[task.number - 1] = abs(participant.stats[task.number - 1])
-
-                # if package.solved:
-                #     if participant.stats[task.number - 1] != 1:
-                #         task.solved_by += 1
-                #         task.save()
-                #     participant.stats[task.number - 1] = 1
-                # else:
-                #     if participant.stats[task.number - 1] != 1:
-                #         participant.stats[task.number - 1] = 2
+                    if participant.stats[task.number - 1] != 1:
+                        participant.stats[task.number - 1] = 1
+                        participant.task_solved += 1
+                        task.solved_by += 1
+                else:
+                    if participant.stats[task.number - 1] != 1:
+                        participant.stats[task.number - 1] = 2
 
                 participant.penalty += int((cur_time - contest.starts_at).total_seconds() // 60)
 
                 participant.save()
                 package.save()
+                task.save()
 
                 return HttpResponseRedirect(reverse('contest_packages_list', args=(contest.pk, task.difficulty)))
 

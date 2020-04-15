@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0025_contestpastparticipant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0026_contestparticipant_username.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0027_auto_20200415_1635.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0028_contestparticipant_u.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0029_auto_20200415_1639.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/templates/archive_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/archive_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/contest_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/contest_result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/management/complete_contest.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/complete_contest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/management/rating_counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/rating_counter.py" afterDir="false" />
@@ -137,14 +140,8 @@
       <workItem from="1586774015287" duration="12765000" />
       <workItem from="1586798795351" duration="10538000" />
       <workItem from="1586810621851" duration="54000" />
-      <workItem from="1586841663474" duration="9021000" />
-    </task>
-    <task id="LOCAL-00008" summary="Connecting PostgreSQL database">
-      <created>1585834518733</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1585834518733</updated>
+      <workItem from="1586841663474" duration="9644000" />
+      <workItem from="1586951411538" duration="5026000" />
     </task>
     <task id="LOCAL-00009" summary="password reset/change">
       <created>1585840730675</created>
@@ -482,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586810664382</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Thinks about rating count">
+      <created>1586896625299</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1586896625300</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +494,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Simple contest registration (participant creation)" />
     <MESSAGE value="little changes" />
     <MESSAGE value="All templates for contest" />
     <MESSAGE value="Bug fix + base rating/packages/tasks list for contest app" />
@@ -515,13 +518,18 @@
     <MESSAGE value="Archive app almost ready" />
     <MESSAGE value="Archive app is ready to battle!" />
     <MESSAGE value="Start to do rating count (and think about it)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start to do rating count (and think about it)" />
+    <MESSAGE value="Thinks about rating count" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thinks about rating count" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="72" y="188" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1586454812093" />
+    <state x="552" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586956865020">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586956865020" />
     <state x="576" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586623297373">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -530,10 +538,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586810658169">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586896622437">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586810658169" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586896622437" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -542,10 +550,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586611797941" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586841664112">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586954444850">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586841664112" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586954444850" />
     <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586715494792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

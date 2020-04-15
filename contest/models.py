@@ -31,6 +31,7 @@ class ContestParticipant(models.Model):
     penalty = models.IntegerField(default=0)
     task_solved = models.PositiveIntegerField(default=0)
     stats = ArrayField(models.IntegerField(default=0), size=16, blank=True)
+    rating = models.IntegerField(default=0)
 
     class Meta:
         ordering = ('-task_solved', 'penalty')

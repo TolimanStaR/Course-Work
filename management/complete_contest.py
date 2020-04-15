@@ -3,8 +3,8 @@ from contest.models import Contest, ContestTask, ContestTest, ContestSolutionCas
 from archive.models import ArchiveTask, ArchiveTest, ArchiveSolutionCase
 
 
-def complete_contest(contest):
-    participants_list = ContestParticipant.objects.filter(contest=contest)
+def complete_contest(contest_id):
+    contest = Contest.objects.get(pk=contest_id)
     tasks_list = ContestTask.objects.filter(contest=contest)
 
     for task_number, task in enumerate(tasks_list):
@@ -48,3 +48,6 @@ def complete_contest(contest):
 
         for package in task_packages:
             package.delete()
+
+    participants_list = ContestParticipant.objects.filter(contest=contest).order_by('-task_solved', 'penalty')
+    
