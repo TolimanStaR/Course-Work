@@ -3,7 +3,7 @@
 {% block title %}{{ contest.title }}{% endblock %}
 
 {% block content %}
-    {% if request.user.user_profile.member %}
+    {% if request.user.user_profile.member and not contest.completed or contest.completed %}
         <div class="navigation" style="margin: 0; padding: 0;">
             <ul class="navbar">
                 <li><a href="{% url 'contest_task_list' contest.pk %}">Задачи</a></li>

@@ -23,3 +23,8 @@ class ArchiveTaskAdmin(admin.ModelAdmin):
     inlines = [
         ArchiveTestInLine,
     ]
+
+
+@admin.register(ArchiveSolutionCase)
+class ArchiveSolutionCaseAdmin(admin.ModelAdmin):
+    pass

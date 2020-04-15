@@ -57,7 +57,7 @@ class TaskDetailView(LoginRequiredMixin, FormView):
             )
 
             try:
-                right_packages = ArchiveSolutionCase.objects.filter(task=task, user=user, solved=True)
+                right_packages = ArchiveSolutionCase.objects.get(task=task, user=user, solved=True)
             except ObjectDoesNotExist:
                 task.solved_by += 1
 
@@ -65,6 +65,7 @@ class TaskDetailView(LoginRequiredMixin, FormView):
                 package.solved = True
 
             package.save()
+            task.save()
 
             return HttpResponseRedirect(reverse('archive_package_list', args=(task.pk,)))
 

@@ -6,14 +6,15 @@
     <p>Анонс соревнований:</p>
     {% for contest in object_list %}
         {% if not contest.active and not contest.completed %}
-            <p><a href="{% url 'contest_detail' contest.pk %}">{{ contest.title }}</a></p>
-            <p>{{ contest.starts_at }}</p>
+            <p>{{ contest.title }} Начало: {{ contest.starts_at }}</p>
             {% if request.user.is_authenticated %}
                 {% if request.user.user_profile.member %}
                     <p><a href="{% url 'contest_waiting' contest.pk %}">Войти</a></p>
                 {% else %}
                     <p><a href="{% url 'contest_register' contest.pk %}">Регистрация</a></p>
                 {% endif %}
+            {% else %}
+                <p><a href="{% url 'login' %}">Войдите</a>, чтобы зарегистрироваться на раунд</p>
             {% endif %}
         {% endif %}
     {% endfor %}
@@ -33,8 +34,7 @@
     <p>Прошедшие соревнования:</p>
     {% for contest in object_list %}
         {% if contest.completed %}
-            <p><a href="#">{{ contest.title }}</a></p>
-            <p><a href="{% url 'contest_result' contest.pk %}">Результаты</a></p>
+            <p>{{ contest.title }} <a href="{% url 'contest_result' contest.pk %}">Результаты</a></p>
         {% endif %}
     {% endfor %}
 {% endblock %}

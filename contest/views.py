@@ -53,6 +53,8 @@ def contest_list(request, pk=None):
         if cur_time > contest.starts_at + datetime.timedelta(minutes=contest.duration_minutes):
 
             if not contest.completed:
+                contest.completed = True
+                contest.save()
                 complete_contest(contest.pk)
 
             return HttpResponseRedirect(reverse('contest_result', args=(pk,)))
@@ -82,6 +84,8 @@ class ContestWaiting(LoginRequiredMixin, DetailView):
 
             else:
                 if not contest.completed:
+                    contest.completed = True
+                    contest.save()
                     complete_contest(contest.pk)
 
                 return HttpResponseRedirect(reverse('contest_result', args=(kwargs['pk'],)))
