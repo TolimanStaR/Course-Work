@@ -34,7 +34,7 @@
     {% for contest in object_list %}
         {% if contest.completed %}
             <p><a href="#">{{ contest.title }}</a></p>
-            <p><a href="{% url 'contest_rating' contest.pk %}">Результаты</a></p>
+            <p><a href="{% url 'contest_result' contest.pk %}">Результаты</a></p>
         {% endif %}
     {% endfor %}
 {% endblock %}

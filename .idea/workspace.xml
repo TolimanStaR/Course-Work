@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0026_contestparticipant_username.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0027_auto_20200415_1635.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0028_contestparticipant_u.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0029_auto_20200415_1639.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/migrations/0007_auto_20200415_1707.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/complete_contest.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/complete_contest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/management/rating_counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/rating_counter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,14 +135,7 @@
       <workItem from="1586798795351" duration="10538000" />
       <workItem from="1586810621851" duration="54000" />
       <workItem from="1586841663474" duration="9644000" />
-      <workItem from="1586951411538" duration="5026000" />
-    </task>
-    <task id="LOCAL-00009" summary="password reset/change">
-      <created>1585840730675</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1585840730675</updated>
+      <workItem from="1586951411538" duration="7578000" />
     </task>
     <task id="LOCAL-00010" summary="user registration">
       <created>1585842248649</created>
@@ -486,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586896625300</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Rating count. Simple, but logical algorithm">
+      <created>1586958949592</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1586958949593</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +488,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="little changes" />
     <MESSAGE value="All templates for contest" />
     <MESSAGE value="Bug fix + base rating/packages/tasks list for contest app" />
     <MESSAGE value="waste time for detail view" />
@@ -519,7 +512,8 @@
     <MESSAGE value="Archive app is ready to battle!" />
     <MESSAGE value="Start to do rating count (and think about it)" />
     <MESSAGE value="Thinks about rating count" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thinks about rating count" />
+    <MESSAGE value="Rating count. Simple, but logical algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rating count. Simple, but logical algorithm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -538,10 +532,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586896622437">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586958947067">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586896622437" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586958947067" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

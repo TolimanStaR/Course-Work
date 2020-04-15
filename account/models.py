@@ -23,7 +23,6 @@ class UserProfile(models.Model):
         ("Живой огурец", "Живой огурец"),
         ("Мафиозник", "Мафиозник"),
         ("Олимпиадник", "Олимпиадник"),
-        ("Sempai", "Sempai"),
         ("Sensei", "Sensei"),
         ("Галактический кодер", "Галактический кодер"),
     )
@@ -43,7 +42,7 @@ class UserProfile(models.Model):
         ('', ''),
     )
 
-    contest_rating = models.PositiveIntegerField(default=0)
+    contest_rating = models.IntegerField(default=0)
     contest_rang = models.CharField(max_length=45, default=RANG_CHOICES[0][0], choices=RANG_CHOICES)
     contest_rang_color = models.CharField(default=COLOR_CHOICES[0][0], max_length=10, choices=COLOR_CHOICES)
 
