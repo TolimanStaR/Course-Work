@@ -25,7 +25,10 @@ def check_participant_solution(package, task, tests):
     judge_solution_lang = task.solution.name.split('.')[-1]
 
     env_dir_name = get_unique_name()
-    work_path = os.getcwd()
+    work_path = 'G:\\Проекты\Coursework'  # Хардкод из-за возникающей ошибки
+
+    print(work_path)
+
     env_dir_abspath = f'{work_path}/management/task-check-env/{env_dir_name}'
 
     solution_abspath = f'{work_path}/media/{task.solution.name}'
@@ -50,7 +53,6 @@ def check_participant_solution(package, task, tests):
                                                     participant_output_file_name)
 
     if participant_launch_command is None:
-        os.chdir(work_path)
         return set_verdict('Ошибка компиляции', work_dir=work_path, env_dir=env_dir_abspath)
 
     for test_number, test in enumerate(tests):
@@ -86,6 +88,7 @@ def check_participant_solution(package, task, tests):
         stdout, stderr = participant_solution_process.communicate()
 
         if stderr:
+            print(stderr.decode('cp866'))
             return set_verdict(f'Ошибка исполнения на тесте {test_number + 1}', work_dir=work_path,
                                env_dir=env_dir_abspath)
 
@@ -100,7 +103,7 @@ def check_participant_solution(package, task, tests):
             participant_out.close()
 
             judge_answer = test.answer.split('\n')
-            if type(judge_answer) == type(list):
+            if type(judge_answer) == list:
                 judge_answer.remove('')
 
             participant_solution_length = len(participant_answer)

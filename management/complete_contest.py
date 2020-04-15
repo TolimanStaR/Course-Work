@@ -2,9 +2,17 @@ from contest.models import Contest, ContestTask, ContestTest, ContestSolutionCas
     ContestPastParticipant
 from archive.models import ArchiveTask, ArchiveTest, ArchiveSolutionCase
 
+from .rating_counter import calculate_rating
+
 
 def complete_contest(contest_id):
     contest = Contest.objects.get(pk=contest_id)
+
+    contest.active = False
+    contest.completed = True
+
+    contest.save()
+
     tasks_list = ContestTask.objects.filter(contest=contest)
 
     for task_number, task in enumerate(tasks_list):
@@ -43,11 +51,27 @@ def complete_contest(contest_id):
             )
             new_package.save()
 
-        for test in task_tests:
-            test.delete()
+        # for test in task_tests:
+        #     test.delete()
+        #
+        # for package in task_packages:
+        #     package.delete()
 
-        for package in task_packages:
-            package.delete()
+    calculate_rating(contest.pk)
 
-    participants_list = ContestParticipant.objects.filter(contest=contest).order_by('-task_solved', 'penalty')
-    
+    participants = ContestParticipant.objects.all()
+
+    for participant in participants:
+        past_participant = ContestPastParticipant.objects.create(
+            contest=contest,
+            user=participant.user.user.username,
+            penalty=participant.penalty,
+            stats=participant.stats,
+            tasks_solved=participant.task_solved,
+        )
+        past_participant.save()
+
+    contest.save()
+
+    # for participant in participants:
+    #     participant.delete()

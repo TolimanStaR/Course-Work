@@ -33,10 +33,10 @@ def calculate_rating(contest_id):
     for relative_place, participant in enumerate(users_list):
         participant.user.contest_rating += 1 + relative_place - participant.rating
 
-        if participant.user.contest_rang >= 0:
-            rang_index = min(participant.user.contest_rang // 50, 4) + 6
+        if int(participant.user.contest_rating) >= 0:
+            rang_index = min(participant.user.contest_rating // 50, 4) + 6
         else:
-            rang_index = max(participant.user.contest_rang // 50, -4) + 5
+            rang_index = max(participant.user.contest_rating // 50, -4) + 5
 
         participant.user.contest_rang = UserProfile.RANG_CHOICES[rang_index][1]
 

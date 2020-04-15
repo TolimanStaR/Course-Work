@@ -24,7 +24,7 @@ SECRET_KEY = 'kk#5(==u=8f2zbi+mf5o2hji#e#%b&mh4nwd^e#zq#w)n)ms67'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8f229a96.ngrok.io', '127.0.0.1']
 
 DEFAULT_FILE_STORAGE = 'django_hashedfilenamestorage.storage.HashedFilenameFileSystemStorage'
 

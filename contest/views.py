@@ -14,7 +14,7 @@ from .forms import ContestRegistrationForm, SolutionSendForm
 from account.models import UserProfile
 from contest.models import ContestParticipant, Contest, ContestTask, ContestSolutionCase, ContestTest
 from management.task_manager import *
-# from management.complete_contest import complete_contest
+from management.complete_contest import complete_contest
 
 from django.core.exceptions import ObjectDoesNotExist
 
@@ -51,27 +51,9 @@ def contest_list(request, pk=None):
             return render(request, 'contest/task_list.html', {'contest': contest})
 
         if cur_time > contest.starts_at + datetime.timedelta(minutes=contest.duration_minutes):
-            if contest.active:
-                contest.active = False
 
             if not contest.completed:
-                contest.completed = True
-
-            contest.save()
-
-            '''
-            
-            Что нужно сделать?
-            
-            1) Пересчитать рейтинг участников согласно таблице результатов и изменить звания
-            2) Перенести задачи с раунда в архив
-            3) Удалить участников, так как это OneToOneField
-            
-            '''
-
-            # TODO: Management app: contest complete manager
-
-            # *****
+                complete_contest(contest.pk)
 
             return HttpResponseRedirect(reverse('contest_result', args=(pk,)))
 
@@ -79,7 +61,7 @@ def contest_list(request, pk=None):
         return HttpResponseRedirect(reverse('contest_list'))
 
 
-class ContestWaiting(DetailView):
+class ContestWaiting(LoginRequiredMixin, DetailView):
     template_name = 'contest/waiting.html'
     model = Contest
 
@@ -96,17 +78,11 @@ class ContestWaiting(DetailView):
 
             elif contest.starts_at <= cur_time <= contest.starts_at + datetime.timedelta(
                     minutes=contest.duration_minutes):
-                contest.active = True
-                contest.completed = False
-                contest.save()
                 return HttpResponseRedirect(reverse('contest_task_list', args=(kwargs['pk'],)))
 
             else:
-                contest.active = False
-                contest.completed = True
-                contest.save()
-
-                # Здесь будет операция завершения соревнования
+                if not contest.completed:
+                    complete_contest(contest.pk)
 
                 return HttpResponseRedirect(reverse('contest_result', args=(kwargs['pk'],)))
 
@@ -127,7 +103,7 @@ class ContestDetail(LoginRequiredMixin, DetailView):
         template_name = 'contest/packages.html'
         model = Contest
 
-    class ContestTaskDetailView(DetailView, FormView):
+    class ContestTaskDetailView(LoginRequiredMixin, DetailView, FormView):
         template_name = 'contest/task_detail.html'
         model = Contest
 
@@ -181,7 +157,7 @@ class ContestDetail(LoginRequiredMixin, DetailView):
                         task.solved_by += 1
                 else:
                     if participant.stats[task.number - 1] != 1:
-                        participant.stats[task.number - 1] = 2
+                        participant.stats[task.number - 1] = -1
 
                 participant.penalty += int((cur_time - contest.starts_at).total_seconds() // 60)
 
@@ -193,7 +169,7 @@ class ContestDetail(LoginRequiredMixin, DetailView):
 
             return HttpResponse('Please try again')
 
-    class ContestPackageListView(TemplateResponseMixin, View):
+    class ContestPackageListView(LoginRequiredMixin, TemplateResponseMixin, View):
         model = Contest
         template_name = 'contest/packages_list.html'
 

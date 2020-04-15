@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Contest, ContestTask, ContestParticipant, ContestSolutionCase, ContestTest
+from .models import Contest, ContestTask, ContestParticipant, ContestSolutionCase, ContestTest, ContestPastParticipant
 
 
 class ContestTaskInLine(admin.StackedInline):
@@ -65,9 +65,9 @@ class ContestParticipantAdmin(admin.ModelAdmin):
         'stats',
     ]
 
-    inlines = [
-        ContestParticipantSolutionCaseInLine,
-    ]
+    # inlines = [
+    #     ContestParticipantSolutionCaseInLine,
+    # ]
 
 
 @admin.register(ContestSolutionCase)
@@ -88,4 +88,15 @@ class ContestTestAdmin(admin.ModelAdmin):
         'task',
         'content',
         'answer',
+    ]
+
+
+@admin.register(ContestPastParticipant)
+class ContestPastParticipantAdmin(admin.ModelAdmin):
+    list_display = [
+        'contest',
+        'user',
+        'penalty',
+        'stats',
+        'tasks_solved',
     ]

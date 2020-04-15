@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
@@ -15,7 +16,7 @@ from management.task_manager import verdict, check_participant_solution
 class TaskListView(ListView):
     template_name = 'archive_list.html'
     model = ArchiveTask
-    paginate_by = 1
+    paginate_by = 3
 
 
 class TaskDetailView(LoginRequiredMixin, FormView):
@@ -55,6 +56,11 @@ class TaskDetailView(LoginRequiredMixin, FormView):
                 tests=tests
             )
 
+            try:
+                right_packages = ArchiveSolutionCase.objects.filter(task=task, user=user, solved=True)
+            except ObjectDoesNotExist:
+                task.solved_by += 1
+
             if package.verdict == verdict[True]:
                 package.solved = True
 
@@ -80,4 +86,3 @@ class ArchivePackageView(LoginRequiredMixin, TemplateResponseMixin, View):
                 return render(request, 'packages/archive_package_detail.html', {'task': task, 'package': package})
             else:
                 return render(request, self.template_name, {'task': task, 'packages': packages})
-
