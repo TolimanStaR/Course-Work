@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account/migrations/0009_userprofile_instructor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/migrations/0004_auto_20200416_2152.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/migrations/0005_auto_20200416_2202.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/templates/courses/manage/course/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Coursework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Coursework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/braces/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/braces/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/braces/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/braces/views/_access.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/braces/views/_ajax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/braces/views/_forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/braces/views/_other.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/braces/views/_queries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django_braces-1.14.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django_braces-1.14.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django_braces-1.14.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django_braces-1.14.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django_braces-1.14.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django_braces-1.14.0.dist-info/pbr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django_braces-1.14.0.dist-info/top_level.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,14 +149,7 @@
       <workItem from="1586810621851" duration="54000" />
       <workItem from="1586841663474" duration="9644000" />
       <workItem from="1586951411538" duration="17527000" />
-      <workItem from="1587022809853" duration="17304000" />
-    </task>
-    <task id="LOCAL-00016" summary="Account App is ready to battle!!!">
-      <created>1585945349990</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1585945349990</updated>
+      <workItem from="1587022809853" duration="18482000" />
     </task>
     <task id="LOCAL-00017" summary="add Article model">
       <created>1585946437197</created>
@@ -486,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587062379153</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Mixins and base course manage handlers">
+      <created>1587067300480</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1587067300480</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +502,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="register bug fixed (not correct orm request linked with last participant stats array initialising)" />
     <MESSAGE value="Contest detail" />
     <MESSAGE value="Packages done" />
     <MESSAGE value="Contest list changes and waiting room" />
@@ -519,7 +526,8 @@
     <MESSAGE value="Start to develop a courses manager app" />
     <MESSAGE value="Several models for content and items" />
     <MESSAGE value="Own counting field" />
-    <option name="LAST_COMMIT_MESSAGE" value="Own counting field" />
+    <MESSAGE value="Mixins and base course manage handlers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mixins and base course manage handlers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -538,18 +546,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1587062377059">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1587067298166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587062377059" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587067298166" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1586722573783" />
-    <state x="491" y="169" key="SettingsEditor" timestamp="1586611797941">
+    <state x="491" y="169" key="SettingsEditor" timestamp="1587067941152">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586611797941" />
+    <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1587067941152" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587022817334">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
