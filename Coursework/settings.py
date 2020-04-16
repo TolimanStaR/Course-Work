@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'archive.apps.ArchiveConfig',
     'contest.apps.ContestConfig',
-    'education.apps.EducationConfig',
+    'courses.apps.CoursesConfig',
     'main.apps.MainConfig',
     'management.apps.ManagementConfig',
     'rating.apps.RatingConfig',

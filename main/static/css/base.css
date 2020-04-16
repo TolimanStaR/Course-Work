@@ -3,6 +3,9 @@ body {
     padding: 0;
     font-family: "Century Gothic", sans-serif;
     background-color: #FFFFFF;
+    background-image: url(https://www.aparici.com/wp-content/uploads/2017/11/AREA-BLANCO-ORNATO-550.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 div {
@@ -112,4 +115,14 @@ th {
 td {
     border: 1px solid #2c2c2c;
     padding: 5px;
+}
+
+pre {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-family: "Lucida Console", sans-serif;
+    letter-spacing: 0;
 }

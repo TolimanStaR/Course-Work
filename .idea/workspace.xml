@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/courses/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/task_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coursework/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/archive_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/archive_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,14 +145,8 @@
       <workItem from="1586798795351" duration="10538000" />
       <workItem from="1586810621851" duration="54000" />
       <workItem from="1586841663474" duration="9644000" />
-      <workItem from="1586951411538" duration="15395000" />
-    </task>
-    <task id="LOCAL-00012" summary="almost end account app">
-      <created>1585858675773</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1585858675773</updated>
+      <workItem from="1586951411538" duration="17527000" />
+      <workItem from="1587022809853" duration="10507000" />
     </task>
     <task id="LOCAL-00013" summary="user image in profile div">
       <created>1585860414236</created>
@@ -482,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586968350001</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Contest app seems to be ready to battle, but it's a trap">
+      <created>1586971774930</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1586971774930</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +499,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="waste time for detail view" />
     <MESSAGE value="Fixed detail view, now it works how it must works" />
     <MESSAGE value="Contest solution sending and package list but now it have no effect" />
     <MESSAGE value="Some models upgrade" />
@@ -515,7 +523,8 @@
     <MESSAGE value="Rating count. Simple, but logical algorithm" />
     <MESSAGE value="ranks giveaway!" />
     <MESSAGE value="Fixed exception with os working path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed exception with os working path" />
+    <MESSAGE value="Contest app seems to be ready to battle, but it's a trap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contest app seems to be ready to battle, but it's a trap" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -534,10 +543,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586968346774">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1586971772634">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586968346774" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586971772634" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -546,10 +555,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586611797941" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1586954444850">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587022817334">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586954444850" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1587022817334" />
     <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586715494792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
