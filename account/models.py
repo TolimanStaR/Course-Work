@@ -46,5 +46,7 @@ class UserProfile(models.Model):
     contest_rang = models.CharField(max_length=45, default=RANG_CHOICES[0][0], choices=RANG_CHOICES)
     contest_rang_color = models.CharField(default=COLOR_CHOICES[0][0], max_length=10, choices=COLOR_CHOICES)
 
+    instructor = models.BooleanField(default=False)
+
     def __str__(self):
         return f'{self.user.username}'

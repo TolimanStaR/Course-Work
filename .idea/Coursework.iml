@@ -29,6 +29,7 @@
         <option value="$MODULE_DIR$/account/templates" />
         <option value="$MODULE_DIR$/contest/templates" />
         <option value="$MODULE_DIR$/archive/templates" />
+        <option value="$MODULE_DIR$/courses/templates" />
       </list>
     </option>
   </component>
