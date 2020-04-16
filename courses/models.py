@@ -5,6 +5,7 @@ from django.db import models
 from account.models import UserProfile
 
 from management.models import TaskBase
+from management.fields import OrderField
 
 MAX_CHAR_LENGTH = 300
 
@@ -94,7 +95,7 @@ class ItemBase(models.Model):
         abstract = True
 
     def __str__(self):
-        return f'{self.title}'
+        return f'{self.item_title}'
 
 
 class Text(ItemBase):

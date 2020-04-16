@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/migrations/0002_auto_20200416_2100.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/migrations/0003_auto_20200416_2119.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/fields.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
     </list>
@@ -19,8 +20,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -134,14 +135,7 @@
       <workItem from="1586810621851" duration="54000" />
       <workItem from="1586841663474" duration="9644000" />
       <workItem from="1586951411538" duration="17527000" />
-      <workItem from="1587022809853" duration="12164000" />
-    </task>
-    <task id="LOCAL-00014" summary="+ custom user profile and users list">
-      <created>1585864878725</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1585864878725</updated>
+      <workItem from="1587022809853" duration="13346000" />
     </task>
     <task id="LOCAL-00015" summary="Ура у меня день рождения)))">
       <created>1585866107143</created>
@@ -479,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587059572425</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Several models for content and items">
+      <created>1587061209069</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1587061209069</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +488,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Contest solution sending and package list but now it have no effect" />
     <MESSAGE value="Some models upgrade" />
     <MESSAGE value="register bug fixed (not correct orm request linked with last participant stats array initialising)" />
     <MESSAGE value="Contest detail" />
@@ -512,7 +512,8 @@
     <MESSAGE value="Fixed exception with os working path" />
     <MESSAGE value="Contest app seems to be ready to battle, but it's a trap" />
     <MESSAGE value="Start to develop a courses manager app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start to develop a courses manager app" />
+    <MESSAGE value="Several models for content and items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Several models for content and items" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -531,10 +532,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1587059569017">
+    <state x="523" y="120" key="CommitChangelistDialog2" timestamp="1587061206996">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587059569017" />
+    <state x="523" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587061206996" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
