@@ -1,0 +1,23 @@
+{% extends 'courses/course_frame.html' %}
+
+{% block title %}Управление курсами{% endblock %}
+
+{% block course_content %}
+    <p>В данний момент вы являетесь инструктором на следующих курсах:</p>
+    <div>
+        {% for course in object_list %}
+            <div>
+                <h3>{{ course.title }}</h3>
+                <p>
+                    <a href="{% url 'course_edit' course.id %}">Перейти к управлению курсом</a>
+                    <a href="{% url 'course_delete' course.id %}">Удалить курс</a>
+                </p>
+            </div>
+        {% empty %}
+            <p>У вас пока что нет собственных курсов.</p>
+        {% endfor %}
+        <p>
+            <a href="{% url 'course_create' %}">Создать новый курс</a>
+        </p>
+    </div>
+{% endblock %}

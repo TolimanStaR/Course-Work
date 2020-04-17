@@ -29,7 +29,7 @@ class OwnerMixin(object):
 class OwnerEditMixin(object):
     def form_valid(self, form):
         form.instance.owner = self.request.user.user_profile
-        return super(OwnerEditMixin, self).form_valid()
+        return super(OwnerEditMixin, self).form_valid(form)
 
 
 class OwnerCourseMixin(OwnerMixin, LoginRequiredMixin):
