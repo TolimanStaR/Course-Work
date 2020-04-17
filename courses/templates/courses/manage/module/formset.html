@@ -1,0 +1,16 @@
+{% extends 'courses/course_frame.html' %}
+
+{% block title %}Управление курсом "{{ course.title }}"{% endblock %}
+
+{% block course_content %}
+    <p>Редактирование "{{ course.title }}"</p>
+    <div>
+        <h3>Модули курса</h3>
+        <form action="" method="post">
+            {{ formset }}
+            {{ formset.management_form }}
+            {% csrf_token %}
+            <input type="submit" class="button" value="Подтвердить изменения">
+        </form>
+    </div>
+{% endblock %}
