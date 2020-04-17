@@ -48,22 +48,22 @@ class ManageCourseListView(OwnerCourseMixin, ListView):
     template_name = 'courses/manage/course/list.html'
 
 
-class CourseCreateView(OwnerCourseEditMixin,
-                       CreateView,
-                       GroupRequiredMixin):
+class CourseCreateView(GroupRequiredMixin,
+                       OwnerCourseEditMixin,
+                       CreateView, ):
+    group_required = u"Instructor"
+
+
+class CourseUpdateView(GroupRequiredMixin,
+                       OwnerCourseEditMixin,
+                       UpdateView, ):
     group_required = u'Instructor'
 
 
-class CourseUpdateView(OwnerCourseEditMixin,
-                       UpdateView,
-                       GroupRequiredMixin):
-    group_required = u'Instructor'
-
-
-class CourseDeleteView(OwnerCourseMixin,
-                       UpdateView,
-                       GroupRequiredMixin):
+class CourseDeleteView(GroupRequiredMixin,
+                       OwnerCourseMixin,
+                       DeleteView, ):
     template_name = 'courses/manage/course/delete.html'
     success_url = reverse_lazy('manage_course_list')
-    
+
     group_required = u'Instructor'
