@@ -1,0 +1,27 @@
+{% extends 'courses/course_frame.html' %}
+
+{% block title %}
+    {% if object %}
+        Управление контентом "{{ object.title }}"
+    {% else %}
+        Добавить контент
+    {% endif %}
+{% endblock %}
+
+{% block course_content %}
+    <p>
+        {% if object %}
+            Управление контентом "{{ object.title }}"
+        {% else %}
+            Добавить контент
+        {% endif %}
+    </p>
+    <div>
+        <p>Информация о курсе</p>
+        <form action="" method="post" enctype="multipart/form-data">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <p><input type="submit" value="Сохранить контент"></p>
+        </form>
+    </div>
+{% endblock %}

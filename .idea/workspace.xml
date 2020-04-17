@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/templates/courses/manage/module/formset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/templates/courses/manage/content/form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/course/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/course/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
     </list>
@@ -138,14 +137,7 @@
       <workItem from="1586841663474" duration="9644000" />
       <workItem from="1586951411538" duration="17527000" />
       <workItem from="1587022809853" duration="20050000" />
-      <workItem from="1587127698691" duration="9584000" />
-    </task>
-    <task id="LOCAL-00020" summary="ammm... idk">
-      <created>1586039906427</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1586039906427</updated>
+      <workItem from="1587127698691" duration="11030000" />
     </task>
     <task id="LOCAL-00021" summary="Comment system">
       <created>1586104258288</created>
@@ -483,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587157146595</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Content manager for each module">
+      <created>1587161024044</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1587161024044</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +490,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Contest start and end custom handler" />
     <MESSAGE value="start to develop management app" />
     <MESSAGE value="Поддержка python, c, c++" />
     <MESSAGE value="Added pypy :)" />
@@ -516,7 +514,8 @@
     <MESSAGE value="Group &quot;Instructor&quot; permissions and group required mixins from django-braces" />
     <MESSAGE value="Course create, edit and delete templates" />
     <MESSAGE value="Fixed group permission mixins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed group permission mixins" />
+    <MESSAGE value="Content manager for each module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Content manager for each module" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -535,10 +534,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587157144354">
+    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587161021935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587157144354" />
+    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587161021935" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
