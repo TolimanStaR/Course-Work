@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/templates/courses/manage/content/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/templates/courses/manage/module/content_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management/templatetags/course.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
@@ -20,8 +22,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -137,14 +139,8 @@
       <workItem from="1586841663474" duration="9644000" />
       <workItem from="1586951411538" duration="17527000" />
       <workItem from="1587022809853" duration="20050000" />
-      <workItem from="1587127698691" duration="11030000" />
-    </task>
-    <task id="LOCAL-00021" summary="Comment system">
-      <created>1586104258288</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1586104258288</updated>
+      <workItem from="1587127698691" duration="11068000" />
+      <workItem from="1587215095124" duration="4024000" />
     </task>
     <task id="LOCAL-00022" summary="Pagination">
       <created>1586113542905</created>
@@ -482,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587161024044</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Module content create, update and delete">
+      <created>1587162472341</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1587162472341</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="start to develop management app" />
     <MESSAGE value="Поддержка python, c, c++" />
     <MESSAGE value="Added pypy :)" />
     <MESSAGE value="fix launch command and add subprocess usage for launch solutions" />
@@ -515,7 +517,8 @@
     <MESSAGE value="Course create, edit and delete templates" />
     <MESSAGE value="Fixed group permission mixins" />
     <MESSAGE value="Content manager for each module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Content manager for each module" />
+    <MESSAGE value="Module content create, update and delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module content create, update and delete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -534,10 +537,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587161021935">
+    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587162470266">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587161021935" />
+    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587162470266" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -546,10 +549,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1587067941152" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587128708735">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587215102133">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1587128708735" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1587215102133" />
     <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586715494792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
