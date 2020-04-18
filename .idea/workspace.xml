@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/images/7cae2418ed6d62bfcd2221c6154c7ac877273bee.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/education/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/course/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/course/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coursework/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/templatetags/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templatetags/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/templatetags/course.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templatetags/course.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,14 +146,7 @@
       <workItem from="1586951411538" duration="17527000" />
       <workItem from="1587022809853" duration="20050000" />
       <workItem from="1587127698691" duration="11068000" />
-      <workItem from="1587215095124" duration="5827000" />
-    </task>
-    <task id="LOCAL-00023" summary="Main app is ready to battle!!!">
-      <created>1586114689572</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1586114689572</updated>
+      <workItem from="1587215095124" duration="6854000" />
     </task>
     <task id="LOCAL-00024" summary="Contest, abstract models: task, sol.case, test">
       <created>1586184187935</created>
@@ -487,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587219269266</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="CMS system is ready to battle?">
+      <created>1587221033447</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1587221033447</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +499,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added pypy :)" />
     <MESSAGE value="fix launch command and add subprocess usage for launch solutions" />
     <MESSAGE value="Task check manager almost ready" />
     <MESSAGE value="Fix string compare" />
@@ -520,7 +523,8 @@
     <MESSAGE value="Content manager for each module" />
     <MESSAGE value="Module content create, update and delete" />
     <MESSAGE value="Content manage templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Content manage templates" />
+    <MESSAGE value="CMS system is ready to battle?" />
+    <option name="LAST_COMMIT_MESSAGE" value="CMS system is ready to battle?" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -539,10 +543,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587219266336">
+    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587221031215">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587219266336" />
+    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587221031215" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
