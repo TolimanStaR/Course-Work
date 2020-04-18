@@ -14,6 +14,12 @@ from braces.views import GroupRequiredMixin
 from .models import Course, Module, Content
 from .forms import ModuleFormSet
 
+#
+from braces.views import CsrfExemptMixin, JsonRequestResponseMixin
+
+
+#
+
 
 class OwnerMixin(object):
     def get_queryset(self):
@@ -124,7 +130,7 @@ class ContentCreateUpdateView(TemplateResponseMixin, View):
         return super(ContentCreateUpdateView, self).dispatch(request, module_id, model_name, id)
 
     def get(self, request, module_id, model_name, id=None):
-        form = self.get_form(self.model, instance=self.obj, data=request.POST, files=request.FILES)
+        form = self.get_form(self.model, instance=self.obj)
         return self.render_to_response({'form': form, 'object': self.obj})
 
     def post(self, request, module_id, model_name, id=None):
@@ -161,3 +167,24 @@ class ModuleContentListView(TemplateResponseMixin, View):
         module = get_object_or_404(Module, id=module_id, course__owner=request.user.user_profile)
 
         return self.render_to_response({'module': module})
+
+
+###################
+
+
+class ModuleOrderView(CsrfExemptMixin, JsonRequestResponseMixin, View):
+    def post(self, request):
+        for id, order in self.request_json.items():
+            Module.objects.filter(id=id, course__owner=request.user.user_profile).update(order=order)
+
+        return self.render_json_response({'saved': 'OK'})
+
+
+class ContentOrderView(CsrfExemptMixin, JsonRequestResponseMixin, View):
+    def post(self, request):
+        for id, order in self.request_json.items():
+            Content.objects.filter(id=id, module__course__owner=request.user.user_profile).update(order=order)
+
+        return self.render_json_response({'saved': 'OK'})
+
+###################

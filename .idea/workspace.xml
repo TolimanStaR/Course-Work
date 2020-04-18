@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/templates/courses/manage/module/content_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/templatetags/course.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/7cae2418ed6d62bfcd2221c6154c7ac877273bee.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/course/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/course/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/templatetags/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templatetags/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/templatetags/course.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templatetags/course.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,12 +61,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\Проекты\Coursework\media\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Проекты\Coursework\courses" />
       <recent name="G:\Проекты\Coursework\courses\templates" />
       <recent name="G:\Проекты\Coursework\account\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Проекты\Coursework\media\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -140,14 +142,7 @@
       <workItem from="1586951411538" duration="17527000" />
       <workItem from="1587022809853" duration="20050000" />
       <workItem from="1587127698691" duration="11068000" />
-      <workItem from="1587215095124" duration="4024000" />
-    </task>
-    <task id="LOCAL-00022" summary="Pagination">
-      <created>1586113542905</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1586113542905</updated>
+      <workItem from="1587215095124" duration="5827000" />
     </task>
     <task id="LOCAL-00023" summary="Main app is ready to battle!!!">
       <created>1586114689572</created>
@@ -485,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587162472341</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Content manage templates">
+      <created>1587219269265</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1587219269266</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +495,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Поддержка python, c, c++" />
     <MESSAGE value="Added pypy :)" />
     <MESSAGE value="fix launch command and add subprocess usage for launch solutions" />
     <MESSAGE value="Task check manager almost ready" />
@@ -518,7 +519,8 @@
     <MESSAGE value="Fixed group permission mixins" />
     <MESSAGE value="Content manager for each module" />
     <MESSAGE value="Module content create, update and delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Module content create, update and delete" />
+    <MESSAGE value="Content manage templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Content manage templates" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -537,10 +539,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587162470266">
+    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587219266336">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587162470266" />
+    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587219266336" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -557,10 +559,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1586715494792" />
-    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1587151019047">
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1587220845802">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587151019047" />
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587220845802" />
     <state x="202" y="442" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585768586733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
