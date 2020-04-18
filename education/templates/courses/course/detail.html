@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block title %}{{ object.title }}{% endblock %}
+
+{% block content %}
+    {% with subject=course.subject %}
+        <h3>{{ object.title }}</h3>
+        <p><a href="{% url 'course_list_subject' subject.slug %}">{{ subject.title }}</a></p>
+        <p>Преподаватель: <a href="{% url 'profile' course.owner %}">{{ course.owner }}</a></p>
+        <p>{{ object.overview }}</p>
+    {% endwith %}
+{% endblock %}
