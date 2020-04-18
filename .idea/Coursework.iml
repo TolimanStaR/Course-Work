@@ -30,6 +30,7 @@
         <option value="$MODULE_DIR$/contest/templates" />
         <option value="$MODULE_DIR$/archive/templates" />
         <option value="$MODULE_DIR$/courses/templates" />
+        <option value="$MODULE_DIR$/education/templates" />
       </list>
     </option>
   </component>
