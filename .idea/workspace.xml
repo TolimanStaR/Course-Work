@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/migrations/0006_course_students.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/education/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/task_c.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/templates/courses/course/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/courses/course/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/education/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/education/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/views.py" afterDir="false" />
     </list>
@@ -143,14 +140,7 @@
       <workItem from="1587022809853" duration="20050000" />
       <workItem from="1587127698691" duration="11068000" />
       <workItem from="1587215095124" duration="19054000" />
-      <workItem from="1587304892846" duration="3160000" />
-    </task>
-    <task id="LOCAL-00027" summary="Register models. Now thinking about foreign keys">
-      <created>1586255300684</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1586255300684</updated>
+      <workItem from="1587304892846" duration="4774000" />
     </task>
     <task id="LOCAL-00028" summary="Contest app templates">
       <created>1586259633309</created>
@@ -488,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587240506605</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Course subscribe handler">
+      <created>1587310283516</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1587310283520</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed penalty calculation" />
     <MESSAGE value="Get handler for waiting room" />
     <MESSAGE value="Start to do archive app" />
     <MESSAGE value="Archive app almost ready" />
@@ -521,7 +517,8 @@
     <MESSAGE value="education app" />
     <MESSAGE value="Course catalog list and detail handlers" />
     <MESSAGE value="Course list and detail pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Course list and detail pages" />
+    <MESSAGE value="Course subscribe handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Course subscribe handler" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -540,10 +537,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587240503618">
+    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587310278924">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587240503618" />
+    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587310278924" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

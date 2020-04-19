@@ -16,5 +16,5 @@ urlpatterns = [
 
     path('subscribe/',
          views.UserSubscribeCourseView,
-         'user_subscribe_course')
+         name='user_subscribe_course')
 ]
