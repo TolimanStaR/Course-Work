@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/education/templates/courses/course/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/migrations/0006_course_students.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/education/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education/templates/courses/course/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/courses/course/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/task_c.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/education/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,14 +142,8 @@
       <workItem from="1586951411538" duration="17527000" />
       <workItem from="1587022809853" duration="20050000" />
       <workItem from="1587127698691" duration="11068000" />
-      <workItem from="1587215095124" duration="17989000" />
-    </task>
-    <task id="LOCAL-00026" summary="All models has created (contest app)">
-      <created>1586189785294</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1586189785294</updated>
+      <workItem from="1587215095124" duration="19054000" />
+      <workItem from="1587304892846" duration="3160000" />
     </task>
     <task id="LOCAL-00027" summary="Register models. Now thinking about foreign keys">
       <created>1586255300684</created>
@@ -485,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587229670178</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Course list and detail pages">
+      <created>1587240506604</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1587240506605</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +496,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fix string compare" />
     <MESSAGE value="Fixed penalty calculation" />
     <MESSAGE value="Get handler for waiting room" />
     <MESSAGE value="Start to do archive app" />
@@ -518,7 +520,8 @@
     <MESSAGE value="CMS system is ready to battle?" />
     <MESSAGE value="education app" />
     <MESSAGE value="Course catalog list and detail handlers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Course catalog list and detail handlers" />
+    <MESSAGE value="Course list and detail pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Course list and detail pages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
@@ -537,10 +540,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587229667578">
+    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587240503618">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587229667578" />
+    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587240503618" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586722573783">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -549,18 +552,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1587067941152" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587215102133">
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587304918835">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1587215102133" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1587304918835" />
     <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586715494792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1586715494792" />
-    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1587220845802">
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1587308668165">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587220845802" />
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587308668165" />
     <state x="202" y="442" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585768586733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

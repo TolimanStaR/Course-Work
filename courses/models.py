@@ -32,6 +32,10 @@ class Course(models.Model):
                                 related_name='courses',
                                 )
 
+    students = models.ManyToManyField(UserProfile,
+                                      related_name='courses',
+                                      blank=True)
+
     title = models.CharField(max_length=MAX_CHAR_LENGTH)
     slug = models.SlugField(max_length=MAX_CHAR_LENGTH, unique=True, blank=True)
     overview = models.TextField()

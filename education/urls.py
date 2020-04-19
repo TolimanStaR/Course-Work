@@ -13,4 +13,8 @@ urlpatterns = [
     path('course/<slug:slug>/',
          views.CourseDetailView.as_view(),
          name='course_detail'),
+
+    path('subscribe/',
+         views.UserSubscribeCourseView,
+         'user_subscribe_course')
 ]
