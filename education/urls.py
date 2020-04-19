@@ -16,5 +16,17 @@ urlpatterns = [
 
     path('subscribe/',
          views.UserSubscribeCourseView,
-         name='user_subscribe_course')
+         name='user_subscribe_course'),
+
+    path('courses/',
+         views.UserCourseListView.as_view(),
+         name='user_course_list'),
+
+    path('course/<int:pk>/',
+         views.UserCourseDetailView.as_view(),
+         name='user_course_detail'),
+
+    path('course/<int:pk>/<module_id>/',
+         views.UserCourseDetailView.as_view(),
+         name='user_course_detail_module'),
 ]
