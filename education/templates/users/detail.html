@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    {{ object.title }}
+{% endblock %}
+
+{% block content %}
+    <h3>{{ module.title }}</h3>
+    <div>
+        <h3>Модули: </h3>
+        <ul>
+            {% for module__ in object.modules.all %}
+                <li>
+                {% if module__ == module %}
+                    <p>Вы сейчас здесь</p>
+                {% endif %}
+                <a href="{% url "user_course_detail_module" object.id module__.id %}">
+                    Модуль {{ module__.order|add:1 }}
+                    <br>
+                    {{ module__.title }}
+                </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        {% for content in module.contents.all %}
+            {% with item=content.item %}
+                {{ item.render }}
+            {% endwith %}
+        {% endfor %}
+    </div>
+{% endblock %}

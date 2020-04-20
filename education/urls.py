@@ -15,7 +15,7 @@ urlpatterns = [
          name='course_detail'),
 
     path('subscribe/',
-         views.UserSubscribeCourseView,
+         views.UserSubscribeCourseView.as_view(),
          name='user_subscribe_course'),
 
     path('courses/',
@@ -26,7 +26,7 @@ urlpatterns = [
          views.UserCourseDetailView.as_view(),
          name='user_course_detail'),
 
-    path('course/<int:pk>/<module_id>/',
+    path('course/<int:pk>/<int:module_id>/',
          views.UserCourseDetailView.as_view(),
          name='user_course_detail_module'),
 ]

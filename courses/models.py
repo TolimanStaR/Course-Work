@@ -7,6 +7,9 @@ from account.models import UserProfile
 from management.models import TaskBase
 from management.fields import OrderField
 
+from django.template.loader import render_to_string
+from django.utils.safestring import mark_safe
+
 MAX_CHAR_LENGTH = 300
 
 
@@ -101,6 +104,10 @@ class ItemBase(models.Model):
     item_title = models.CharField(max_length=MAX_CHAR_LENGTH)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+    def render(self):
+        return render_to_string('courses/content/{}.html'.format(
+            self._meta.model_name), {'item': self})
 
     class Meta:
         abstract = True
