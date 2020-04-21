@@ -59,13 +59,13 @@ class Module(models.Model):
 
     title = models.CharField(max_length=MAX_CHAR_LENGTH)
     description = models.TextField(blank=True)
-    order = OrderField(blank=True, for_fields=['course'], default=0)
+    order = OrderField(blank=True, for_fields=['course'])
 
     class Meta:
-        ordering = ['order', ]
+        ordering = ['order']
 
     def __str__(self):
-        return f'{self.order} Модуль {self.title} курса {self.course.title}'
+        return f'Модуль {self.title} курса {self.course.title}'
 
 
 class Content(models.Model):
@@ -87,11 +87,11 @@ class Content(models.Model):
                                          )})
 
     object_id = models.PositiveIntegerField()
-    item = GenericForeignKey('content_type', 'object_id', )
-    order = OrderField(blank=True, for_fields=['module'], default=True)
+    item = GenericForeignKey('content_type', 'object_id')
+    order = OrderField(blank=True, for_fields=['module'])
 
     class Meta:
-        ordering = ['order', ]
+        ordering = ['order']
 
 
 class ItemBase(models.Model):
