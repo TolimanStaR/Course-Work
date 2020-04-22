@@ -8,7 +8,7 @@
         <ul class="navbar">
             <li><a href="{% url 'profile' user.username %}">Личный кабинет</a></li>
             <li><a href="{% url 'profile_packages' username=user.username %}">Посылки</a></li>
-            <li><a href="">Курсы</a></li>
+            <li><a href="{% url 'user_course_list' %}">Курсы</a></li>
             {% if user == request.user %}
                 <li><a href="{% url 'change_password' %}">Сменить пароль</a></li>
                 <li><a href="{% url 'edit' %}">Редактировать аккаунт</a></li>

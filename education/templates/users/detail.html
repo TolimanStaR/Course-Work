@@ -11,14 +11,14 @@
         <ul>
             {% for module__ in object.modules.all %}
                 <table>
+                    <a href="{% url "user_course_detail_module" object.id module__.id %}">
+                        Модуль {{ module__.order|add:1 }}
+                        <br>
+                        {{ module__.title }}
+                    </a>
                 {% if module__ == module %}
-                    <p>Вы сейчас здесь</p>
-                {% endif %}
-                <a href="{% url "user_course_detail_module" object.id module__.id %}">
-                    Модуль {{ module__.order|add:1 }}
-                    <br>
-                    {{ module__.title }}
-                </a>
+                            <<< Вы сейчас здесь
+                        {% endif %}
                 </table>
             {% endfor %}
         </ul>

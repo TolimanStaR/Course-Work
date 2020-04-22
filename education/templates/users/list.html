@@ -7,7 +7,7 @@
     <div>
         {% for course in object_list %}
             <p>{{ course.title }}</p>
-            <p><a href="{% url 'user_course_detail_module' pk=course.pk module_id=0%}">Продолжить обучение</a></p>
+            <p><a href="{% url 'user_course_detail_module' pk=course.pk module_id=course.modules.all.0.id %}">Продолжить обучение</a></p>
         {% empty %}
             <p>
                 Вы пока не записаны ни на один из курсов.
