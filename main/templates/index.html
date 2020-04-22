@@ -7,40 +7,41 @@
     <link href="{% static "css/base.css" %}" rel="stylesheet">
 </head>
 <body>
-<div class="header">
-    <div class="logo">
-        OLYMPUS
-        <div style="color: #999999;">PROGRAMMING</div>
+<div class="wrapper">
+    <div class="header">
+        <div class="logo">
+            OLYMPUS
+            <div style="color: #999999;">PROGRAMMING</div>
+        </div>
+        <div class="account">
+            {% if request.user.is_authenticated %}
+                <img class="image" src="{{ request.user.user_profile.profile_image.url }}"
+                     alt="Аватар">
+                <p><a href="{% url "profile" request.user.username %}">{{ request.user.username }}</a></p>
+                <p><a href="{% url "logout" %}">Выйти</a></p>
+            {% else %}
+                <p><a href="{% url "login" %}">Войти</a></p>
+            {% endif %}
+        </div>
     </div>
-    <div class="account">
-        {% if request.user.is_authenticated %}
-            <img class="image" src="{{ request.user.user_profile.profile_image.url }}"
-                 alt="Аватар">
-            <p><a href="{% url "profile" request.user.username %}">{{ request.user.username }}</a></p>
-            <p><a href="{% url "logout" %}">Выйти</a></p>
-        {% else %}
-            <p><a href="{% url "login" %}">Войти</a></p>
-        {% endif %}
-    </div>
-</div>
-<div class="navigation">
-    <ul class="navbar">
-        <li><a href="{% url 'article_list' %}">Новости</a></li>
-        <li><a href="{% url 'contest_list' %}">Соревнования</a></li>
-        <li><a href="{% url 'archive_task_list' %}">Архив задач</a></li>
-        <li><a href="#">Рейтинг</a></li>
-        <li><a href="{% url 'course_list' %}">Образование</a></li>
-        <li><a href="{% url 'manage_course_list' %}">Преподавание</a></li>
-    </ul>
-</div>
-{% if messages %}
     <div class="navigation">
-        <ul class="navbar" style="background-color: #5fff5e">
-            {% for message in messages %}
-                <li style="color: white;">
-                    {{ message|safe }}
-                    <a href="#"></a>
-                </li>
+        <ul class="navbar">
+            <li><a href="{% url 'article_list' %}">Новости</a></li>
+            <li><a href="{% url 'contest_list' %}">Соревнования</a></li>
+            <li><a href="{% url 'archive_task_list' %}">Архив задач</a></li>
+            <li><a href="#">Рейтинг</a></li>
+            <li><a href="{% url 'course_list' %}">Образование</a></li>
+            <li><a href="{% url 'course_main_page' %}">Преподавание</a></li>
+        </ul>
+    </div>
+    {% if messages %}
+        <div class="navigation">
+            <ul class="navbar" style="background-color: #5fff5e">
+                {% for message in messages %}
+                    <li style="color: white;">
+                        {{ message|safe }}
+                        <a href="#"></a>
+                    </li>
             {% endfor %}
         </ul>
     </div>
@@ -48,5 +49,12 @@
 <div class="content">
     {% block content %}{% endblock %}
 </div>
+</div>
+<footer class="footer">
+    <hr>
+    <div class="footer">
+        <p>Olympus Programming, 2020</p>
+    </div>
+</footer>
 </body>
 </html>

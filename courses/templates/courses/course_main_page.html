@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+
+{% block title %}Создавайте свои курсы{% endblock %}
+
+{% block content %}
+    <p>Наша платформа предоставляет возможность пользователям самим создавать обучающие курсы!</p>
+    <p><a href="{% url 'manage_course_list' %}">Перейти к созданию курсов</a> | <a href="{% url 'instructor_rates' %}">Посмотреть
+        тарифы</a></p>
+{% endblock %}

@@ -8,6 +8,15 @@ body {
     background-attachment: fixed;
 }
 
+body, html {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    padding-bottom: 70px;
+}
+
 div {
     display: block;
 }
@@ -32,6 +41,11 @@ div {
 
 .account p a {
     color: white;
+}
+
+a.logo {
+    color: white;
+    display: block;
 }
 
 div.message {
@@ -125,4 +139,17 @@ pre {
 code {
     font-family: "Lucida Console", sans-serif;
     letter-spacing: 0;
+}
+
+.footer {
+    height: 50px;
+    margin-top: -50px;
+}
+
+hr {
+    width: 80%;
+}
+
+div.footer {
+    margin: 2% 10%;
 }

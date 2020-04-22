@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'management.apps.ManagementConfig',
     'rating.apps.RatingConfig',
-    # 'grappelli',
     'embed_video',
     'django.contrib.admin',
     'django.contrib.auth',

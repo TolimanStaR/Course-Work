@@ -2,8 +2,8 @@ from django.urls import reverse_lazy
 from django.forms.models import modelform_factory
 from django.apps import apps
 from django.views.generic.list import ListView
-from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from django.views.generic.base import TemplateResponseMixin, View
+from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
+from django.views.generic.base import TemplateResponseMixin, View, TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 
 from django.shortcuts import render, redirect, get_object_or_404
@@ -12,7 +12,25 @@ from django.views.generic.list import ListView
 from braces.views import GroupRequiredMixin
 
 from .models import Course, Module, Content
-from .forms import ModuleFormSet
+from .forms import ModuleFormSet, GetInstructorRate
+
+
+class CourseMainPageView(TemplateView):
+    template_name = 'courses/course_main_page.html'
+
+
+class CourseInstructorRatesView(TemplateView):
+    template_name = 'courses/instructor_rates.html'
+
+
+class CourseGetInstructorRateView(LoginRequiredMixin, FormView):
+    form_class = GetInstructorRate
+
+    def form_valid(self, form):
+        pass
+
+    def get_success_url(self):
+        pass
 
 
 class OwnerMixin(object):

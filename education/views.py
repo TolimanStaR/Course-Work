@@ -41,8 +41,9 @@ class CourseDetailView(DetailView):
         context['subscribe_form'] = CourseSubscribeForm(initial={'course': self.object})
         context['is_subscribed'] = False
 
-        if self.request.user.user_profile in [x for x in self.object.students.all()]:
-            context['is_subscribed'] = True
+        if self.request.user.is_authenticated:
+            if self.request.user.user_profile in [x for x in self.object.students.all()]:
+                context['is_subscribed'] = True
 
         return context
 

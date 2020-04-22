@@ -9,3 +9,7 @@ ModuleFormSet = inlineformset_factory(
     extra=2,
     can_delete=True,
 )
+
+
+class GetInstructorRate(forms.Form):
+    pass
