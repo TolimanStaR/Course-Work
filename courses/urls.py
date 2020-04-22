@@ -9,7 +9,11 @@ urlpatterns = [
     path('instructor_rates/',
          views.CourseInstructorRatesView.as_view(),
          name='instructor_rates'),
-    
+
+    path('get_rate/',
+         views.CourseGetInstructorRateView.as_view(),
+         name='get_instructor_rate'),
+
     path('my_courses/',
          views.ManageCourseListView.as_view(),
          name='manage_course_list'),

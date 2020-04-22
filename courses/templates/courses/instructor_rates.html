@@ -4,4 +4,25 @@
 
 {% block content %}
     <p>Тарифные планы olympus предоставляют возможность создавать курсы и управлять ими.</p>
+    <br>
+    <p>Тариф "Преподаватель":</p>
+    <table>
+        <tr>
+            <th>Instructor</th>
+        </tr>
+        <tr>
+            <td>Создавать, редактировать, удалять курсы</td>
+        </tr>
+        <tr>
+            <td>Использование контента: Текст, ссылки, картинки, видео, файлы, листинги, задачи</td>
+        </tr>
+        <tr>
+            <td>Техническая поддержка</td>
+        </tr>
+    </table>
+    <form action="{% url 'get_instructor_rate' %}" method="post">
+        {{ rate_get_form }}
+        {% csrf_token %}
+        <input type="submit" class="button" value="Получить статус преподавателя">
+    </form>
 {% endblock %}

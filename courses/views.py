@@ -5,6 +5,7 @@ from django.views.generic.list import ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
 from django.views.generic.base import TemplateResponseMixin, View, TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.contrib.auth.models import Group
 
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic.list import ListView
@@ -22,15 +23,28 @@ class CourseMainPageView(TemplateView):
 class CourseInstructorRatesView(TemplateView):
     template_name = 'courses/instructor_rates.html'
 
+    def get_context_data(self, **kwargs):
+        context = super(CourseInstructorRatesView, self).get_context_data(**kwargs)\
+
+        context['rate_get_form'] = GetInstructorRate()
+        return context
+
 
 class CourseGetInstructorRateView(LoginRequiredMixin, FormView):
     form_class = GetInstructorRate
 
     def form_valid(self, form):
-        pass
+        instructor_group = Group.objects.get(name='Instructor')
+
+        self.request.user.groups.add(instructor_group)
+
+        self.request.user.user_profile.instructor = True
+        self.request.user.user_profile.save()
+
+        return super(CourseGetInstructorRateView, self).form_valid(form)
 
     def get_success_url(self):
-        pass
+        return reverse_lazy('manage_course_list')
 
 
 class OwnerMixin(object):
