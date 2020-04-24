@@ -1,3 +1,22 @@
 <h3>{{ item.title }}</h3>
 <p>Ограничение по времени: {{ item.time_limit }} сек.</p>
 <p>{{ item.body|linebreaks }}</p>
+<h4>Входные данные</h4>
+<p>{{ item.input }}</p>
+<h4>Выходные данные</h4>
+<p>{{ item.output }}</p>
+<table>
+    <tr>
+        <th>Пример входных данных</th>
+        <th>{{ item.tests.all.0.content }}</th>
+    </tr>
+    <tr>
+        <td>Результат</td>
+        <td>{{ item.tests.all.0.answer }}</td>
+    </tr>
+</table>
+<form action="{% url 'user_course_detail_module_task_check' %}" method="post" prefix="{{ item.title }}">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" class="button" value="Отправить на проверку">
+</form>

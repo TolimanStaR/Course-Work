@@ -1,6 +1,7 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404
 
+from django.contrib import messages
 from django.db.models import Count
 from django.urls import reverse_lazy
 from django.views.generic import FormView, ListView
@@ -97,3 +98,6 @@ class UserCourseCheckTaskView(LoginRequiredMixin, FormView):
 
     def form_valid(self, form):
         return super(UserCourseCheckTaskView, self).form_valid(form)
+
+    def get_success_url(self):
+        return reverse_lazy('user_course_detail_module', args=(self.kwargs['pk'], self.kwargs['module_id']))

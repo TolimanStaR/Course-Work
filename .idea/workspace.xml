@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="Add the models task, test, package for educational courses">
-      <change afterPath="$PROJECT_DIR$/account/migrations/0010_userprofile_is_staff.py" afterDir="false" />
+    <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/media/code_files/e5108b77560b8831a66e4343266714cf34af52e7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/templates/courses/instructor_rates.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/instructor_rates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/courses/content/code.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/content/code.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/courses/content/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/content/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,13 +154,7 @@
       <workItem from="1587728070150" duration="3000" />
       <workItem from="1587750455120" duration="3944000" />
       <workItem from="1587755413297" duration="177000" />
-    </task>
-    <task id="LOCAL-00035" summary="Bug fix + base rating/packages/tasks list for contest app">
-      <created>1586365312223</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1586365312223</updated>
+      <workItem from="1587755668325" duration="3393000" />
     </task>
     <task id="LOCAL-00036" summary="waste time for detail view">
       <created>1586382126107</created>
@@ -498,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587563677746</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Add the models task, test, package for educational courses">
+      <created>1587755732564</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1587755732565</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,10 +555,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1587755588310">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1587755730584">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587755588310" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587755730584" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1587755394815">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

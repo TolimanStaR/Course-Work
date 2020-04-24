@@ -29,4 +29,8 @@ urlpatterns = [
     path('course/<int:pk>/<int:module_id>/',
          views.UserCourseDetailView.as_view(),
          name='user_course_detail_module'),
+
+    path('course_check_solution/',
+         views.UserCourseCheckTaskView.as_view(),
+         name='user_course_detail_module_task_check'),
 ]
