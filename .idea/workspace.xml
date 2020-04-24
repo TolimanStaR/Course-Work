@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+    <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="Add the models task, test, package for educational courses">
       <change afterPath="$PROJECT_DIR$/account/migrations/0010_userprofile_is_staff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
@@ -55,9 +55,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../educa" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -152,7 +152,8 @@
       <workItem from="1587725302850" duration="254000" />
       <workItem from="1587726415070" duration="815000" />
       <workItem from="1587728070150" duration="3000" />
-      <workItem from="1587750455120" duration="3070000" />
+      <workItem from="1587750455120" duration="3944000" />
+      <workItem from="1587755413297" duration="177000" />
     </task>
     <task id="LOCAL-00035" summary="Bug fix + base rating/packages/tasks list for contest app">
       <created>1586365312223</created>
@@ -505,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ranks giveaway!" />
     <MESSAGE value="Fixed exception with os working path" />
     <MESSAGE value="Contest app seems to be ready to battle, but it's a trap" />
     <MESSAGE value="Start to develop a courses manager app" />
@@ -530,9 +530,14 @@
     <MESSAGE value="Good morning and it is good time to make courses app more advanced" />
     <MESSAGE value="Some templates and handlers for instructor role get" />
     <MESSAGE value="Ability to get &quot;Instructor&quot; group is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ability to get &quot;Instructor&quot; group is working" />
+    <MESSAGE value="Add the models task, test, package for educational courses" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the models task, test, package for educational courses" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="472" y="222" key="#Deployment/0.0.1920.1050@0.0.1920.1050" timestamp="1587755383922" />
     <state x="72" y="188" key="#Notifications" timestamp="1586454812093">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -549,14 +554,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" key="CommitChangelistDialog2" timestamp="1587563674434">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1587755588310">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587563674434" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1587490836835">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587755588310" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1587755394815">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1587490836835" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1587755394815" />
     <state width="1879" height="349" key="GridCell.Tab.0.bottom" timestamp="1587509649352">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -589,14 +594,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1879" height="349" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1587509649352" />
-    <state x="491" y="169" key="SettingsEditor" timestamp="1587390005364">
+    <state x="491" y="169" key="SettingsEditor" timestamp="1587755308726">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1587390005364" />
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587751245624">
+    <state x="491" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1587755308726" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1587751245624" />
+    <state x="614" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1587755706189" />
     <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586715494792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
