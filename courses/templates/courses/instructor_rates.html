@@ -20,9 +20,20 @@
             <td>Техническая поддержка</td>
         </tr>
     </table>
-    <form action="{% url 'get_instructor_rate' %}" method="post">
-        {{ rate_get_form }}
-        {% csrf_token %}
-        <input type="submit" class="button" value="Получить статус преподавателя">
-    </form>
+    <br>
+    {% if request.user.is_authenticated %}
+        {% if not request.user.user_profile.instructor %}
+            <form action="{% url 'get_instructor_rate' %}" method="post">
+                {{ rate_get_form }}
+                {% csrf_token %}
+                <input type="submit" class="button" value="Получить статус преподавателя">
+            </form>
+        {% else %}
+            <p>Вы уже имеете статус преподавателя.</p>
+            <p><a href="{% url 'manage_course_list' %}">Перейти к управлению курсами</a></p>
+        {% endif %}
+    {% else %}
+        <p><a href="{% url 'login' %}">Войдите в аккаунт</a>, чтобы получить статус преподавателя</p>
+    {% endif %}
+
 {% endblock %}

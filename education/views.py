@@ -9,7 +9,8 @@ from django.views.generic.detail import DetailView
 
 from courses.models import Subject, Course
 
-from .forms import CourseSubscribeForm
+
+from .forms import CourseSubscribeForm, CourseSolutionSendForm
 
 
 class CourseListView(TemplateResponseMixin, View):
@@ -89,3 +90,10 @@ class UserCourseDetailView(DetailView):
             context['module'] = course.modules.all()[0]
 
         return context
+
+
+class UserCourseCheckTaskView(LoginRequiredMixin, FormView):
+    form_class = CourseSolutionSendForm
+
+    def form_valid(self, form):
+        return super(UserCourseCheckTaskView, self).form_valid(form)

@@ -3,7 +3,14 @@
 {% block title %}Личный кабинет{% endblock %}
 
 {% block account_detail %}
-    <h4>{{ user.username }} {% if user.user_profile.instructor %}<a style="background-color: #8d4dff; color: white;">Преподаватель</a>{% endif %}</h4>
+    <h4>
+        {{ user.username }}
+        {% if user.user_profile.is_staff %}
+            <a style="background-color: indianred; color: white;"> Staff </a>
+        {% elif user.user_profile.instructor %}
+            <a style="background-color: mediumorchid; color: white;"> Преподаватель </a>
+        {% endif %}
+    </h4>
     <p>
         {{ user.user_profile.about }}
     </p>

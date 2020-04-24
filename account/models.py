@@ -13,6 +13,8 @@ class UserProfile(models.Model):
     profile_image = models.ImageField(upload_to='users/%Y/%m/%d/', blank=True, null=True)
     about = models.TextField(blank=True, max_length=500)
 
+    is_staff = models.BooleanField(default=False)
+
     RANG_CHOICES = (
         ("Новичек", "Новичек"),
         ("Лиманадек", "Лиманадек"),

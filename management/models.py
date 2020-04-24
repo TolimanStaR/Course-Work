@@ -37,6 +37,7 @@ class TaskBase(models.Model):
         ('j', 'J'),
         ('k', 'K'),
         ('l', 'L'),
+        ('', ''),
     )
 
     difficulty = models.CharField(choices=DIFFICULT_CHOICES, default='a', max_length=3)
