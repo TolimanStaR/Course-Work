@@ -30,18 +30,17 @@ class UserProfile(models.Model):
     )
 
     COLOR_CHOICES = (
-        ('0xAAAAAA', '0xAAAAAA'),
-        ('', ''),
-        ('', ''),
-        ('', ''),
-        ('', ''),
-        ('', ''),
-        ('', ''),
-        ('', ''),
-        ('', ''),
-        ('', ''),
-        ('', ''),
-        ('', ''),
+        ('AAAAAA', 'AAAAAA'),
+        ('6F72BE', '6F72BE'),
+        ('7F9ED8', '7F9ED8'),
+        ('7FBAD8', '7FBAD8'),
+        ('88F8FF', '88F8FF'),
+        ('00FFC5', '00FFC5'),
+        ('1EFF88', '1EFF88'),
+        ('F0FF00', 'F0FF00'),
+        ('FFA600', 'FFA600'),
+        ('FF6100', 'FF6100'),
+        ('FF0000', 'FF0000'),
     )
 
     contest_rating = models.IntegerField(default=0)
@@ -52,3 +51,6 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return f'{self.user.username}'
+
+    class Meta:
+        ordering = ['-contest_rating']

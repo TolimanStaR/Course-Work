@@ -15,7 +15,7 @@
         {% for participant in contest.past_participants.all %}
             <tr>
                 <td>{{ forloop.counter }}</td>
-                <td><a href="{% url 'profile' participant.user %}">{{ participant }}</a></td>
+                <td>{% include 'user_username.html' with user=participant.user %}</td>
                 <td>{{ participant.penalty }}</td>
                 {% for res in participant.stats %}
                     {% if forloop.counter <= contest.tasks.count %}

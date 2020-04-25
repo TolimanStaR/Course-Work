@@ -16,7 +16,7 @@
         <tr>
             <td>
                 <a href="{% url 'profile' package.user %}">
-                    {{ package.user }}
+                    {% include 'user_username.html' with user=package.user %}
                 </a></td>
             <td>{{ package.id }}</td>
             <td>{{ package.package_time }}</td>

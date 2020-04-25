@@ -32,6 +32,7 @@
         <option value="$MODULE_DIR$/courses/templates" />
         <option value="$MODULE_DIR$/education/templates" />
         <option value="$MODULE_DIR$/management/templates" />
+        <option value="$MODULE_DIR$/rating/templates" />
       </list>
     </option>
   </component>

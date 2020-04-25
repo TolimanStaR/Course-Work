@@ -68,10 +68,11 @@ def complete_contest(contest_id):
             penalty=participant.penalty,
             stats=participant.stats,
             tasks_solved=participant.task_solved,
+            contest_rang_color=participant.user.contest_rang_color,
         )
         past_participant.save()
 
-    contest.save()
+    for participant in participants:
+        participant.delete()
 
-    # for participant in participants:
-    #     participant.delete()
+    contest.save()

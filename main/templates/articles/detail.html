@@ -4,6 +4,7 @@
 
 {% block content %}
     <p>{{ article.title }}</p>
+    <p>Автор {% include 'user_username.html' with user=article.author %}</p>
     <p>{{ article.created }}</p>
     <p>Теги:
         {% for tag in article.tags.all %}
@@ -24,7 +25,7 @@
             аккаунт</a></p>
     {% endif %}
     {% for  comment in article.comments.all %}
-        <p><a href="{% url 'profile' comment.user.user %}">{{ comment.user|linebreaksbr }}</a></p>
+        <p>{% include 'user_username.html' with user=comment.user %}</p>
         <p>{{ comment.created }}</p>
         <p>{{ comment.body }}</p>
     {% endfor %}

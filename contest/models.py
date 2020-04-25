@@ -66,6 +66,7 @@ class ContestPastParticipant(models.Model):
     penalty = models.PositiveIntegerField()
     stats = ArrayField(models.IntegerField(default=0), size=16, blank=True)
     tasks_solved = models.IntegerField(default=0)
+    contest_rang_color = models.CharField(max_length=10, blank=True)
 
     class Meta:
         ordering = ('-tasks_solved', 'penalty')

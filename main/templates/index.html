@@ -17,7 +17,8 @@
             {% if request.user.is_authenticated %}
                 <img class="image" src="{{ request.user.user_profile.profile_image.url }}"
                      alt="Аватар">
-                <p><a href="{% url "profile" request.user.username %}">{{ request.user.username }}</a></p>
+{#                <p><a href="{% url "profile" request.user.username %}">{{ request.user.username }}</a></p>#}
+                <p>{% include 'user_username.html' with user=request.user.user_profile %}</p>
                 <p><a href="{% url "logout" %}">Выйти</a></p>
             {% else %}
                 <p><a href="{% url "login" %}">Войти</a></p>

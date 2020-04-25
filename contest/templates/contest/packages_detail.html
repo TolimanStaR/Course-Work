@@ -14,7 +14,7 @@
             <th>Вердикт</th>
         </tr>
         <tr>
-            <td><a href="{% url 'profile' package.participant %}">{{ package.participant }}</a></td>
+            <td>{% include 'user_username.html' with user=package.participant.user %}</td>
             <td>{{ package.id }}</td>
             <td>{{ package.package_time }}</td>
             <td>

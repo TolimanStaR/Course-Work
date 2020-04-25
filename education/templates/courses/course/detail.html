@@ -6,7 +6,7 @@
     {% with subject=course.subject %}
         <h3>{{ object.title }}</h3>
         <p><a href="{% url 'course_list_subject' subject.slug %}">{{ subject.title }}</a></p>
-        <p>Преподаватель: <a href="{% url 'profile' course.owner %}">{{ course.owner }}</a></p>
+        <p>Преподаватель: {% include 'user_username.html' with user=course.owner %}</p>
         <p>{{ object.overview|linebreaks }}</p>
         {% if request.user.is_authenticated %}
             {% if is_subscribed %}

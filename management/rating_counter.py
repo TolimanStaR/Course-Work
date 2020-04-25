@@ -39,5 +39,6 @@ def calculate_rating(contest_id):
             rang_index = max(participant.user.contest_rating // 50, -4) + 5
 
         participant.user.contest_rang = UserProfile.RANG_CHOICES[rang_index][1]
+        participant.user.contest_rang_color = UserProfile.COLOR_CHOICES[rang_index][1]
 
         participant.user.save()
