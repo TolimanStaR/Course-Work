@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %}</title>
+	<link href="{% static "css/styles.css" %}" rel="stylesheet">
+</head>
+<style type="text/css">
+	html, body {
+		height: 100%;
+	}
+	body {
+	 	margin:0;
+		padding:0;
+		background: #232327;
+		color: white;
+	}
+
+	div.wrapper {
+		min-height: 100%;
+    	padding-bottom: 70px;
+	}
+
+	div.header {
+		height: 90px;
+		min-width: 1100px;
+	}
+
+	div.title {
+		padding-left: 15%;
+		padding-top: 20px;
+		position: absolute;
+	    font-size: 30px;
+	    color: white;
+	}
+
+	div.slug {
+		padding-left: 15%;
+		padding-top: 58px;
+		font-size: 17px;
+		color: #666;
+		position: absolute;
+	}
+
+	div.account {
+		margin-right: 15%;
+		float: right;
+		right:0;
+		padding-top: 20px;
+		color: white;
+		font-size: 18px;
+		position: relative;
+	}
+
+	a.olymp {
+		color: white;
+		text-decoration: none;
+	}
+
+	a.prog {
+		color: #999;
+		text-decoration: none;
+	}
+
+	a.account {
+		text-decoration: none;
+		color: white;
+	}
+
+	div.navigation-menu {
+		height: 50px;
+		margin: 0% 15%;
+		min-width: 800px;
+	}
+
+	div.navbar {
+		width: 100%;
+		margin-left: 15%;
+		margin-right: 15%;
+		position: absolute;
+	}
+
+	ul.main-menu {
+		list-style: none;
+		list-style-type: none;
+		padding-left: 0;
+		overflow: hidden;
+		background-color: #2F2F32;
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		float: left;
+		position: relative;
+	}
+
+	div.navigation-menu ul.main-menu li a {
+		text-decoration: none;
+		color: white;
+		font-size: 18px;
+		display: block;
+		padding: 10px 15px;
+    	transition: 0.5s ease;
+	}
+
+	li a:hover {
+	    background-color: aquamarine;
+	}
+
+	div.content {
+		margin: 20px 15%;
+		min-width: 800px;
+	}
+
+	footer {
+		height: 100px;
+    	margin-top: -100px;
+	}
+
+	footer hr {
+		width: 70%;
+	}
+
+	div.footer {
+		margin: 20px 15%;
+	}
+	
+	div p {
+		padding: 15px;
+	}
+
+	hr {
+		size: 1px;
+	}
+</style>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="title">
+				<a href="#" class="olymp">OLYMPUS </a><a href="#" class="prog">PROGRAMMING</a>
+			</div>
+			<div class="slug">
+				<i>Не можешь возглавить проблему - реши её.</i>
+			</div>
+			<div class="account">
+				<pre><a href="#" class="account">Войти</a>     |     <a href="#" class="account">Регистрация</a></pre>
+			</div>
+		</div>
+		<div class="navigation-menu">
+				<ul class="main-menu">
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Соревнования</a></li>
+					<li><a href="#">Архив задач</a></li>
+					<li><a href="#">Рейтинг</a></li>
+					<li><a href="#">Образование</a></li>
+					<li><a href="#">Преподавание</a></li>
+				</ul>
+		</div>
+		<div class="content">
+			<p>Content block</p>
+		</div>
+	</div>
+	<footer>
+		<hr>
+		<div class="footer">
+		&copy; 2020 Olympus programming
+		</div>
+	</footer>
+</body>
+</html>

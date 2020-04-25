@@ -3,22 +3,36 @@
 {% block title %}Личный кабинет{% endblock %}
 
 {% block account_detail %}
-    <h4>
-        {{ user.username }}
-        {% if user.user_profile.is_staff %}
-            <a style="background-color: indianred; color: white;"> Staff </a>
-        {% elif user.user_profile.instructor %}
-            <a style="background-color: mediumorchid; color: white;"> Преподаватель </a>
-        {% endif %}
-    </h4>
-    <p>
-        {{ user.user_profile.about }}
-    </p>
-    <p>
-        Рейтинг: {{ user.user_profile.contest_rating }}
-    </p>
-    <p>
-        Звание: {{ user.user_profile.contest_rang }}
-    </p>
-    <img src="{{ user.user_profile.profile_image.url }}" style="width: 300px;" alt="Avatar">
+    <div class="account-image">
+        <img src="{{ user.user_profile.profile_image.url }}" alt="Profile Image">
+    </div>
+    <div class="account-info">
+        <h3>
+            Профиль пользователя {% include 'user_username.html' with user=user.user_profile %}
+            {% if user.user_profile.is_staff %}
+                <a> &#9818; </a>
+            {% elif user.user_profile.instructor %}
+                <a> &#9820; </a>
+            {% else %}
+                <a>&#9823;</a>
+            {% endif %}
+        </h3>
+        <p class="about"><i>
+            О себе:
+            {% if user.user_profile.about %}
+                "{{ user.user_profile.about }}"
+            {% else %}
+                -
+            {% endif %}
+        </i></p>
+        <p>
+            &#8986; Зарегистрировался на сайте: {{ user.user_profile.register_date }}
+        </p>
+        <p>
+            &#127942; Рейтинг: {{ user.user_profile.contest_rating }}
+        </p>
+        <p>
+            &#128640; Звание: {{ user.user_profile.contest_rang }}
+        </p>
+    </div>
 {% endblock %}

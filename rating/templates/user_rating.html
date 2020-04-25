@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block title %}Рейтинг пользователей{% endblock %}
+
+{% block content %}
+    <table>
+        <tr>
+            <th>Место в топе</th>
+            <th>Пользователь</th>
+            <th>Рейтинг</th>
+        </tr>
+        {% for user in object_list %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{% include 'user_username.html' with user=user %}</td>
+                <td>{{ user.contest_rating }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% include 'pagination.html' with page=page_obj %}
+{% endblock %}

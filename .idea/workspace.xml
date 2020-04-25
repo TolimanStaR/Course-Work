@@ -2,28 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account/migrations/0011_auto_20200425_1635.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0032_contestpastparticipant_contest_rang_color.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/user_username.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rating/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Coursework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Coursework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rating/templates/user_rating.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coursework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/account_packages.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/account_packages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account_detail_frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account_detail_frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/archive_detail_frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/archive_detail_frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/archive/templates/packages/archive_package_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/contest_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/contest_result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/rating.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/rating.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education/templates/courses/course/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/courses/course/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/articles/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/articles/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/templates/users/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/users/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/complete_contest.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/complete_contest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/rating_counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/rating_counter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rating/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rating/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rating/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rating/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,10 +29,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -173,14 +165,7 @@
       <workItem from="1587750455120" duration="3944000" />
       <workItem from="1587755413297" duration="177000" />
       <workItem from="1587755668325" duration="8518000" />
-      <workItem from="1587817436354" duration="4723000" />
-    </task>
-    <task id="LOCAL-00038" summary="Contest solution sending and package list but now it have no effect">
-      <created>1586427582409</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1586427582409</updated>
+      <workItem from="1587817436354" duration="17629000" />
     </task>
     <task id="LOCAL-00039" summary="Some models upgrade">
       <created>1586428265169</created>
@@ -518,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587819404681</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Contest rating color at the all of project">
+      <created>1587822468376</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1587822468376</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +518,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Start to develop a courses manager app" />
     <MESSAGE value="Several models for content and items" />
     <MESSAGE value="Own counting field" />
     <MESSAGE value="Mixins and base course manage handlers" />
@@ -551,7 +542,8 @@
     <MESSAGE value="Add the models task, test, package for educational courses" />
     <MESSAGE value="Task template" />
     <MESSAGE value="Some bugs fixed and tasks removed from courses" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some bugs fixed and tasks removed from courses" />
+    <MESSAGE value="Contest rating color at the all of project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contest rating color at the all of project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
@@ -574,10 +566,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1587819399487">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1587822464984">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587819399487" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587822464984" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1587755394815">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -634,5 +626,15 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="202" y="442" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585768586733" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="django-line">
+          <url>file://$PROJECT_DIR$/account/templates/account/account_packages.html</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

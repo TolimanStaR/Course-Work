@@ -3,7 +3,7 @@
 {% block title %}Посылки пользователя {{ request.user }}{% endblock %}
 
 {% block account_detail %}
-    <table>
+    <table class="standart-table">
         <tr>
             <th>Пользователь</th>
             <th>ID посылки</th>
@@ -14,7 +14,7 @@
         </tr>
         {% for package in packages %}
             <tr>
-                <td>{{ package.user }}</td>
+                <td>{% include 'user_username.html' with user=package.user %}</td>
                 <td>
                     <a href="{% url 'archive_package_detail' pk=package.task.pk id=package.id %}">{{ package.id }}</a>
                 </td>

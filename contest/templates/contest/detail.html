@@ -4,8 +4,8 @@
 
 {% block content %}
     {% if request.user.user_profile.member and not contest.completed or contest.completed %}
-        <div class="navigation" style="margin: 0; padding: 0;">
-            <ul class="navbar">
+        <div class="sub-nav">
+            <ul class="sub-nav">
                 <li><a href="{% url 'contest_task_list' contest.pk %}">Задачи</a></li>
                 <li><a href="{% url 'contest_packages' contest.pk %}">Посылки</a></li>
                 <li>
@@ -25,8 +25,10 @@
             </ul>
         </div>
         <p></p>
+        <div class="sub-content">
         {% block contest_detail %}
         {% endblock %}
+        </div>
         {% if contest.active %}
             <script type="text/javascript">
                 Timer();

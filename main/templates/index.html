@@ -1,60 +1,48 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>{% block title %}{% endblock %}</title>
-    <link href="{% static "css/base.css" %}" rel="stylesheet">
+    <link href="{% static "css/styles.css" %}" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
     <div class="header">
-        <div class="logo">
-            OLYMPUS
-            <div style="color: #999999;">PROGRAMMING</div>
+        <div class="title">
+            <a href="#" class="olymp">OLYMPUS </a><a href="#" class="prog">PROGRAMMING</a>
+        </div>
+        <div class="slug">
+            <i>Не можешь возглавить проблему - реши её.</i>
         </div>
         <div class="account">
             {% if request.user.is_authenticated %}
-                <img class="image" src="{{ request.user.user_profile.profile_image.url }}"
-                     alt="Аватар">
-{#                <p><a href="{% url "profile" request.user.username %}">{{ request.user.username }}</a></p>#}
-                <p>{% include 'user_username.html' with user=request.user.user_profile %}</p>
-                <p><a href="{% url "logout" %}">Выйти</a></p>
+                <pre><a href="{% url 'profile' request.user.user_profile %}" class="account">{{ request.user.user_profile }}</a>     |     <a
+                        href="{% url 'logout' %}" class="account">Выйти</a></pre>
             {% else %}
-                <p><a href="{% url "login" %}">Войти</a></p>
+                <pre><a href="{% url 'login' %}" class="account">Войти</a>     |     <a href="{% url 'register' %}" class="account">Регистрация</a></pre>
             {% endif %}
         </div>
     </div>
-    <div class="navigation">
-        <ul class="navbar">
+    <div class="navigation-menu">
+        <ul class="main-menu">
             <li><a href="{% url 'article_list' %}">Новости</a></li>
             <li><a href="{% url 'contest_list' %}">Соревнования</a></li>
             <li><a href="{% url 'archive_task_list' %}">Архив задач</a></li>
-            <li><a href="#">Рейтинг</a></li>
+            <li><a href="{% url 'user_rating_list' %}">Рейтинг</a></li>
             <li><a href="{% url 'course_list' %}">Образование</a></li>
             <li><a href="{% url 'course_main_page' %}">Преподавание</a></li>
         </ul>
     </div>
-    {% if messages %}
-        <div class="navigation">
-            <ul class="navbar" style="background-color: #5fff5e">
-                {% for message in messages %}
-                    <li style="color: white;">
-                        {{ message|safe }}
-                        <a href="#"></a>
-                    </li>
-            {% endfor %}
-        </ul>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
     </div>
-{% endif %}
-<div class="content">
-    {% block content %}{% endblock %}
 </div>
-</div>
-<footer class="footer">
+<footer>
     <hr>
     <div class="footer">
-        <p>2020 Olympus Programming</p>
+        &copy; 2020 Olympus programming
     </div>
 </footer>
 </body>
