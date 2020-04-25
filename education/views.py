@@ -93,11 +93,11 @@ class UserCourseDetailView(DetailView):
         return context
 
 
-class UserCourseCheckTaskView(LoginRequiredMixin, FormView):
-    form_class = CourseSolutionSendForm
-
-    def form_valid(self, form):
-        return super(UserCourseCheckTaskView, self).form_valid(form)
-
-    def get_success_url(self):
-        return reverse_lazy('user_course_detail_module', args=(self.kwargs['pk'], self.kwargs['module_id']))
+# class UserCourseCheckTaskView(LoginRequiredMixin, FormView):
+#     form_class = CourseSolutionSendForm
+#
+#     def form_valid(self, form):
+#         return super(UserCourseCheckTaskView, self).form_valid(form)
+#
+#     def get_success_url(self):
+#         return reverse_lazy('user_course_detail_module', args=(self.kwargs['pk'], self.kwargs['module_id']))

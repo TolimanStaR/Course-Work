@@ -86,7 +86,6 @@ def check_participant_solution(package, task, tests):
         stdout, stderr = participant_solution_process.communicate()
 
         if stderr:
-            print(stderr.decode('cp866'))
             return set_verdict(f'Ошибка исполнения на тесте {test_number + 1}', work_dir=work_path,
                                env_dir=env_dir_abspath)
 

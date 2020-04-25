@@ -3,8 +3,9 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 
 from django.db import models
 from account.models import UserProfile
+# from education.models import CourseTask, CourseTest
 
-from management.models import TaskBase
+from management.models import TaskBase, TestBase
 from management.fields import OrderField
 
 from django.template.loader import render_to_string
@@ -83,7 +84,7 @@ class Content(models.Model):
                                              'image',
                                              'video',
                                              'code',
-                                             'task',
+                                             # 'task',
                                          )})
 
     object_id = models.PositiveIntegerField()
@@ -136,5 +137,5 @@ class Code(ItemBase):
     code = models.TextField()
 
 
-class Task(ItemBase, TaskBase):
-    pass
+# class Task(ItemBase, TaskBase):
+#     pass

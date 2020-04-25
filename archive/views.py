@@ -56,9 +56,9 @@ class TaskDetailView(LoginRequiredMixin, FormView):
                 tests=tests
             )
 
-            try:
-                right_packages = ArchiveSolutionCase.objects.get(task=task, user=user, solved=True)
-            except ObjectDoesNotExist:
+            right_packages = ArchiveSolutionCase.objects.filter(task=task, user=user, solved=True)
+
+            if len(right_packages) == 0:
                 task.solved_by += 1
 
             if package.verdict == verdict[True]:
