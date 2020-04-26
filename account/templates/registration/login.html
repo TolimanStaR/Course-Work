@@ -3,17 +3,18 @@
 {% block title %}Аутентификация{% endblock %}
 
 {% block content %}
-    <h1>Станица входа</h1>
-    {% if form.errors %}
-        Имя пользователя и пароль не совпадают.
-    {% else %}
-        <p>Заполните форму для входа в аккаунт. Если у вас его нет, <a href="{% url "register" %}">зарегистрируйтесь</a></p>
-    {% endif %}
-    <form action="{% url "login" %}" method="post">
-        {{ form.as_p }}
+    <form action="{% url "login" %}" method="post" class="transparent">
+    <div class="form-inner">
+        <h3>Авторизация</h3>
+        {{form.as_p}}
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}">
+        {% if form.errors %}
+            <p>Имя пользователя и пароль не совпадают.</p>
+        {% endif %}
         <p><input type="submit" value="Войти"></p>
+        <a href="{% url "register" %}">Регистрация</a>
+        <a href="{% url "reset_password" %}">Зыбыли пароль?</a>
+        </div>
     </form>
-    <p><a href="{% url "reset_password" %}">Зыбыли пароль?</a></p>
 {% endblock %}

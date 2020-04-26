@@ -3,13 +3,17 @@ html, body {
 }
 
 body {
-    overflow-x:hidden;
+    overflow-x: hidden;
     font-family: "Century Gothic", sans-serif;
     margin: 0;
     padding: 0;
     color: #BBBBBB;
     background-size: cover;
     background: #232327 url(https://krot.info/uploads/posts/2020-01/1579319884_40-100.jpg) fixed;
+}
+
+textarea {
+    font-family: "Century Gothic", sans-serif;
 }
 
 div.wrapper {
@@ -115,7 +119,7 @@ div.content {
     margin: 10px 15% 50px;
     min-width: 800px;
     background-color: rgba(16, 16, 16, 0.5);
-    min-height: 600px;
+    min-height: 800px;
     padding: 15px;
 }
 
@@ -123,7 +127,7 @@ div.sub-detail {
     background-color: rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
     padding: 20px;
-    min-height: 600px;
+    min-height: 800px;
 }
 
 div.sub-nav {
@@ -148,7 +152,7 @@ ul.sub-nav li a {
 
 div.sub-content {
     padding: 30px 10px 10px;
-    min-width: 700px;
+    min-width: 900px;
 }
 
 div.account-image {
@@ -176,8 +180,10 @@ p.about {
 table.standart-table {
     border: #AAAAAA 1px solid;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
     margin-top: 20px;
+    min-width: 700px;
+    position: relative;
 }
 
 table.standart-table tr {
@@ -187,11 +193,20 @@ table.standart-table tr {
 table.standart-table tr th {
     border: #AAAAAA 1px solid;
     padding: 7px;
+    color: white;
 }
 
 table.standart-table tr td {
     border: #AAAAAA 1px solid;
     padding: 7px;
+}
+
+div.task h1, h4 {
+    color: white;
+}
+
+div.task table td {
+    text-align: left;
 }
 
 footer {
@@ -209,4 +224,175 @@ div.footer {
 
 hr {
     size: 1px;
+}
+
+.transparent {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 400px;
+    padding: 60px 50px;
+    margin: 50px auto 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+}
+
+.transparent-edit {
+    box-sizing: border-box;
+    position: relative;
+    padding: 60px 50px;
+    margin: 50px auto 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+}
+
+.transparent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.form-inner {
+    position: relative;
+}
+
+.form-inner h3 {
+    position: relative;
+    margin-top: 0;
+    color: white;
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.form-inner h3:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 60px;
+    background: aquamarine;
+}
+
+.form-inner label {
+    box-sizing: border-box;
+    display: block;
+    padding-left: 15px;
+    color: rgba(255, 255, 255, .6);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.form-inner input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 10px 0 15px;
+    border-width: 0;
+    line-height: 40px;
+    border-radius: 0;
+    color: white;
+    background: rgba(0, 255, 255, 0.2);
+}
+
+.form-inner textarea {
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    background: rgba(0, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.form-inner ul, span.helptext {
+    display: none;
+}
+
+.form-inner input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+#custom-checkbox + label {
+    position: relative;
+    margin: 20px 0;
+    text-transform: none;
+    cursor: pointer;
+}
+
+#custom-checkbox + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: text-top;
+    background: white;
+}
+
+#custom-checkbox:checked + label:before {
+    background: aquamarine;
+}
+
+#custom-checkbox:checked + label:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 20px;
+    top: 9px;
+    background: white;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
+.form-inner input[type="submit"] {
+    background: mediumaquamarine;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 16px;
+}
+
+button.file-upload {
+    margin-top: 10px;
+    display: block;
+    width: 332px;
+    height: 40px;
+    color: white;
+    background-color: mediumaquamarine;
+    border: none;
+}
+
+input.input-button {
+    display: none;
+}
+
+div.file-upload {
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 332px;
+    height: 40px;
+    background: mediumaquamarine;
+    color: #fff;
+    text-align: center;
+    vertical-align: center;
+}
+
+.file-upload label {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }

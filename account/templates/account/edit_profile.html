@@ -3,12 +3,36 @@
 {% block title %}Редактировать профиль{% endblock %}
 
 {% block account_detail %}
-    <p>Редактирование вашего профиля</p>
-    <form action="" method="post" enctype="multipart/form-data">
-        {{ user_form.as_p }}
-        {{ user_profile_form.as_p }}
-        {% csrf_token %}
-        <input type="submit" value="Сохранить изменения">
+    <form action="" method="post" enctype="multipart/form-data" class="transparent-edit">
+        <div class="form-inner">
+            <h3>Редактирование вашего профиля</h3>
+            <label for="id_first_name">Имя:</label>
+            <input type="text" name="first_name" maxlength="30" id="id_first_name" value="{{ user.first_name }}">
+            <label for="id_last_name">Фамилия:</label>
+            <input type="text" name="last_name" maxlength="150" id="id_last_name" value="{{ user.last_name }}">
+            <label for="id_email">Адрес электронной почты:</label>
+            <input type="email" name="email" maxlength="254" id="id_email" value="{{ user.email }}">
+            <label for="id_profile_image">Аватар:</label>
+
+            <div class="file-upload">
+                <label>
+                    <span>Загрузить</span>
+                    <input type="file" name="profile_image" accept="image/*" id="id_profile_image" class="input-button">
+                </label>
+            </div>
+
+            <div class="account-image" style="position: relative;">
+                <img src="{{ user.user_profile.profile_image.url }}" alt="Profile Image">
+            </div>
+            <label for="id_about">About:</label>
+            <textarea name="about" cols="40" rows="10" maxlength="500"
+                      id="id_about">{{ user.user_profile.about }}</textarea>
+
+            {#        {{ user_form.as_p }}#}
+            {#        {{ user_profile_form.as_p }}#}
+            {% csrf_token %}
+            <input type="submit" value="Сохранить изменения">
+            <p><a href="{% url "profile" %}">Вернуться в профиль</a></p>
+        </div>
     </form>
-    <p><a href="{% url "profile" %}">Вернуться в профиль</a></p>
 {% endblock %}

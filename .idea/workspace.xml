@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rating/templates/user_rating.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/users/2020/04/26/6af9139f9748f7883643d25c3c9a345d29376651.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/users/2020/04/26/8d6641c2cd16669449847f85b99e775436b6319b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/users/2020/04/26/b366a2be7aa8c9988dee0d58b127af5ed6f52f33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/account_packages.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/account_packages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account_detail_frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account_detail_frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/templates/archive_detail_frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/archive_detail_frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/templates/packages/archive_package_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education/templates/users/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/users/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rating/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rating/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rating/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rating/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/edit_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/edit_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/registration/password_change_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/registration/password_change_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/registration/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/registration/password_reset_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/archive_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/archive_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,14 +163,8 @@
       <workItem from="1587750455120" duration="3944000" />
       <workItem from="1587755413297" duration="177000" />
       <workItem from="1587755668325" duration="8518000" />
-      <workItem from="1587817436354" duration="17629000" />
-    </task>
-    <task id="LOCAL-00039" summary="Some models upgrade">
-      <created>1586428265169</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1586428265169</updated>
+      <workItem from="1587817436354" duration="19277000" />
+      <workItem from="1587904222145" duration="7841000" />
     </task>
     <task id="LOCAL-00040" summary="register bug fixed (not correct orm request linked with last participant stats array initialising)">
       <created>1586430585739</created>
@@ -510,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587822468376</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Some design features">
+      <created>1587856470843</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1587856470843</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +517,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Several models for content and items" />
     <MESSAGE value="Own counting field" />
     <MESSAGE value="Mixins and base course manage handlers" />
     <MESSAGE value="Group &quot;Instructor&quot; permissions and group required mixins from django-braces" />
@@ -543,7 +541,8 @@
     <MESSAGE value="Task template" />
     <MESSAGE value="Some bugs fixed and tasks removed from courses" />
     <MESSAGE value="Contest rating color at the all of project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contest rating color at the all of project" />
+    <MESSAGE value="Some design features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some design features" />
   </component>
   <component name="WindowStateProjectService">
     <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
@@ -566,10 +565,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1587822464984">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1587856466856">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587822464984" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587856466856" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1587755394815">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
