@@ -3,15 +3,14 @@
 {% block title %}Новости{% endblock %}
 
 {% block content %}
-    <p>Новости:</p>
-
-    <form action="" method="post">
-        {{ form.as_p }}
+    <form action="" method="post" class="search">
+        <label for="id_search_text"></label>
+        <input type="text" name="search_text" maxlength="300" required="" id="id_search_text" placeholder="Введите запрос...">
         {% csrf_token %}
-        <input type="submit" value="Искать">
+        <input type="submit" value="Искать" id="submit">
     </form>
     {% if search_text %}
-        <p>
+        <p style="color: white">
             Поиск по запросу "{{ search_text }}":
         </p>
     {% endif %}

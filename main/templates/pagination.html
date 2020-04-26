@@ -1,13 +1,13 @@
-<div>
+<div class="pagination">
     <span>
         {% if page.has_previous %}
-            <a href="?page={{ page.previous_page_number }}">Назад</a>
+            <a href="?page={{ page.previous_page_number }}">&#8592; Назад</a>
         {% endif %}
         <span>
-            Страница {{ page.number }} из {{ page.paginator.num_pages }}
+            Страница <b>{{ page.number }}</b> из <b>{{ page.paginator.num_pages }}</b>
         </span>
         {% if page.has_next %}
-            <a href="?page={{ page.next_page_number }}">Вперед</a>
+            <a href="?page={{ page.next_page_number }}">Вперед &#8594;</a>
         {% endif %}
     </span>
 </div>

@@ -90,7 +90,6 @@ a {
 
 ul.main-menu {
     overflow: hidden;
-    /*background-color: #2F2F32;*/
     background-color: rgba(16, 16, 16,  0.5);
     position: relative;
     margin: 0;
@@ -395,4 +394,44 @@ div.file-upload {
     width: 100%;
     height: 100%;
     cursor: pointer;
+}
+
+form.search {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+}
+
+form.search input#id_search_text {
+    height: 24px;
+    width: 280px;
+}
+
+form.search input#submit {
+    background-color: mediumaquamarine;
+    height: 30px;
+    width: 100px;
+    color: white;
+    border: none;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 16px;
+}
+
+div.blog-article-preview {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+div.pagination {
+    color: #BBBBBB;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+div.pagination a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+
+div.pagination a:hover {
+    background: aquamarine;
 }
