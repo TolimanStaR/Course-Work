@@ -2,16 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/media/images/olympus-background.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/edit_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/edit_profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/articles/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/articles/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/articles/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/articles/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/pagination.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rating/templates/user_rating.html" beforeDir="false" afterPath="$PROJECT_DIR$/rating/templates/user_rating.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -20,9 +36,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -59,15 +75,15 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Проекты\Coursework\media\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Проекты\Coursework\media\images" />
       <recent name="G:\Проекты\Coursework\main\templates" />
       <recent name="G:\Проекты\Coursework\courses\templates\courses" />
       <recent name="G:\Проекты\Coursework\courses" />
       <recent name="G:\Проекты\Coursework\courses\templates" />
-      <recent name="G:\Проекты\Coursework\account\templates" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\Проекты\Coursework\media\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -156,14 +172,8 @@
       <workItem from="1587755413297" duration="177000" />
       <workItem from="1587755668325" duration="8518000" />
       <workItem from="1587817436354" duration="19277000" />
-      <workItem from="1587904222145" duration="10684000" />
-    </task>
-    <task id="LOCAL-00041" summary="Contest detail">
-      <created>1586458722401</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1586458722401</updated>
+      <workItem from="1587904222145" duration="13845000" />
+      <workItem from="1588055625373" duration="5274000" />
     </task>
     <task id="LOCAL-00042" summary="Packages done">
       <created>1586465870416</created>
@@ -501,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587913136150</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Another design features">
+      <created>1587936971043</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1587936971043</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +526,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Mixins and base course manage handlers" />
     <MESSAGE value="Group &quot;Instructor&quot; permissions and group required mixins from django-braces" />
     <MESSAGE value="Course create, edit and delete templates" />
     <MESSAGE value="Fixed group permission mixins" />
@@ -534,7 +550,8 @@
     <MESSAGE value="Contest rating color at the all of project" />
     <MESSAGE value="Some design features" />
     <MESSAGE value="Account design" />
-    <option name="LAST_COMMIT_MESSAGE" value="Account design" />
+    <MESSAGE value="Another design features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Another design features" />
   </component>
   <component name="WindowStateProjectService">
     <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
@@ -557,10 +574,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1587936968590">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588065859447">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587936968590" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588065859447" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1587755394815">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -609,10 +626,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1587822441232" />
-    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1587753054678">
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1587937199169">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587753054678" />
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587937199169" />
     <state x="202" y="442" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585768586733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

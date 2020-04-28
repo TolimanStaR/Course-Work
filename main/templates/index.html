@@ -18,7 +18,7 @@
         <div class="account">
             {% if request.user.is_authenticated %}
                 <pre><a href="{% url 'profile' request.user.user_profile %}" class="account">{{ request.user.user_profile }}</a>     |     <a
-                        href="{% url 'logout' %}" class="account">Выйти</a></pre>
+                        href="{% url 'logout' %}?next={{ request.path }}" class="account">Выйти</a></pre>
             {% else %}
                 <pre><a href="{% url 'login' %}" class="account">Войти</a>     |     <a href="{% url 'register' %}" class="account">Регистрация</a></pre>
             {% endif %}

@@ -5,7 +5,8 @@
 {% block content %}
     <form action="" method="post" class="search">
         <label for="id_search_text"></label>
-        <input type="text" name="search_text" maxlength="300" required="" id="id_search_text" placeholder="Введите запрос...">
+        <input type="text" name="search_text" maxlength="300" required="" id="id_search_text"
+               placeholder="Введите запрос...">
         {% csrf_token %}
         <input type="submit" value="Искать" id="submit">
     </form>
@@ -15,11 +16,13 @@
         </p>
     {% endif %}
     {% for article in object_list %}
-        <p>
-            <a href="{% url 'article_detail' pk=article.pk %}">{{ article.title }}</a>
-        </p>
-    {% empty %}
-        <p>Пока новостей нет</p>
+        <div class="blog-article-preview">
+            <a href="{% url 'article_detail' pk=article.pk %}" class="article-title">{{ article.title }}</a>
+            <p><i>Автор:</i> {% include 'user_username.html' with user=article.author %}, <i>дата
+                публикации {{ article.publish }}</i></p>
+            <p>{{ article.content|linebreaksbr|safe|truncatewords_html:200 }}</p>
+        <a href="{% url 'article_detail' pk=article.pk %}">Читать далее...</a>
+        </div>
     {% endfor %}
     {% include "pagination.html" with page=object_list %}
 {% endblock %}

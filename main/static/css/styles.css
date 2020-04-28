@@ -14,6 +14,7 @@ body {
 
 textarea {
     font-family: "Century Gothic", sans-serif;
+    resize: none;
 }
 
 div.wrapper {
@@ -65,6 +66,7 @@ a.prog {
 a.account {
     text-decoration: none;
     color: white;
+    font-family: "Century Gothic", sans-serif;
 }
 
 div.navigation-menu {
@@ -398,7 +400,7 @@ div.file-upload {
 
 form.search {
     background: rgba(0, 0, 0, 0.5);
-    padding: 20px 30px;
+    padding: 20px 20px;
 }
 
 form.search input#id_search_text {
@@ -418,6 +420,63 @@ form.search input#submit {
 
 div.blog-article-preview {
     background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+a.article-title {
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+}
+
+a.article-tag {
+    background: rgba(0, 255, 255, 0.2);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+p.article-title {
+    font-size: 26px;
+    color: white;
+}
+
+div.comment-form {
+    background: rgba(0, 0, 0, 0.5);
+    width: 620px;
+    padding: 10px;
+}
+
+div.comment-form input#submit {
+    margin-left: 400px;
+    background-color: mediumaquamarine;
+    height: 30px;
+    width: 220px;
+    color: white;
+    border: none;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 16px;
+    margin-top: 94px;
+}
+
+div.comment-form textarea#id_body {
+    margin-left: 100px;
+    margin-top: 5px;
+    width: 516px;
+    height: 76px;
+    color: white;
+    background: rgba(0, 255, 255, 0.2);
+    border: none;
+    position: absolute;
+}
+
+div.comment-form img {
+    width: 90px;
+    position: absolute;
+}
+
+div.comment-form a {
+    margin-left: 100px;
 }
 
 div.pagination {
