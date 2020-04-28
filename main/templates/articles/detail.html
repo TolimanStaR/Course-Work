@@ -16,8 +16,8 @@
     <p>{{ article.content|linebreaksbr }}</p>
     {% if request.user.is_authenticated %}
         <div class="comment-form">
-        <img src="{{ request.user.user_profile.profile_image.url }}" alt="Profile Image">
-            {% include 'user_username.html' with user=request.user.user_profile %}
+            <img src="{{ request.user.user_profile.profile_image.url }}" alt="Profile Image">
+            {#            {% include 'user_username.html' with user=request.user.user_profile %}#}
             <form action="" method="post">
                 <label for="id_body"></label>
                 <textarea type="text" name="body" required="" id="id_body" placeholder="Ваш комментарий..."></textarea>
@@ -29,9 +29,15 @@
         <p>Чтобы оставлять комментарии, вам нужно <a href="{% url 'login' %}?next={{ request.path }}">войти в
             аккаунт</a></p>
     {% endif %}
+    <p>Комментарии ({{ article.comments.count }})</p>
     {% for  comment in article.comments.all %}
-        <p>{% include 'user_username.html' with user=comment.user %}</p>
-        <p>{{ comment.created }}</p>
-        <p>{{ comment.body }}</p>
+        <div class="comment-field">
+            <img src="{{ comment.user.profile_image.url }}" alt="Profile Image">
+            <a>
+                {% include 'user_username.html' with user=comment.user %}
+                {{ comment.created }}
+            </a>
+            <p>{{ comment.body }}</p>
+        </div>
     {% endfor %}
 {% endblock %}

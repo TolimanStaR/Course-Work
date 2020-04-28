@@ -7,8 +7,8 @@ class ContestRegistrationForm(forms.Form):
 
 class SolutionSendForm(forms.Form):
     LANG_CHOICES = (
-        ('GNU GCC', 'GNU GCC'),
-        ('GNU G++', 'GNU G++'),
+        ('GNU GCC C99', 'GNU GCC C99'),
+        ('GNU G++ 17', 'GNU G++ 17'),
         # ('Kotlin', 'Kotlin'),
         ('Python 3', 'Python 3'),
         ('PyPy', 'PyPy'),

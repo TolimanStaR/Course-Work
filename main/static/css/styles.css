@@ -443,12 +443,12 @@ p.article-title {
 
 div.comment-form {
     background: rgba(0, 0, 0, 0.5);
-    width: 620px;
+    width: 590px;
     padding: 10px;
 }
 
 div.comment-form input#submit {
-    margin-left: 400px;
+    margin-left: 370px;
     background-color: mediumaquamarine;
     height: 30px;
     width: 220px;
@@ -460,8 +460,7 @@ div.comment-form input#submit {
 }
 
 div.comment-form textarea#id_body {
-    margin-left: 100px;
-    margin-top: 5px;
+    margin-left: 70px;
     width: 516px;
     height: 76px;
     color: white;
@@ -471,12 +470,71 @@ div.comment-form textarea#id_body {
 }
 
 div.comment-form img {
-    width: 90px;
+    width: 50px;
     position: absolute;
+    border: white 1px solid;
+    padding: 5px 5px 10px;
 }
 
 div.comment-form a {
     margin-left: 100px;
+}
+
+div.comment-field {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+div.comment-field p {
+    margin-left: 70px;
+}
+
+div.comment-field a {
+    margin-left: 35px;
+    float: top;
+}
+
+div.comment-field img {
+    width: 45px;
+    border: white 1px solid;
+    padding: 5px 5px 8px;
+    position: absolute;
+}
+
+div.comment-field:nth-child(even) {
+    background: rgba(16, 16, 16, 0.5);
+}
+
+div.comment-field:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+table.contest-table {
+    color: white;
+    align-self: center;
+    width: 80%;
+    border: #999999 3px solid;
+    border-radius: 2px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+table.contest-table th {
+    padding: 10px;
+    border: #999999 3px solid;
+}
+
+table.contest-table td {
+    border: #999999 3px solid;
+    color: #AAAAAA;
+    padding: 10px;
+    text-align: center;
+}
+
+table.contest-table tr {
+    border: #CCCCCC 3px solid;
+    padding: 10px;
 }
 
 div.pagination {

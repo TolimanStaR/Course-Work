@@ -15,6 +15,8 @@ class Contest(models.Model):
     active = models.BooleanField(default=False)
     completed = models.BooleanField(default=False)
 
+    participants_count = models.PositiveIntegerField(default=0)
+
     def __str__(self):
         return f'Раунд {self.pk}. {self.title}'
 

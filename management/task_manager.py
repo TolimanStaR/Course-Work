@@ -5,8 +5,8 @@ import uuid
 import os
 
 solution_lang = {
-    'GNU GCC': 'c',
-    'GNU G++': 'cpp',
+    'GNU GCC C99': 'c',
+    'GNU G++ 17': 'cpp',
     # 'Kotlin': 'kt',
     'Python 3': 'py',
     'PyPy': 'pypy',
@@ -101,7 +101,8 @@ def check_participant_solution(package, task, tests):
 
             judge_answer = test.answer.split('\n')
             if type(judge_answer) == list:
-                judge_answer.remove('')
+                if '' in judge_answer:
+                    judge_answer.remove('')
 
             participant_solution_length = len(participant_answer)
             judge_solution_length = len(judge_answer)
@@ -150,7 +151,7 @@ def get_launch_command(env_part_sol_path, input_, output_):
 
     if lang == 'cpp':
         create_exe = subprocess.call(
-            f'g++ -o participant_solution {env_part_sol_path}',
+            f'g++ -std=c++17 -o participant_solution {env_part_sol_path}',
             shell=True,
             timeout=10,
             stdout=subprocess.PIPE,

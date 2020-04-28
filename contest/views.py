@@ -42,10 +42,13 @@ def contest_list(request, pk=None):
             return HttpResponseRedirect(reverse('contest_waiting', args=(pk,)))
 
         if contest.starts_at <= cur_time <= contest.starts_at + datetime.timedelta(minutes=contest.duration_minutes):
+
             if not contest.active:
                 contest.active = True
+
             if contest.completed:
                 contest.completed = False
+                
             contest.save()
 
             return render(request, 'contest/task_list.html', {'contest': contest})
@@ -243,11 +246,12 @@ class ContestRegistrationView(LoginRequiredMixin, FormView):
                     contest=contest,
                     stats=[0] * 16
                 )
+                contest.participants_count += 1
+                contest.save()
                 message = f'Вы успешно зарегистрировались на соревнование {contest.title} ' \
                           f'под ником {user_profile.user.username}'
 
-            return render(request, 'contest/contest_register_done.html',
-                          {'user_profile': user_profile, 'message': message})
+            return HttpResponseRedirect(reverse('contest_waiting', args=(contest.pk,)))
         else:
             messages.error(request, 'Необходимо согласиться с правилами!')
             return render(request, self.template_name,

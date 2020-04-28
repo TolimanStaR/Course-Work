@@ -4,37 +4,85 @@
 
 {% block content %}
     <p>Анонс соревнований:</p>
-    {% for contest in object_list %}
-        {% if not contest.active and not contest.completed %}
-            <p>{{ contest.title }} Начало: {{ contest.starts_at }}</p>
-            {% if request.user.is_authenticated %}
-                {% if request.user.user_profile.member %}
-                    <p><a href="{% url 'contest_waiting' contest.pk %}">Войти</a></p>
-                {% else %}
-                    <p><a href="{% url 'contest_register' contest.pk %}">Регистрация</a></p>
-                {% endif %}
-            {% else %}
-                <p><a href="{% url 'login' %}">Войдите</a>, чтобы зарегистрироваться на раунд</p>
+    <table class="contest-table">
+        <tr>
+            <th>Название</th>
+            <th>Начало</th>
+            <th>Продолжительность</th>
+            <th>Участников</th>
+            <th> &#9776;</th>
+        </tr>
+        {% for contest in object_list %}
+            {% if not contest.active and not contest.completed %}
+                <tr>
+                    <td>{{ contest.title }}</td>
+                    <td>{{ contest.starts_at }}</td>
+                    <td>{{ contest.duration_minutes }} Мин.</td>
+                    <td>{{ contest.participants_count }}</td>
+                    <td>
+                        {% if request.user.is_authenticated %}
+                            {% if request.user.user_profile.member %}
+                                <a href="{% url 'contest_waiting' contest.pk %}">Войти</a>
+                            {% else %}
+                                <a href="{% url 'contest_register' contest.pk %}">Регистрация</a>
+                            {% endif %}
+                        {% else %}
+                            <a href="{% url 'login' %}">Войдите для регистрации</a>
+                        {% endif %}
+                    </td>
+                </tr>
             {% endif %}
-        {% endif %}
-    {% endfor %}
+        {% endfor %}
+    </table>
     <p>Текущие соревнования:</p>
-    {% for contest in object_list %}
-        {% if contest.active %}
-            <p>{{ contest.title }}</p>
-            {% if request.user.is_authenticated %}
-                {% if request.user.user_profile.member %}
-                    <p><a href="{% url 'contest_task_list' contest.pk %}">Войти</a></p>
-                {% else %}
-                    <p><a href="{% url 'contest_register' contest.pk %}">Регистрация</a></p>
-                {% endif %}
+    <table class="contest-table">
+        <tr>
+            <th>Название</th>
+            <th>Начало</th>
+            <th>Продолжительность</th>
+            <th>Участников</th>
+            <th> &#9776;</th>
+        </tr>
+        {% for contest in object_list %}
+            {% if contest.active %}
+                <tr>
+                    <td>{{ contest.title }}</td>
+                    <td>{{ contest.starts_at }}</td>
+                    <td>{{ contest.duration_minutes }} Мин.</td>
+                    <td>{{ contest.participants_count }}</td>
+                    <td>
+                        {% if request.user.is_authenticated %}
+                            {% if request.user.user_profile.member %}
+                                <a href="{% url 'contest_task_list' contest.pk %}"
+                                   style="background: aquamarine; color: white;">Войти</a>
+                            {% else %}
+                                <a href="{% url 'contest_register' contest.pk %}">Регистрация</a>
+                            {% endif %}
+                        {% endif %}
+                    </td>
+                </tr>
             {% endif %}
-        {% endif %}
-    {% endfor %}
+        {% endfor %}
+    </table>
     <p>Прошедшие соревнования:</p>
-    {% for contest in object_list %}
-        {% if contest.completed %}
-            <p>{{ contest.title }} <a href="{% url 'contest_result' contest.pk %}">Результаты</a></p>
-        {% endif %}
-    {% endfor %}
+    <table class="contest-table">
+        <tr>
+            <th>Название</th>
+            <th>Начало</th>
+            <th>Продолжительность</th>
+            <th>Участников</th>
+            <th> &#9776;</th>
+        </tr>
+        {% for contest in object_list %}
+            {% if contest.completed %}
+                <tr>
+                    <td>{{ contest.title }}</td>
+                    <td>{{ contest.starts_at }}</td>
+                    <td>{{ contest.duration_minutes }} Мин.</td>
+                    <td>{{ contest.participants_count }}</td>
+                    <td><a href="{% url 'contest_result' contest.pk %}">Результаты</a></td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
 {% endblock %}

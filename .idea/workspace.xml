@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/images/olympus-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contest/migrations/0033_contest_participants_count.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/code_files/9912adfcfe173637463815752a7379997259f288.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/code_files/f138b64c61ac185d3e7c45dfb2a6475ded5cb060.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/edit_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/edit_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/articles/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/articles/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/articles/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/articles/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/task_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/task_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,14 +177,7 @@
       <workItem from="1587755668325" duration="8518000" />
       <workItem from="1587817436354" duration="19277000" />
       <workItem from="1587904222145" duration="13845000" />
-      <workItem from="1588055625373" duration="5274000" />
-    </task>
-    <task id="LOCAL-00042" summary="Packages done">
-      <created>1586465870416</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1586465870416</updated>
+      <workItem from="1588055625373" duration="13748000" />
     </task>
     <task id="LOCAL-00043" summary="Contest list changes and waiting room">
       <created>1586547355058</created>
@@ -518,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587936971043</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="deEeEeEeEeEesign">
+      <created>1588065862313</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1588065862313</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +530,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Group &quot;Instructor&quot; permissions and group required mixins from django-braces" />
     <MESSAGE value="Course create, edit and delete templates" />
     <MESSAGE value="Fixed group permission mixins" />
     <MESSAGE value="Content manager for each module" />
@@ -551,7 +554,8 @@
     <MESSAGE value="Some design features" />
     <MESSAGE value="Account design" />
     <MESSAGE value="Another design features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Another design features" />
+    <MESSAGE value="deEeEeEeEeEesign" />
+    <option name="LAST_COMMIT_MESSAGE" value="deEeEeEeEeEesign" />
   </component>
   <component name="WindowStateProjectService">
     <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
@@ -566,10 +570,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586956865020" />
-    <state x="576" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586623297373">
+    <state x="576" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588089951661">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="576" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1586623297373" />
+    <state x="576" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1588089951661" />
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585778802997">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
