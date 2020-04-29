@@ -6,7 +6,7 @@
     Посылки участника {{ request.user }}
     {% for participant in contest.participants.all %}
         {% if participant.user.user == request.user %}
-            <table>
+            <table class="standart-table">
                 <tr>
                     <th>Участник</th>
                     <th>ID Посылки</th>

@@ -578,6 +578,22 @@ form.package-send option {
     padding: 5px;
 }
 
+div.contest-reg {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 100px auto auto;
+}
+
+div.contest-reg h3, p {
+    color: white;
+}
+
+div.contest-reg ul {
+    list-style-type: disc;
+    display: table-footer-group;
+}
+
 div.pagination {
     color: #BBBBBB;
     font-size: 18px;

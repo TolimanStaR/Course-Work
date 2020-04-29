@@ -2,7 +2,7 @@ from django import forms
 
 
 class ContestRegistrationForm(forms.Form):
-    agreed = forms.BooleanField(required=True)
+    agreed = forms.BooleanField(required=True, label="Согласен с правилами")
 
 
 class SolutionSendForm(forms.Form):

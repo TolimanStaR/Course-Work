@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/media/code_files/2b2d60a3675af445f9b0e89d48a2b38c174f9df6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/templates/archive_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/archive_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/task_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/task_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/contest_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/contest_register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/contest_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/contest_result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/rating.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/rating.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,14 +177,7 @@
       <workItem from="1587817436354" duration="19277000" />
       <workItem from="1587904222145" duration="13845000" />
       <workItem from="1588055625373" duration="17495000" />
-      <workItem from="1588162297922" duration="1553000" />
-    </task>
-    <task id="LOCAL-00044" summary="Contest start and end custom handler">
-      <created>1586611307556</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1586611307556</updated>
+      <workItem from="1588162297922" duration="5799000" />
     </task>
     <task id="LOCAL-00045" summary="start to develop management app">
       <created>1586621748876</created>
@@ -518,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588096412841</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Packages form styles">
+      <created>1588166275082</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1588166275083</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +530,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed group permission mixins" />
     <MESSAGE value="Content manager for each module" />
     <MESSAGE value="Module content create, update and delete" />
     <MESSAGE value="Content manage templates" />
@@ -551,7 +554,8 @@
     <MESSAGE value="Another design features" />
     <MESSAGE value="deEeEeEeEeEesign" />
     <MESSAGE value="100th commit congratulations to me" />
-    <option name="LAST_COMMIT_MESSAGE" value="100th commit congratulations to me" />
+    <MESSAGE value="Packages form styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Packages form styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
@@ -574,10 +578,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588096410118">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588166270380">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588096410118" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588166270380" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1587755394815">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
