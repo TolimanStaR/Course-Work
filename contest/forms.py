@@ -15,5 +15,5 @@ class SolutionSendForm(forms.Form):
         # ('Ruby 2.7', 'Ruby 2.7'),
     )
 
-    language = forms.ChoiceField(choices=LANG_CHOICES)
-    participant_file = forms.FileField()
+    language = forms.ChoiceField(choices=LANG_CHOICES, label="Выберите язык")
+    participant_file = forms.FileField(label="Загрузить файл")

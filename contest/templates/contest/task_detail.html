@@ -3,14 +3,16 @@
 {% block title %}{{ task.difficulty|upper }}. {{ task.title }}{% endblock %}
 
 {% block contest_detail %}
-    <h1>{{ task.title }}</h1>
-    <p>Ограничение по времени: {{ task.time_limit }} сек.</p>
-    <p>{{ task.body|linebreaksbr }}</p>
-    <h4>Входные данные</h4>
-    <p>{{ task.input|linebreaksbr }}</p>
-    <h4>Выходные данные</h4>
-    <p>{{ task.output|linebreaksbr }}</p>
-    <table>
+    <div class="task">
+        <h1>{{ task.title }}</h1>
+        <p>Ограничение по времени: {{ task.time_limit }} сек.</p>
+        <p>{{ task.body|linebreaksbr }}</p>
+        <h4>Входные данные</h4>
+        <p>{{ task.input|linebreaksbr }}</p>
+        <h4>Выходные данные</h4>
+        <p>{{ task.output|linebreaksbr }}</p>
+    </div>
+    <table class="standart-table">
         <tr>
             <th>Пример входных данных</th>
             <th>Результат</th>
@@ -20,9 +22,11 @@
             <td>{{ first_test.answer|linebreaksbr }}</td>
         </tr>
     </table>
-    <form action="" method="post" enctype="multipart/form-data">
-        {{ form.as_p }}
-        {% csrf_token %}
-        <input type="submit" value="Отправить">
-    </form>
+    <div>
+        <form action="" method="post" enctype="multipart/form-data" class="package-send">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
 {% endblock %}

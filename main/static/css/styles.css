@@ -537,6 +537,47 @@ table.contest-table tr {
     padding: 10px;
 }
 
+form.package-send {
+    padding: 10px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+form.package-send label[for=id_participant_file] {
+    background: mediumaquamarine;
+    color: white;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+form.package-send input[type=submit] {
+    width: 200px;
+    height: 30px;
+    font-family: "Century Gothic", sans-serif;
+    background: rgba(0, 255, 255, 0.2);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+form.package-send input#id_participant_file {
+    display: none;
+}
+
+form.package-send select {
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+form.package-send option {
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+}
+
 div.pagination {
     color: #BBBBBB;
     font-size: 18px;

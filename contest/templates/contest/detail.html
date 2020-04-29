@@ -40,15 +40,15 @@
                     let m = (duration % 60 + {{ contest.starts_at.minute }} -now.getMinutes() + 60) % 60;
                     let s = ({{ contest.starts_at.second }} -now.getSeconds() + 60) % 60;
 
-                    if (s === 0) {
-                        if (m === 0) {
-                            if (h === 0) {
+                    if (s == 0) {
+                        if (m == 0) {
+                            if (h == 0) {
                                 alert("Соревнование закончилось. Пожалуйста, перейдите к таблице результатов.");
                                 window.location.replace("http://127.0.0.1:8000/contest/{{ contest.pk }}/problemset/");
                                 return;
                             }
                             --h;
-                            m = 60;
+                            m = 59;
                             if (h < 10) h = '0' + h;
                         }
                         --m;

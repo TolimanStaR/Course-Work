@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contest/migrations/0033_contest_participants_count.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/code_files/9912adfcfe173637463815752a7379997259f288.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/code_files/f138b64c61ac185d3e7c45dfb2a6475ded5cb060.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/archive_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/archive_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/task_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/task_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/articles/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/articles/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/task_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,14 +172,8 @@
       <workItem from="1587755668325" duration="8518000" />
       <workItem from="1587817436354" duration="19277000" />
       <workItem from="1587904222145" duration="13845000" />
-      <workItem from="1588055625373" duration="13748000" />
-    </task>
-    <task id="LOCAL-00043" summary="Contest list changes and waiting room">
-      <created>1586547355058</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1586547355058</updated>
+      <workItem from="1588055625373" duration="17495000" />
+      <workItem from="1588162297922" duration="1553000" />
     </task>
     <task id="LOCAL-00044" summary="Contest start and end custom handler">
       <created>1586611307556</created>
@@ -522,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588065862313</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="100th commit congratulations to me">
+      <created>1588096412841</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1588096412841</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +526,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Course create, edit and delete templates" />
     <MESSAGE value="Fixed group permission mixins" />
     <MESSAGE value="Content manager for each module" />
     <MESSAGE value="Module content create, update and delete" />
@@ -555,7 +550,8 @@
     <MESSAGE value="Account design" />
     <MESSAGE value="Another design features" />
     <MESSAGE value="deEeEeEeEeEesign" />
-    <option name="LAST_COMMIT_MESSAGE" value="deEeEeEeEeEesign" />
+    <MESSAGE value="100th commit congratulations to me" />
+    <option name="LAST_COMMIT_MESSAGE" value="100th commit congratulations to me" />
   </component>
   <component name="WindowStateProjectService">
     <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
@@ -578,10 +574,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588065859447">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588096410118">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588065859447" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588096410118" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1587755394815">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -638,15 +634,5 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="202" y="442" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585768586733" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="django-line">
-          <url>file://$PROJECT_DIR$/account/templates/account/account_packages.html</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -22,9 +22,11 @@
             <td>{{ first_test.answer|linebreaksbr }}</td>
         </tr>
     </table>
-    <form action="" method="post" enctype="multipart/form-data">
-        {{ form.as_p }}
-        {% csrf_token %}
-        <input type="submit" value="Отправить">
-    </form>
+    <div>
+        <form action="" method="post" enctype="multipart/form-data" class="package-send">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
 {% endblock %}
