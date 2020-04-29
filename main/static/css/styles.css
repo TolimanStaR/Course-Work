@@ -594,6 +594,12 @@ div.contest-reg ul {
     display: table-footer-group;
 }
 
+div.task-list {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 10px 0;
+}
+
 div.pagination {
     color: #BBBBBB;
     font-size: 18px;

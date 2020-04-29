@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/code_files/2b2d60a3675af445f9b0e89d48a2b38c174f9df6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/code_files/0596bcd182c7a22ae8b6b22faeb417f6c1d0e7cc.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/code_files/513f21c2e09827d1a5309c3dd9e74b7e79c2b789.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/contest_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/contest_register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/contest_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/contest_result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/packages_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contest/templates/contest/rating.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/rating.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/task_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/task_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contest/templates/contest/waiting.html" beforeDir="false" afterPath="$PROJECT_DIR$/contest/templates/contest/waiting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,14 +173,7 @@
       <workItem from="1587817436354" duration="19277000" />
       <workItem from="1587904222145" duration="13845000" />
       <workItem from="1588055625373" duration="17495000" />
-      <workItem from="1588162297922" duration="5799000" />
-    </task>
-    <task id="LOCAL-00045" summary="start to develop management app">
-      <created>1586621748876</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1586621748876</updated>
+      <workItem from="1588162297922" duration="6828000" />
     </task>
     <task id="LOCAL-00046" summary="Поддержка python, c, c++">
       <created>1586630541745</created>
@@ -522,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588166275083</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="contest css styles (at most)">
+      <created>1588173280175</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1588173280175</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +526,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Content manager for each module" />
     <MESSAGE value="Module content create, update and delete" />
     <MESSAGE value="Content manage templates" />
     <MESSAGE value="CMS system is ready to battle?" />
@@ -555,7 +550,8 @@
     <MESSAGE value="deEeEeEeEeEesign" />
     <MESSAGE value="100th commit congratulations to me" />
     <MESSAGE value="Packages form styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Packages form styles" />
+    <MESSAGE value="contest css styles (at most)" />
+    <option name="LAST_COMMIT_MESSAGE" value="contest css styles (at most)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
@@ -578,10 +574,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588166270380">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588173275856">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588166270380" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588173275856" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1587755394815">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

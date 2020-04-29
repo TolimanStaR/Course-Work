@@ -1,0 +1,59 @@
+﻿2019-10-11 23:20:25> Program: Starting Squirrel Updater: --createShortcut FACEIT.exe
+2019-10-11 23:20:25> ApplyReleasesImpl: About to create shortcuts for FACEIT.exe, rootAppDir C:\Users\Данил\AppData\Local\FACEITApp
+2019-10-11 23:20:26> ApplyReleasesImpl: Creating shortcut for FACEIT.exe => C:\Users\Данил\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\FACEIT Ltd.\FACEIT.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: About to save shortcut: C:\Users\Данил\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\FACEIT Ltd.\FACEIT.lnk (target C:\Users\Данил\AppData\Local\FACEITApp\FACEIT.exe, workingDir C:\Users\Данил\AppData\Local\FACEITApp\app-1.23.0, args , toastActivatorCSLID 44639087-d056-55ac-8d5a-9e3de4b53620)
+2019-10-11 23:20:26> ApplyReleasesImpl: Creating shortcut for FACEIT.exe => C:\Users\Данил\Desktop\FACEIT.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: About to save shortcut: C:\Users\Данил\Desktop\FACEIT.lnk (target C:\Users\Данил\AppData\Local\FACEITApp\FACEIT.exe, workingDir C:\Users\Данил\AppData\Local\FACEITApp\app-1.23.0, args , toastActivatorCSLID 44639087-d056-55ac-8d5a-9e3de4b53620)
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: Adobe Audition CC 2018.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: Discord.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: iCUE.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: JetBrains CLion 2019.2.3.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: JetBrains PyCharm Community Edition with Anaconda plugin 2019.2 x64.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: MediaGet.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: MSI Afterburner.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: Orbitum.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: Origin (2).lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: Origin (3).lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: Origin.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: Steam.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: Sublime Text 3.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: Vegas Pro 13.0 (64-bit).lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: Visual Studio 2019.lnk
+2019-10-11 23:20:26> ApplyReleasesImpl: Examining Pin: Диспетчер Realtek HD.lnk
+2019-10-11 23:20:35> Program: Starting Squirrel Updater: --checkForUpdate https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:20:35> Program: Fetching update information, downloading from https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:20:36> CheckForUpdateImpl: Generated new staging user ID: 10053aa8-8462-51df-a8d1-9c68c0350565
+2019-10-11 23:20:36> CheckForUpdateImpl: Downloading RELEASES file from https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:20:36> FileDownloader: Downloading url: https://faceit-client.faceit-cdn.net/release/RELEASES?id=FACEITApp&localVersion=1.23.0&arch=amd64
+2019-10-11 23:31:13> Program: Starting Squirrel Updater: --checkForUpdate https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:31:13> Program: Fetching update information, downloading from https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:31:13> CheckForUpdateImpl: Using existing staging user ID: 10053aa8-8462-51df-a8d1-9c68c0350565
+2019-10-11 23:31:13> CheckForUpdateImpl: Downloading RELEASES file from https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:31:13> FileDownloader: Downloading url: https://faceit-client.faceit-cdn.net/release/RELEASES?id=FACEITApp&localVersion=1.23.0&arch=amd64
+2019-10-11 23:34:49> Program: Starting Squirrel Updater: --processStart FACEIT.exe
+2019-10-11 23:34:49> Program: Want to launch 'C:\Users\Данил\AppData\Local\FACEITApp\app-1.23.0\FACEIT.exe'
+2019-10-11 23:34:49> Program: About to launch: 'C:\Users\Данил\AppData\Local\FACEITApp\app-1.23.0\FACEIT.exe': 
+2019-10-11 23:36:06> Program: Starting Squirrel Updater: --checkForUpdate https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:36:06> Program: Fetching update information, downloading from https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:36:06> CheckForUpdateImpl: Using existing staging user ID: 10053aa8-8462-51df-a8d1-9c68c0350565
+2019-10-11 23:36:06> CheckForUpdateImpl: Downloading RELEASES file from https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:36:06> FileDownloader: Downloading url: https://faceit-client.faceit-cdn.net/release/RELEASES?id=FACEITApp&localVersion=1.23.0&arch=amd64
+2019-10-11 23:46:40> Program: Starting Squirrel Updater: --checkForUpdate https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:46:40> Program: Fetching update information, downloading from https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:46:40> CheckForUpdateImpl: Using existing staging user ID: 10053aa8-8462-51df-a8d1-9c68c0350565
+2019-10-11 23:46:40> CheckForUpdateImpl: Downloading RELEASES file from https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:46:40> FileDownloader: Downloading url: https://faceit-client.faceit-cdn.net/release/RELEASES?id=FACEITApp&localVersion=1.23.0&arch=amd64
+2019-10-11 23:47:48> Program: Starting Squirrel Updater: --checkForUpdate https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:47:48> Program: Fetching update information, downloading from https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:47:48> CheckForUpdateImpl: Using existing staging user ID: 10053aa8-8462-51df-a8d1-9c68c0350565
+2019-10-11 23:47:48> CheckForUpdateImpl: Downloading RELEASES file from https://faceit-client.faceit-cdn.net/release
+2019-10-11 23:47:48> FileDownloader: Downloading url: https://faceit-client.faceit-cdn.net/release/RELEASES?id=FACEITApp&localVersion=1.23.0&arch=amd64
+2019-10-12 17:01:12> Program: Starting Squirrel Updater: --processStart FACEIT.exe
+2019-10-12 17:01:12> Program: Want to launch 'C:\Users\Данил\AppData\Local\FACEITApp\app-1.23.0\FACEIT.exe'
+2019-10-12 17:01:12> Program: About to launch: 'C:\Users\Данил\AppData\Local\FACEITApp\app-1.23.0\FACEIT.exe': 
+2019-10-12 17:02:15> Program: Starting Squirrel Updater: --checkForUpdate https://faceit-client.faceit-cdn.net/release
+2019-10-12 17:02:15> Program: Fetching update information, downloading from https://faceit-client.faceit-cdn.net/release
+2019-10-12 17:02:15> CheckForUpdateImpl: Using existing staging user ID: 10053aa8-8462-51df-a8d1-9c68c0350565
+2019-10-12 17:02:15> CheckForUpdateImpl: Downloading RELEASES file from https://faceit-client.faceit-cdn.net/release
+2019-10-12 17:02:15> FileDownloader: Downloading url: https://faceit-client.faceit-cdn.net/release/RELEASES?id=FACEITApp&localVersion=1.23.0&arch=amd64

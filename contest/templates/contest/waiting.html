@@ -4,11 +4,7 @@
 {% block title %}{{ contest.title }}{% endblock %}
 
 {% block content %}
-    <div class="navigation" style="margin: 0; padding: 0;">
-        <ul class="navbar">
-            <li><a>{{ contest.title }}</a></li>
-        </ul>
-    </div>
+    <p>Вы находитесь в комнате ожидания. Соревнование начнется через </p>
     {% if not contest.active and not contest.completed %}
         {% if request.user.user_profile.member %}
             <p id="timer"></p>
