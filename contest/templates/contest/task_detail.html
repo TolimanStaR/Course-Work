@@ -6,6 +6,11 @@
     <div class="task">
         <h1>{{ task.title }}</h1>
         <p>Ограничение по времени: {{ task.time_limit }} сек.</p>
+        {% if task.image %}
+            <div class="contest-img">
+                <img src="{{ task.image.url }}" alt="Img" style="width: 750px;">
+            </div>
+        {% endif %}
         <p>{{ task.body|linebreaksbr }}</p>
         <h4>Входные данные</h4>
         <p>{{ task.input|linebreaksbr }}</p>

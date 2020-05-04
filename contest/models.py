@@ -1,8 +1,11 @@
 from django.contrib.postgres.fields import ArrayField
 from django.db import models
+from django.utils import timezone
 
 from management.models import TaskBase, SolutionCaseBase, TestBase
 from account.models import UserProfile
+
+from management.fields import OrderField
 
 
 class Contest(models.Model):
@@ -25,6 +28,13 @@ class ContestTask(TaskBase):
     contest = models.ForeignKey(Contest, on_delete=models.CASCADE, related_name='tasks')
 
     number = models.PositiveIntegerField(default=1)
+
+    image = models.ImageField(blank=True, null=True, upload_to='images/')
+
+    order = OrderField(blank=True, for_fields=['contest'])
+
+    class Meta:
+        ordering = ['order']
 
 
 class ContestParticipant(models.Model):
@@ -57,6 +67,10 @@ class ContestSolutionCase(SolutionCaseBase):
 
 class ContestTest(TestBase):
     task = models.ForeignKey(ContestTask, on_delete=models.CASCADE, related_name='tests')
+    created = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        ordering = ['created']
 
     def __str__(self):
         return f'Тест задачи {self.task.title}'

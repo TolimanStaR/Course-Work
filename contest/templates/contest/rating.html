@@ -9,7 +9,7 @@
             <th>Никнейм</th>
             <th>Штраф</th>
             {% for task in contest.tasks.all %}
-                <th>{{ task.title }}</th>
+                <th>{{ task.difficulty|upper }}</th>
             {% endfor %}
         </tr>
         {% for participant in contest.participants.all %}
@@ -20,11 +20,11 @@
                 {% for res in participant.stats %}
                     {% if forloop.counter <= contest.tasks.count %}
                         {% if res == 0 %}
-                            <td></td>
+                            <td class="stats"></td>
                         {% elif res == 1 %}
-                            <td>+</td>
+                            <td class="stats"><b style="color: #00fa89">+</b></td>
                         {% else %}
-                            <td>-</td>
+                            <td class="stats"><b style="color: #fa596b">-</b></td>
                         {% endif %}
                     {% endif %}
                 {% endfor %}

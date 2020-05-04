@@ -12,6 +12,10 @@ body {
     background: #232327 url(https://krot.info/uploads/posts/2020-01/1579319884_40-100.jpg) fixed;
 }
 
+::selection {
+    background: aquamarine;
+}
+
 textarea {
     font-family: "Century Gothic", sans-serif;
     resize: none;
@@ -585,7 +589,10 @@ div.contest-reg {
     margin: 100px auto auto;
 }
 
-div.contest-reg h3, p {
+div.contest-reg p {
+    color: #AAAAAA;
+}
+div.contest-reg h3 {
     color: white;
 }
 
@@ -594,10 +601,35 @@ div.contest-reg ul {
     display: table-footer-group;
 }
 
-div.task-list {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    margin: 10px 0;
+table.task-table table#list, tr, th, td {
+    border: #999999 1px solid;
+    padding: 5px;
+}
+
+table.task-table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.status {
+    width: 1px;
+}
+
+.failed {
+    background: #AB3933;
+}
+
+.solved {
+    background: #31AB53;
+}
+
+.stats {
+    width: 40px;
+    text-align: center;
+}
+
+div.contest-img {
+    width: 500px;
 }
 
 div.pagination {

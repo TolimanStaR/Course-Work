@@ -25,7 +25,7 @@ def check_participant_solution(package, task, tests):
     judge_solution_lang = task.solution.name.split('.')[-1]
 
     env_dir_name = get_unique_name()
-    work_path = 'G:\\Проекты\Coursework'  # Хардкод из-за возникающей ошибки
+    work_path = 'G:\\Projects\Coursework'  # Хардкод из-за возникающей ошибки
 
     env_dir_abspath = f'{work_path}/management/task-check-env/{env_dir_name}'
 
@@ -79,6 +79,8 @@ def check_participant_solution(package, task, tests):
             participant_solution_process.wait(task.time_limit)
         except subprocess.TimeoutExpired:
             participant_solution_process.kill()
+            time.sleep(1)
+
             return set_verdict(f'Превышено ограничение по времени на тесте {test_number + 1}', work_dir=work_path,
                                env_dir=env_dir_abspath)
 

@@ -19,7 +19,6 @@ from django.urls import path, include
 from . import settings
 
 urlpatterns = [
-    path('grappelli/', include('grappelli.urls')),
     path('account/', include('account.urls')),
     path('contest/', include('contest.urls')),
     path('archive/', include('archive.urls')),

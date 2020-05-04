@@ -27,7 +27,7 @@
         </tr>
     </table>
     <br>
-    <div style="border: 1px #2c2c2c solid;">
-        <pre><code>{{ package.task_code }}</code></pre>
+    <div>
+        {% include 'code_listing.html' with code_text=package.task_code %}
     </div>
 {% endblock %}

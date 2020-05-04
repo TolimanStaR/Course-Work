@@ -37,7 +37,7 @@
                 {% include 'user_username.html' with user=comment.user %}
                 {{ comment.created }}
             </a>
-            <p>{{ comment.body }}</p>
+            <p>{{ comment.body|linebreaksbr|safe }}</p>
         </div>
     {% endfor %}
 {% endblock %}

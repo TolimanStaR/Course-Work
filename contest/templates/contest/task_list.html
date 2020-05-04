@@ -3,14 +3,23 @@
 {% block title %}Задачи{% endblock %}
 
 {% block contest_detail %}
-    {% for task in contest.tasks.all %}
-        <div class="task-list">
-            <p>
-                <a href="{% url 'contest_task_detail' pk=contest.pk difficulty=task.difficulty %}">
-                {{ task.difficulty|upper }}. {{ task.title }}
-                </a>
-                (Решивших: {{ task.solved_by }})
-            </p>
-        </div>
-    {% endfor %}
+    <table class="task-table" id="list">
+        <tr>
+            <th>&#8470;</th>
+            <th>Задача</th>
+            <th>Решивших</th>
+            <th class="status"></th>
+        </tr>
+        {% for task in contest.tasks.all %}
+            <tr>
+                <td>{{ contest.pk }}{{ task.difficulty|upper }}</td>
+                <td>
+                    <a href="{% url 'contest_task_detail' pk=contest.pk difficulty=task.difficulty %}">{{ task.title }}</a>
+                </td>
+                <td>{{ task.solved_by }}x</td>
+                <td {% if participant.stats == 1 %}class="solved"{% endif %}
+                    {% if participant.stats.forloop.counter0 == -1 %}class="failed"{% endif %}></td>
+            </tr>
+        {% endfor %}
+    </table>
 {% endblock %}

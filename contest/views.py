@@ -30,6 +30,7 @@ class ContestList(ListView):
     model = Contest
 
 
+@login_required
 def contest_list(request, pk=None):
     if pk:
         contest = get_object_or_404(Contest, pk=pk)
@@ -48,10 +49,12 @@ def contest_list(request, pk=None):
 
             if contest.completed:
                 contest.completed = False
-                
+
             contest.save()
 
-            return render(request, 'contest/task_list.html', {'contest': contest})
+            participant = ContestParticipant.objects.get(user=request.user.user_profile)
+
+            return render(request, 'contest/task_list.html', {'contest': contest, 'participant': participant})
 
         if cur_time > contest.starts_at + datetime.timedelta(minutes=contest.duration_minutes):
 
