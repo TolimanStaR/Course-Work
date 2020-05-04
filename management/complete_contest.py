@@ -27,7 +27,8 @@ def complete_contest(contest_id):
             time_limit=task.time_limit,
             memory_limit=task.memory_limit,
             solution=task.solution,
-            difficulty=task.difficulty
+            difficulty=task.difficulty,
+            image=task.image,
         )
         archive_task.save()
 
@@ -51,11 +52,11 @@ def complete_contest(contest_id):
             )
             new_package.save()
 
-        # for test in task_tests:
-        #     test.delete()
-        #
-        # for package in task_packages:
-        #     package.delete()
+        for test in task_tests:
+            test.delete()
+
+        for package in task_packages:
+            package.delete()
 
     calculate_rating(contest.pk)
 
@@ -71,6 +72,9 @@ def complete_contest(contest_id):
             contest_rang_color=participant.user.contest_rang_color,
         )
         past_participant.save()
+
+    for task in tasks_list:
+        task.delete()
 
     for participant in participants:
         participant.delete()

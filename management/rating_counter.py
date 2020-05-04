@@ -34,9 +34,9 @@ def calculate_rating(contest_id):
         participant.user.contest_rating += 1 + relative_place - participant.rating
 
         if int(participant.user.contest_rating) >= 0:
-            rang_index = min(participant.user.contest_rating // 50, 4) + 6
+            rang_index = min(participant.user.contest_rating // 15, 4) + 6
         else:
-            rang_index = max(participant.user.contest_rating // 50, -4) + 5
+            rang_index = max(participant.user.contest_rating // 15, -4) + 5
 
         participant.user.contest_rang = UserProfile.RANG_CHOICES[rang_index][1]
         participant.user.contest_rang_color = UserProfile.COLOR_CHOICES[rang_index][1]

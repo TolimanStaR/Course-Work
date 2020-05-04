@@ -8,6 +8,8 @@ from django.utils import timezone
 class ArchiveTask(TaskBase):
     added = models.DateTimeField(default=timezone.now)
 
+    image = models.ImageField(blank=True, null=True, upload_to='images/')
+
     class Meta:
         ordering = ('-added',)
 

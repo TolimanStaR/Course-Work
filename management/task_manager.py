@@ -27,6 +27,8 @@ def check_participant_solution(package, task, tests):
     env_dir_name = get_unique_name()
     work_path = 'G:\\Projects\Coursework'  # Хардкод из-за возникающей ошибки
 
+    # TODO: Пофиксить: Может быть сделать статические данные
+
     env_dir_abspath = f'{work_path}/management/task-check-env/{env_dir_name}'
 
     solution_abspath = f'{work_path}/media/{task.solution.name}'
