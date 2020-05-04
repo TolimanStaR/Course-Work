@@ -632,6 +632,30 @@ div.contest-img {
     width: 500px;
 }
 
+div.adm-button {
+
+}
+
+a.adm-button {
+    background: #999999;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+ul.subject-menu {
+
+}
+
+.subject-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.subject-menu .submenu {
+    visibility: hidden;
+}
+
 div.pagination {
     color: #BBBBBB;
     font-size: 18px;

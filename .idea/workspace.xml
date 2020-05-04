@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/archive/migrations/0005_archivetask_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/packages/archive_package_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/code_listing.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/code_listing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/complete_contest.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/complete_contest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/rating_counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/rating_counter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/task_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/archive_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/archive_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/templates/archive_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive/templates/archive_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/templates/courses/course/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/courses/course/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rating/templates/user_rating.html" beforeDir="false" afterPath="$PROJECT_DIR$/rating/templates/user_rating.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,14 +183,7 @@
       <workItem from="1588593833603" duration="2301000" />
       <workItem from="1588613713944" duration="31000" />
       <workItem from="1588615111465" duration="44000" />
-      <workItem from="1588626902451" duration="2044000" />
-    </task>
-    <task id="LOCAL-00048" summary="fix launch command and add subprocess usage for launch solutions">
-      <created>1586644392555</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1586644392555</updated>
+      <workItem from="1588626902451" duration="7287000" />
     </task>
     <task id="LOCAL-00049" summary="Task check manager almost ready">
       <created>1586645106763</created>
@@ -528,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588627436298</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="adding some to rating counter and complete contest managers">
+      <created>1588629023059</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1588629023059</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +536,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="CMS system is ready to battle?" />
     <MESSAGE value="education app" />
     <MESSAGE value="Course catalog list and detail handlers" />
     <MESSAGE value="Course list and detail pages" />
@@ -561,7 +560,8 @@
     <MESSAGE value="contest css styles (at most)" />
     <MESSAGE value="Contest styles almost ready" />
     <MESSAGE value="Fixed some mistakes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed some mistakes" />
+    <MESSAGE value="adding some to rating counter and complete contest managers" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding some to rating counter and complete contest managers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
@@ -584,10 +584,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585778802997" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588629016858">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588635504212">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588629016858" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588635504212" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1588613743251">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -628,10 +628,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="946" y="116" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588627306088" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1588627439649">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1588631253433">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1588627439649" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1588631253433" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -640,10 +640,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="728" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1587822441232" />
-    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1588235645443">
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1588633800870">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588235645443" />
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588633800870" />
     <state x="202" y="442" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585768586733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

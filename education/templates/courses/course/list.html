@@ -16,11 +16,12 @@
     {% endif %}
     <div>
         <h3>Предметы</h3>
-        <ul>
+        <ul class="subject-menu">
             <li {% if not subject %}class="selected"{% endif %}>
                 <a href="{% url 'course_list' %}">Все курсы</a>
             </li>
             {% for subject__ in subjects %}
+
                 <li {% if subject == subject__ %}class="selected"{% endif %}>
                     <a href="{% url 'course_list_subject' subject__.slug %}">
                         {{ subject__.title }}

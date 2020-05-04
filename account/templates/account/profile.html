@@ -17,6 +17,13 @@
                 <a>&#9823;</a>
             {% endif %}
         </h3>
+        {% if request.user.is_authenticated %}
+            {% if request.user == user and request.user.is_staff %}
+                <p>
+                    <a href="{% url 'admin:index' %}" class="adm-button">Панель администрирования</a>
+                </p>
+            {% endif %}
+        {% endif %}
         <p class="about"><i>
             О себе:
             {% if user.user_profile.about %}

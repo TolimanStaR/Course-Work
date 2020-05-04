@@ -3,11 +3,17 @@
 {% block title %}Архив задач{% endblock %}
 
 {% block content %}
-    {% for task in object_list %}
-        <p>
-            <a href="{% url 'archive_task_detail' task.pk %}">{{ task.title }}</a>
-            (Решивших: {{ task.solved_by }})
-        </p>
-    {% endfor %}
+    <table class="task-table">
+        <tr>
+            <th>Задача</th>
+            <th>Решивших</th>
+        </tr>
+        {% for task in object_list %}
+            <tr>
+                <td><a href="{% url 'archive_task_detail' task.pk %}">{{ task.title }}</a></td>
+                <td>{{ task.solved_by }}</td>
+            </tr>
+        {% endfor %}
+    </table>
     {% include "pagination.html" with page=page_obj %}
 {% endblock %}
