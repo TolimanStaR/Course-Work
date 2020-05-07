@@ -6,8 +6,11 @@
     <h3>Мои курсы</h3>
     <div>
         {% for course in object_list %}
-            <p>{{ course.title }}</p>
-            <p><a href="{% url 'user_course_detail_module' pk=course.pk module_id=course.modules.all.0.id %}">Продолжить обучение</a></p>
+            <div class="course-list-user">
+                <h3>{{ course.title }}</h3>
+                <p><a href="{% url 'user_course_detail_module' pk=course.pk module_id=course.modules.all.0.id %}">Продолжить
+                обучение</a></p>
+            </div>
         {% empty %}
             <p>
                 Вы пока не записаны ни на один из курсов.

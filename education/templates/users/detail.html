@@ -5,26 +5,22 @@
 {% endblock %}
 
 {% block content %}
-    <h3>{{ module.title }}</h3>
-    <div>
-        <h3>Модули: </h3>
-        <ul>
-            {% for module__ in object.modules.all %}
-                <table>
-                    <a href="{% url "user_course_detail_module" object.id module__.id %}">
-                        Модуль {{ module__.order|add:1 }}
-                        <br>
-                        {{ module__.title }}
-                    </a>
-                {% if module__ == module %}
-                            <<< Вы сейчас здесь
-                        {% endif %}
-                </table>
-            {% endfor %}
-        </ul>
+    <h2>Модуль {{ module.order|add:1 }}. {{ module.title }}</h2>
+    <div class="course-detail-nav">
+        {% for module__ in object.modules.all %}
+            <p>
+                <a href="{% url "user_course_detail_module" object.id module__.id %}" {% if module__ == module %}
+                   class="selected-module" {% else %}class="module-href"
+                {% endif %}>
+                    Модуль {{ module__.order|add:1 }}
+                    <br>
+                    {{ module__.title }}
+                </a>
+            </p>
+        {% endfor %}
     </div>
     <hr>
-    <div>
+    <div class="course-detail-content">
         {% for content in module.contents.all %}
             {% with item=content.item %}
                 {{ item.render }}

@@ -34,15 +34,17 @@ class Course(models.Model):
     subject = models.ForeignKey(Subject,
                                 on_delete=models.DO_NOTHING,
                                 related_name='courses',
+                                verbose_name='Предмет',
                                 )
 
     students = models.ManyToManyField(UserProfile,
                                       related_name='courses',
                                       blank=True)
 
-    title = models.CharField(max_length=MAX_CHAR_LENGTH)
-    slug = models.SlugField(max_length=MAX_CHAR_LENGTH, unique=True, blank=True)
-    overview = models.TextField()
+    title = models.CharField(max_length=MAX_CHAR_LENGTH, verbose_name='Название курса')
+    slug = models.SlugField(max_length=MAX_CHAR_LENGTH, unique=True, blank=True,
+                            verbose_name='Уникальная ссылка. (Может содержать буквы латинского алфавита и тире)')
+    overview = models.TextField(verbose_name='Краткое описание курса')
     created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -58,8 +60,8 @@ class Module(models.Model):
                                related_name='modules',
                                )
 
-    title = models.CharField(max_length=MAX_CHAR_LENGTH)
-    description = models.TextField(blank=True)
+    title = models.CharField(max_length=MAX_CHAR_LENGTH, verbose_name='Название модуля')
+    description = models.TextField(blank=True, verbose_name='Краткое описание модуля')
     order = OrderField(blank=True, for_fields=['course'])
 
     class Meta:
@@ -84,7 +86,7 @@ class Content(models.Model):
                                              'image',
                                              'video',
                                              'code',
-                                             # 'task',
+                                             # 'task',  Спойлер: Задачи будут, но позже
                                          )})
 
     object_id = models.PositiveIntegerField()
@@ -102,7 +104,8 @@ class ItemBase(models.Model):
         on_delete=models.CASCADE,
     )
 
-    item_title = models.CharField(max_length=MAX_CHAR_LENGTH)
+    item_title = models.CharField(max_length=MAX_CHAR_LENGTH,
+                                  verbose_name='Название объекта. (Не отображается на странице модуля)')
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 

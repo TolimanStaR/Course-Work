@@ -5,35 +5,26 @@
 {% block content %}
     <p>Тарифные планы olympus предоставляют возможность создавать курсы и управлять ими.</p>
     <br>
-    <p>Тариф "Преподаватель":</p>
-    <table>
-        <tr>
-            <th>Instructor</th>
-        </tr>
-        <tr>
-            <td>Создавать, редактировать, удалять курсы</td>
-        </tr>
-        <tr>
-            <td>Использование контента: Текст, ссылки, картинки, видео, файлы, листинги</td>
-        </tr>
-        <tr>
-            <td>Техническая поддержка</td>
-        </tr>
-    </table>
-    <br>
-    {% if request.user.is_authenticated %}
-        {% if not request.user.user_profile.instructor %}
-            <form action="{% url 'get_instructor_rate' %}" method="post">
-                {{ rate_get_form }}
-                {% csrf_token %}
-                <input type="submit" class="button" value="Получить статус преподавателя">
-            </form>
-        {% else %}
-            <p>Вы уже имеете статус преподавателя.</p>
-            <p><a href="{% url 'manage_course_list' %}">Перейти к управлению курсами</a></p>
-        {% endif %}
+    <div class="instructor-rate">
+        <h3>Преподаватель</h3>
+        <p>&bull; Добавлять, редактировать, удалять курсы</p>
+        <p>&bull; Использование контента: Текст, Картинки, Видео, Код, Файлы</p>
+        <p>&bull; Обеспечивается техническая поддержка</p>
+        <br>
+        {% if request.user.is_authenticated %}
+            {% if not request.user.user_profile.instructor %}
+                <form action="{% url 'get_instructor_rate' %}" method="post">
+                    {{ rate_get_form }}
+                    {% csrf_token %}
+                    <input type="submit" class="instructor-button" value="Получить статус преподавателя">
+                </form>
+            {% else %}
+                <p>Вы уже имеете статус преподавателя.</p>
+                <p><a href="{% url 'manage_course_list' %}">Перейти к управлению курсами</a></p>
+            {% endif %}
     {% else %}
         <p><a href="{% url 'login' %}">Войдите в аккаунт</a>, чтобы получить статус преподавателя</p>
     {% endif %}
+    </div>
 
 {% endblock %}

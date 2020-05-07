@@ -2,112 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/a11y-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/a11y-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/agate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/an-old-hope.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/androidstudio.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/arduino-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/arta.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/ascetic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-cave-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-cave-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-dune-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-dune-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-estuary-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-estuary-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-forest-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-forest-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-heath-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-heath-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-lakeside-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-lakeside-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-plateau-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-plateau-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-savanna-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-savanna-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-seaside-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-seaside-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-sulphurpool-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atelier-sulphurpool-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atom-one-dark-reasonable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atom-one-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/atom-one-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/brown-paper.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/brown-papersq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/codepen-embed.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/color-brewer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/darcula.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/docco.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/dracula.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/far.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/foundation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/github-gist.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/github.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/gml.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/googlecode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/gradient-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/grayscale.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/gruvbox-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/gruvbox-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/hopscotch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/hybrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/idea.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/ir-black.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/isbl-editor-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/isbl-editor-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/kimbie.dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/kimbie.light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/lightfair.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/magula.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/mono-blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/monokai-sublime.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/monokai.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/night-owl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/nord.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/obsidian.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/ocean.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/paraiso-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/paraiso-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/pojoaque.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/pojoaque.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/purebasic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/qtcreator_dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/qtcreator_light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/railscasts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/rainbow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/routeros.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/school-book.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/school-book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/shades-of-purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/solarized-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/solarized-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/srcery.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/sunburst.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/tomorrow-night-blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/tomorrow-night-bright.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/tomorrow-night-eighties.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/tomorrow-night.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/tomorrow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/vs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/vs2015.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/xcode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/xt256.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/zenburn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/js/highlight.pack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Coursework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Coursework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/migrations/0006_auto_20200507_1911.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/migrations/0017_auto_20200507_1911.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education/templates/courses/course/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/courses/course/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education/templates/courses/course/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/courses/course/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/education/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/courses/course_main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/course_main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/courses/instructor_rates.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/instructor_rates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/course/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/course/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/course/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/course/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/course/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/course/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/module/formset.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/module/formset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/templates/users/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/users/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/templates/users/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/users/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/code_listing.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/code_listing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,14 +193,7 @@
       <workItem from="1588615111465" duration="44000" />
       <workItem from="1588626902451" duration="8506000" />
       <workItem from="1588774987260" duration="3009000" />
-      <workItem from="1588839251167" duration="5424000" />
-    </task>
-    <task id="LOCAL-00050" summary="Fix string compare">
-      <created>1586717069191</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1586717069192</updated>
+      <workItem from="1588839251167" duration="15388000" />
     </task>
     <task id="LOCAL-00051" summary="Fixed penalty calculation">
       <created>1586726776572</created>
@@ -629,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588635511085</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Add highlight for code listings">
+      <created>1588844727848</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1588844727850</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,7 +546,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Course catalog list and detail handlers" />
     <MESSAGE value="Course list and detail pages" />
     <MESSAGE value="Course subscribe handler" />
     <MESSAGE value="Courses list and detail handlers" />
@@ -662,7 +570,8 @@
     <MESSAGE value="Fixed some mistakes" />
     <MESSAGE value="adding some to rating counter and complete contest managers" />
     <MESSAGE value="some DESIGN" />
-    <option name="LAST_COMMIT_MESSAGE" value="some DESIGN" />
+    <MESSAGE value="Add highlight for code listings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add highlight for code listings" />
   </component>
   <component name="WindowStateProjectService">
     <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
@@ -729,10 +638,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="946" y="116" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588627306088" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1588638165478">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1588844736866">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1588638165478" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1588844736866" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

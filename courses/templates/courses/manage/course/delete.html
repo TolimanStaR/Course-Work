@@ -3,12 +3,14 @@
 {% block title %}Удаление курса{% endblock %}
 
 {% block course_content %}
-    <p>Удаление курса "{{ object.title }}"</p>
+    <h3>Удаление курса "{{ object.title }}"</h3>
     <div>
         <form action="" method="post">
             {% csrf_token %}
             <p>Вы уверены, что хотите удалить курс "{{ object.title }}"? Действие нельзя будет отменить.</p>
-            <input type="submit" class="button" value="Подтвердить удаление">
+            <p>С удалением курса вы также удаляете весь контент и информацию о курсе.</p>
+            <p>Действие нельзя будет отменить.</p>
+            <input type="submit" class="course-button" value="Подтвердить удаление">
         </form>
     </div>
 {% endblock %}

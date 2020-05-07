@@ -6,12 +6,15 @@
     <p>В данний момент вы являетесь инструктором на следующих курсах:</p>
     <div>
         {% for course in object_list %}
-            <div>
+            <div class="course-edit-list">
                 <h3>{{ course.title }}</h3>
                 <p>
                     <a href="{% url 'course_edit' course.id %}">Перейти к управлению курсом</a>
+                    <br>
                     <a href="{% url 'course_delete' course.id %}">Удалить курс</a>
+                    <br>
                     <a href="{% url 'course_module_update' course.id %}">Перейти к настройкам модулей</a>
+                    <br>
                     {% if course.modules.count > 0 %}
                         <a href="{% url 'module_content_list' course.modules.first.id %}">Управление контентом</a>
                     {% endif %}
@@ -20,8 +23,6 @@
         {% empty %}
             <p>У вас пока что нет собственных курсов.</p>
         {% endfor %}
-        <p>
-            <a href="{% url 'course_create' %}">Создать новый курс</a>
-        </p>
+            <a href="{% url 'course_create' %}" class="course-button">Создать новый курс</a>
     </div>
 {% endblock %}

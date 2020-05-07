@@ -9,19 +9,19 @@
 {% endblock %}
 
 {% block course_content %}
-    <p>
+    <h3>
         {% if object %}
             Управление курсом "{{ object.title }}"
         {% else %}
             Создание нового курса
         {% endif %}
-    </p>
-    <div>
-        <p>Информация о курсе</p>
-        <form action="" method="post">
+    </h3>
+    <p>Это информация, которая будет показываться на главной странице курса в разделе сайта "Обучение"</p>
+    <form action="" method="post" class="course-edit">
+        <div class="form-inner">
             {{ form.as_p }}
             {% csrf_token %}
             <p><input type="submit" value="Сохранить изменения"></p>
-        </form>
-    </div>
+        </div>
+    </form>
 {% endblock %}

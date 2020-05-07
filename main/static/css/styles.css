@@ -16,7 +16,7 @@ body {
     background: aquamarine;
 }
 
-h2 {
+h2, h3 {
     color: white;
 }
 
@@ -685,6 +685,90 @@ input.std-button {
     color: white;
     border: none;
     background: mediumaquamarine;
+}
+
+div.course-list-user {
+    background: rgb(0, 255, 162);
+    background: linear-gradient(90deg, rgba(0, 255, 162, 0.5970763305322129) 0%, rgba(0, 0, 0, 0.16010154061624648) 65%);
+    padding: 10px;
+}
+
+div.course-detail-nav {
+    position: absolute;
+    width: 200px;
+}
+
+div.course-detail-content {
+    margin-left: 220px;
+}
+
+a.module-href {
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 10px;
+}
+
+a.module-href:hover {
+    background: aquamarine;
+    transition: 0.5s ease;
+}
+
+a.selected-module {
+    background: aquamarine;
+    transition: 0.5s ease;
+}
+
+a.selected-module {
+    background: mediumaquamarine;
+    display: block;
+    padding: 10px;
+}
+
+div.instructor-rate {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 300px;
+}
+
+input.instructor-button {
+    width: 300px;
+    height: 40px;
+    background: mediumaquamarine;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    border: none;
+}
+
+form.course-edit select {
+    display: block;
+    background: mediumaquamarine;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 16px;
+    color: white;
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+div.course-edit-list {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.course-button {
+    text-decoration: none;
+    display: block;
+    width: 300px;
+    color: white;
+    border: none;
+    background: mediumaquamarine;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Century Gothic", sans-serif;
 }
 
 .selected {

@@ -19,6 +19,10 @@ class ArchiveTask(TaskBase):
 
 class ArchiveTest(TestBase):
     task = models.ForeignKey(ArchiveTask, on_delete=models.CASCADE, related_name='tests')
+    created = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        ordering = ['created']
 
     def __str__(self):
         return f'Тест задачи {self.task.title}'
