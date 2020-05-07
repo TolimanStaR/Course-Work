@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/archive/migrations/0006_auto_20200507_1911.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/migrations/0017_auto_20200507_1911.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/templates/courses/course_main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/course_main_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/templates/courses/instructor_rates.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/instructor_rates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/course/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/course/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/course/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/course/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/course/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/course/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/module/formset.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/module/formset.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education/templates/users/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/users/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education/templates/users/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/users/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/code_listing.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/code_listing.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,14 +181,7 @@
       <workItem from="1588615111465" duration="44000" />
       <workItem from="1588626902451" duration="8506000" />
       <workItem from="1588774987260" duration="3009000" />
-      <workItem from="1588839251167" duration="15388000" />
-    </task>
-    <task id="LOCAL-00051" summary="Fixed penalty calculation">
-      <created>1586726776572</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1586726776572</updated>
+      <workItem from="1588839251167" duration="18236000" />
     </task>
     <task id="LOCAL-00052" summary="Get handler for waiting room">
       <created>1586775268137</created>
@@ -538,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588844727850</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Style Style Opa Gangnam Style">
+      <created>1588868832538</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1588868832538</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +534,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Course list and detail pages" />
     <MESSAGE value="Course subscribe handler" />
     <MESSAGE value="Courses list and detail handlers" />
     <MESSAGE value="templates for list and detail" />
@@ -571,7 +558,8 @@
     <MESSAGE value="adding some to rating counter and complete contest managers" />
     <MESSAGE value="some DESIGN" />
     <MESSAGE value="Add highlight for code listings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add highlight for code listings" />
+    <MESSAGE value="Style Style Opa Gangnam Style" />
+    <option name="LAST_COMMIT_MESSAGE" value="Style Style Opa Gangnam Style" />
   </component>
   <component name="WindowStateProjectService">
     <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
@@ -594,10 +582,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588841485545" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588844718630">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588868825702">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588844718630" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588868825702" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1588613743251">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -638,10 +626,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="946" y="116" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588627306088" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1588844736866">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1588868835335">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1588844736866" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1588868835335" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

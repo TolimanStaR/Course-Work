@@ -771,6 +771,25 @@ div.course-edit-list {
     font-family: "Century Gothic", sans-serif;
 }
 
+div.module-edit input[type=text], textarea {
+    display: block;
+    box-sizing: border-box;
+    background: rgba(0, 255, 255, 0.2);
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Century Gothic", sans-serif;
+    margin: 20px 0;
+    line-height: 40px;
+}
+
+div.module-edit label {
+    width: 100%;
+    display: inline-block;
+    margin-top: 5px;
+}
+
 .selected {
     background: mediumaquamarine;
 }
@@ -790,5 +809,3 @@ div.pagination a {
 div.pagination a:hover {
     background: aquamarine;
 }
-
-

@@ -4,10 +4,9 @@
 
 {% block course_content %}
     <p>Редактирование "{{ course.title }}"</p>
-    <div>
+    <div class="module-edit">
         <h3>Модули курса</h3>
         <form action="" method="post">
-            <div>
             {{ formset }}
             {{ formset.management_form }}
             {% csrf_token %}
