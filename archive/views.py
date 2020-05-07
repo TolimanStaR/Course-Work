@@ -16,7 +16,7 @@ from management.task_manager import verdict, check_participant_solution
 class TaskListView(ListView):
     template_name = 'archive_list.html'
     model = ArchiveTask
-    paginate_by = 3
+    paginate_by = 10
 
 
 class TaskDetailView(LoginRequiredMixin, FormView):

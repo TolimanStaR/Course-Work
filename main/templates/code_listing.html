@@ -1,24 +1,31 @@
-<style type="text/css">
-    div.code-listing {
-        border: 1px #2c2c2c solid;
-        padding: 10px;
-        background: rgb(44, 166, 132);
-        background: linear-gradient(0deg, rgba(44, 166, 132, 1) 0%, rgba(49, 106, 94, 1) 47%, rgba(0, 0, 0, 1) 100%);
-        background: linear-gradient(0deg, rgba(44,120,99,1) 0%, rgba(49,106,94,1) 16%, rgba(0,0,0,1) 96%);
-        width: 60%;
-    }
+{#<style type="text/css">#}
+{#    div.code-listing {#}
+{#        border: 1px #2c2c2c solid;#}
+{#        padding: 10px;#}
+{#        background: rgb(44, 166, 132);#}
+{#        background: linear-gradient(0deg, rgba(44,120,99,1) 0%, rgba(49,106,94,1) 16%, rgba(0,0,0,1) 96%);#}
+{#        width: 60%;#}
+{#    }#}
+{##}
+{#    code.code-listing {#}
+{#        font-family: monospace;#}
+{#        font-size: 16px;#}
+{#        font-style: normal;#}
+{#        font-variant: normal;#}
+{#        font-weight: 400;#}
+{#        color: white;#}
+{#        line-height: 17.6px;#}
+{#    }#}
+{#</style>#}
+{##}
+{#<div class="code-listing">#}
+{#    <pre><code class="code-listing">{{ code_text }}</code></pre>#}
+{#</div>#}
 
-    code.code-listing {
-        font-family: monospace;
-        font-size: 16px;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 400;
-        color: white;
-        line-height: 17.6px;
+<style type="text/css">
+    code {
+        width: 70%;
     }
 </style>
 
-<div class="code-listing">
-    <pre><code class="code-listing">{{ code_text }}</code></pre>
-</div>
+<pre><code>{{ code_text }}</code></pre>

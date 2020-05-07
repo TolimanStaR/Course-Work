@@ -16,6 +16,10 @@ body {
     background: aquamarine;
 }
 
+h2 {
+    color: white;
+}
+
 textarea {
     font-family: "Century Gothic", sans-serif;
     resize: none;
@@ -643,17 +647,48 @@ a.adm-button {
     padding: 5px;
 }
 
-ul.subject-menu {
-
-}
-
-.subject-menu a {
-    color: white;
+a.subj {
     text-decoration: none;
+    padding: 5px;
+    display: block;
+    transition: 0.5s ease;
 }
 
-.subject-menu .submenu {
-    visibility: hidden;
+div.subj-menu {
+    background: rgba(0, 0, 0,  0.5);
+}
+
+ul.subject-menu {
+    padding: 0;
+}
+
+ul.subject-menu li {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+div.course-list {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px 0;
+}
+p.course-review {
+    color: white;
+}
+
+input.std-button {
+    width: 300px;
+    height: 50px;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background: mediumaquamarine;
+}
+
+.selected {
+    background: mediumaquamarine;
 }
 
 div.pagination {
@@ -671,3 +706,5 @@ div.pagination a {
 div.pagination a:hover {
     background: aquamarine;
 }
+
+

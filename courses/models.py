@@ -22,7 +22,7 @@ class Subject(models.Model):
         ordering = ['title']
 
     def __str__(self):
-        return f'Предмет {self.title}'
+        return f'{self.title}'
 
 
 class Course(models.Model):

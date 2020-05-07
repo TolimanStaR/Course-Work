@@ -9,38 +9,46 @@
 {% endblock %}
 
 {% block content %}
-    {% if subject %}
-        Курсы по предмету {{ subject.title }}
-    {% else %}
-        Все курсы
-    {% endif %}
     <div>
-        <h3>Предметы</h3>
-        <ul class="subject-menu">
-            <li {% if not subject %}class="selected"{% endif %}>
-                <a href="{% url 'course_list' %}">Все курсы</a>
-            </li>
-            {% for subject__ in subjects %}
-
-                <li {% if subject == subject__ %}class="selected"{% endif %}>
-                    <a href="{% url 'course_list_subject' subject__.slug %}">
-                        {{ subject__.title }}
+        <div class="subj-menu">
+            <ul class="subject-menu">
+                <li {% if not subject %}class="selected"{% endif %}>
+                    <a href="{% url 'course_list' %}" class="subj">Все предметы
                         <br>
-                        <span>{{ subject__.total_courses }} Курсов</span>
-                    </a>
+                        <span>Всего курсов: {{ courses.courses_set.count }}</span></a>
                 </li>
-            {% endfor %}
-        </ul>
+                {% for subject__ in subjects %}
+                    <li {% if subject == subject__ %}class="selected"{% endif %}>
+                        <a href="{% url 'course_list_subject' subject__.slug %}" class="subj">
+                            {{ subject__.title }}
+                            <br>
+                            <span>Курсов: {{ subject__.total_courses }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
     <br>
-    <p></p>
     <br>
-    <div class="module">
+    <br>
+    <h2>
+        {% if subject %}
+            Курсы по предмету "{{ subject.title }}"
+        {% else %}
+            Все курсы
+        {% endif %}
+    </h2>
+    <div>
         {% for course in courses %}
             {% with subject=course.subject %}
-                <h3><a href="{% url 'course_detail' course.slug %}">{{ course.title }}</a></h3>
-                <p>Модулей: {{ course.total_modules }}</p>
-                <p>Преподаватель: {{ course.owner }}</p>
+                <div class="course-list">
+                    <h3><a href="{% url 'course_detail' course.slug %}">{{ course.title }}</a> <a
+                            class="article-tag">{{ course.subject }}</a></h3>
+                    <p class="course-review">Модулей: {{ course.total_modules }},
+                        Преподаватель: {% include 'user_username.html' with user=course.owner %}</p>
+                    <p>{{ course.overview|linebreaksbr|safe|truncatewords:100 }}</p>
+                </div>
             {% endwith %}
         {% endfor %}
     </div>
