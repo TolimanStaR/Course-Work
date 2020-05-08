@@ -70,6 +70,9 @@ def check_participant_solution(package, task, tests):
             test.answer = get_judge_answer(test, env_solution_path, input_file_name, output_file_name)
             test.save()
 
+        __input = open(input_file_name, read_mode)
+        __output = open(output_file_name, write_mode)
+
         participant_solution_process = subprocess.Popen(
             participant_launch_command,
             shell=True,
@@ -77,10 +80,14 @@ def check_participant_solution(package, task, tests):
             stderr=subprocess.PIPE,
         )
 
+        __input.close()
+        __output.close()
+
         try:
             participant_solution_process.wait(task.time_limit)
         except subprocess.TimeoutExpired:
             participant_solution_process.kill()
+
             time.sleep(1)
 
             return set_verdict(f'Превышено ограничение по времени на тесте {test_number + 1}', work_dir=work_path,
