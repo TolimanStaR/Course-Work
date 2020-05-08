@@ -60,7 +60,7 @@ class SolutionCaseBase(models.Model):
                                          'cout << hack::get_solution(input);\n'
                                          'return 0;\n'
                                          '}')
-    verdict = models.CharField(max_length=150, default='Выполняется проверка')
+    verdict = models.CharField(max_length=150, default='Ожидается проверка')
     solved = models.BooleanField(default=False)
 
     class Meta:

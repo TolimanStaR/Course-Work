@@ -29,4 +29,5 @@ urlpatterns = [
     path('course/<int:pk>/<int:module_id>/',
          views.UserCourseDetailView.as_view(),
          name='user_course_detail_module'),
+
 ]

@@ -27,7 +27,7 @@ urlpatterns = [
     path('rating/', include('rating.urls')),
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
-
+    # path('api/', include('courses.api.urls')),
 ]
 
 if settings.DEBUG:
