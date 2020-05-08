@@ -2,29 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/participant_output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/participant_solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/participant_solution.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/participant_output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/participant_solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/participant_solution.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/participant_output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/participant_solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/participant_solution.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/ac44049c-ef89-4b40-aad4-4de727880315/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/ac44049c-ef89-4b40-aad4-4de727880315/participant_output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/ac44049c-ef89-4b40-aad4-4de727880315/participant_solution.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/ac44049c-ef89-4b40-aad4-4de727880315/participant_solution.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/task-check-env/ac44049c-ef89-4b40-aad4-4de727880315/solution.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/management/task_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/task_manager.py" afterDir="false" />
     </list>
@@ -204,14 +181,7 @@
       <workItem from="1588626902451" duration="8506000" />
       <workItem from="1588774987260" duration="3009000" />
       <workItem from="1588839251167" duration="18874000" />
-      <workItem from="1588954027896" duration="2069000" />
-    </task>
-    <task id="LOCAL-00053" summary="Start to do archive app">
-      <created>1586786606307</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1586786606307</updated>
+      <workItem from="1588954027896" duration="3215000" />
     </task>
     <task id="LOCAL-00054" summary="Archive app almost ready">
       <created>1586793666356</created>
@@ -549,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588876722481</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Fixed errors with directories management">
+      <created>1588957582797</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1588957582798</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,7 +534,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Courses list and detail handlers" />
     <MESSAGE value="templates for list and detail" />
     <MESSAGE value="Fix bug with urls" />
     <MESSAGE value="Fixed orderField and text template" />
@@ -582,7 +558,8 @@
     <MESSAGE value="Add highlight for code listings" />
     <MESSAGE value="Style Style Opa Gangnam Style" />
     <MESSAGE value="course delete, list styles css" />
-    <option name="LAST_COMMIT_MESSAGE" value="course delete, list styles css" />
+    <MESSAGE value="Fixed errors with directories management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed errors with directories management" />
   </component>
   <component name="WindowStateProjectService">
     <state x="472" y="222" key="#Deployment" timestamp="1587755383922">
@@ -605,10 +582,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588841485545" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588876717052">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1588957576409">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588876717052" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588957576409" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1588613743251">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -645,14 +622,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1879" height="349" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1587509649352" />
-    <state x="946" y="116" key="SettingsEditor" timestamp="1588627306088">
+    <state x="946" y="116" key="SettingsEditor" timestamp="1588958478295">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="946" y="116" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588627306088" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1588876725126">
+    <state x="946" y="116" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588958478295" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1588957589364">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1588876725126" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1588957589364" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

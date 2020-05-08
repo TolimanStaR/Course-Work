@@ -22,12 +22,15 @@ read_mode = 'r'
 
 
 def check_participant_solution(package, task, tests):
+    package.verdict = 'Выполняется проверка'
+    package.save()
+
     judge_solution_lang = task.solution.name.split('.')[-1]
 
     env_dir_name = get_unique_name()
-    work_path = 'G:\\Projects\Coursework'  # Хардкод из-за возникающей ошибки
+    work_path = "G:\\Projects\Coursework"  # Хардкод из-за возникающей ошибки
 
-    # TODO: Пофиксить: Может быть сделать статические данные
+    # TODO: Пофиксить: Может быть сделать статические данные (config.py)
 
     env_dir_abspath = f'{work_path}/management/task-check-env/{env_dir_name}'
 
@@ -198,7 +201,12 @@ def get_judge_answer(test, judge_sol_abs_path, input_, output_):
 
 
 def get_solution_lang(solution_abs_path):
-    return solution_abs_path.split('.')[-1]
+    try:
+        language = solution_abs_path.split('.')[-1]
+    except Exception:
+        language = None
+
+    return language
 
 
 def get_unique_name():
@@ -207,5 +215,9 @@ def get_unique_name():
 
 def set_verdict(message, work_dir=None, env_dir=None):
     os.chdir(work_dir)
-    shutil.rmtree(env_dir)
+    try:
+        shutil.rmtree(env_dir)
+    except PermissionError:
+        return message
+
     return message
