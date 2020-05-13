@@ -100,9 +100,9 @@ WSGI_APPLICATION = 'Coursework.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'olympus',
+        'NAME': 'Olympus',
         'USER': 'postgres',
-        'PASSWORD': 'anonimusman528491',
+        'PASSWORD': '528491pisos',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
