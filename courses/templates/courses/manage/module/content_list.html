@@ -6,37 +6,34 @@
 
 {% block course_content %}
     {% with course=module.course %}
-        <h3>Курс "{{ course.title }}"</h3>
-        <div>
-            <h3>Модули</h3>
-            <ul>
-                {% for module__ in course.modules.all %}
-                    <li data-id="{{ module__.id }}" {% if module__ == module %}class="selected"{% endif %}>
-                        <a href="{% url 'module_content_list' module__.id %}">
+        <h3>Управление содержимым курса "{{ course.title }}"</h3>
+        <div class="course-detail-nav">
+            {% for module__ in course.modules.all %}
+                <p>
+                    <a href="{% url 'module_content_list' module__.id %}" {% if module__ == module %}
+                       class="selected-module" {% else %}class="module-href"
+                    {% endif %}>
                         <span>
                             Модуль <span class="order-cell">{{ module__.order|add:1 }}</span>
                         </span>
-                            <br>
-                            {{ module__.title }}
-                        </a>
-                    </li>
-                {% empty %}
-                    <p>Модулей пока нет</p>
-                {% endfor %}
-            </ul>
-            <p><a href="{% url 'course_module_update' course.id %}">Редактировать модули</a></p>
+                        <br>
+                        {{ module__.title }}
+                    </a>
+                </p>
+            {% empty %}
+                <p>Модулей пока нет</p>
+            {% endfor %}
+            {#            <p><a href="{% url 'course_module_update' course.id %}">Редактировать модули</a></p>#}
         </div>
-        <div class="module">
-            <h3>Модуль {{ module.order|add:1 }}: {{ module.title }}</h3>
-            <h3>Контент модуля:</h3>
-            <div>
+        <div class="course-detail-content">
+            <div class="content-edit-wrap">
                 {% for content in module.contents.all %}
-                    <div data-id="{{ content.id }}">
+                    <div data-id="{{ content.id }}" class="content-edit">
                         {% with item=content.item %}
-                            <p>{{ item }} {{ item|model_name }}</p>
-                            <a href="{% url 'module_content_update' module.id item|model_name item.id %}">Редактировать</a>
+                            <p>Предмет: {{ item }} {{ item|model_name }}</p>
+                            <a href="{% url 'module_content_update' module.id item|model_name item.id %}" class="std-button-m">Редактировать</a>
                             <form action="{% url 'module_content_delete' content.id %}" method="post">
-                                <input type="submit" value="Удалить">
+                                <input type="submit" value="Удалить" class="std-button-m">
                                 {% csrf_token %}
                             </form>
                         {% endwith %}
@@ -46,7 +43,7 @@
                 {% endfor %}
             </div>
             <h3>Добавить контент</h3>
-            <ul class="content">
+            <ul class="content-add-menu">
                 <li><a href="{% url 'module_content_create' module.id 'text' %}">Текст</a></li>
                 <li><a href="{% url 'module_content_create' module.id 'image' %}">Картинка</a></li>
                 <li><a href="{% url 'module_content_create' module.id 'video' %}">Видео</a></li>

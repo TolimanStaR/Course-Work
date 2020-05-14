@@ -790,6 +790,67 @@ div.module-edit label {
     margin-top: 5px;
 }
 
+div.content-edit {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-top: 33px;
+}
+
+ul.content-add-menu {
+
+}
+
+ul.content-add-menu li {
+
+}
+
+ul.content-add-menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 0 5px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease;
+}
+
+div.content-edit-wrap p {
+    color: white;
+    font-size: 16px;
+}
+
+input.std-button-m {
+    background: mediumaquamarine;
+    display: block;
+    border: none;
+    line-height: 40px;
+    width: 200px;
+    font-size: 16px;
+    font-family: "Century Gothic", sans-serif;
+    color: white;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+a.std-button-m {
+    text-decoration: none;
+    text-align: center;
+    background: mediumaquamarine;
+    display: block;
+    border: none;
+    line-height: 40px;
+    width: 200px;
+    font-size: 16px;
+    font-family: "Century Gothic", sans-serif;
+    color: white;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+ul.content-add-menu li a:hover {
+    background: aquamarine;
+    transition: 0.5s ease;
+}
+
 .selected {
     background: mediumaquamarine;
 }

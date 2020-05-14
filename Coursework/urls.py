@@ -35,4 +35,4 @@ urlpatterns = [
 # check: python3.8 manage.py check --deploy --settings=Coursework.settings.pro
 
 if local.DEBUG:
-    urlpatterns += static(pro.MEDIA_URL, document_root=pro.MEDIA_ROOT)
+    urlpatterns += static(base.MEDIA_URL, document_root=base.MEDIA_ROOT)
