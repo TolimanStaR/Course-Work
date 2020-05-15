@@ -12,9 +12,11 @@ from Coursework.settings.project_variables import WORKING_DIRECTORY, \
 write_mode = 'w'
 read_mode = 'r'
 
+debug = False
+
 
 def check_participant_solution(package, task, tests):
-    package.verdict = 'Выполняется проверка'
+    package.verdict = verdict['process']
     package.save()
 
     judge_solution_lang = task.solution.name.split('.')[-1]
@@ -29,6 +31,10 @@ def check_participant_solution(package, task, tests):
 
     env_solution_path = f'{env_dir_abspath}/solution.{judge_solution_lang}'
     env_participant_solution_path = f'{env_dir_abspath}/participant_solution.{solution_lang[package.language]}'
+
+    if debug:
+        print(f'WORKING PATH: {WORKING_DIRECTORY}')
+        print(f'ENV WORKING PATH: {env_dir_abspath}')
 
     os.mkdir(env_dir_abspath)
 

@@ -4,7 +4,7 @@ DEBUG_PROJECT_NAME = 'Coursework'
 IP = '185.255.132.221'
 PORT = '8000'
 
-WORKING_DIRECTORY = '/root/project/'  # Only for server
+WORKING_DIRECTORY = '/root/project'  # Only for server
 LOCAL_WORKING_DIRECTORY = 'G://Projects/Coursework'  # On my pc
 
 solution_lang = {
@@ -18,4 +18,10 @@ solution_lang = {
 
 verdict = {
     True: 'Правильное решение',
+
+    # Codes of status of task checking:
+    # WANNA ENUM...
+
+    'process': 'Выполняется проверка',
+
 }

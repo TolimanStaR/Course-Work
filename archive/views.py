@@ -61,11 +61,13 @@ class TaskDetailView(LoginRequiredMixin, FormView):
 
             right_packages = ArchiveSolutionCase.objects.filter(task=task, user=user, solved=True)
 
-            if len(right_packages) == 0:
+            if len(right_packages) == 0 and package.verdict == verdict[True]:
                 task.solved_by += 1
 
             if package.verdict == verdict[True]:
                 package.solved = True
+            elif package.verdict == verdict['process']:
+                package.verdict = 'Ошибка исполнения'
 
             package.save()
             task.save()
