@@ -4,18 +4,10 @@ import time
 import uuid
 import os
 
-solution_lang = {
-    'GNU GCC C99': 'c',
-    'GNU G++ 17': 'cpp',
-    # 'Kotlin': 'kt',
-    'Python 3': 'py',
-    'PyPy': 'pypy',
-    # 'Ruby 2.7': 'rb',
-}
-
-verdict = {
-    True: 'Правильное решение',
-}
+from Coursework.settings.project_variables import WORKING_DIRECTORY, \
+    LOCAL_WORKING_DIRECTORY, \
+    solution_lang, \
+    verdict
 
 write_mode = 'w'
 read_mode = 'r'
@@ -28,9 +20,7 @@ def check_participant_solution(package, task, tests):
     judge_solution_lang = task.solution.name.split('.')[-1]
 
     env_dir_name = get_unique_name()
-    work_path = "G:\\Projects\Coursework"  # Хардкод из-за возникающей ошибки
-
-    # TODO: Пофиксить: Может быть сделать статические данные (config.py)
+    work_path = WORKING_DIRECTORY
 
     env_dir_abspath = f'{work_path}/management/task-check-env/{env_dir_name}'
 

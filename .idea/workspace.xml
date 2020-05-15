@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/templates/privacy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coursework/settings/project_variables.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-config/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coursework/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coursework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/templates/courses/content/image.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/content/image.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/templates/courses/manage/content/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/courses/manage/content/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/project-config/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/uwsgi-cfg.ini" beforeDir="false" afterPath="$PROJECT_DIR$/project-config/uwsgi-cfg.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management/task_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/task_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +36,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -91,11 +84,11 @@
       <recent name="G:\Проекты\Coursework\media\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\Projects\Coursework\config" />
       <recent name="G:\Projects\Coursework\Coursework\settings" />
+      <recent name="G:\Projects\Coursework\Coursework" />
+      <recent name="G:\Projects\Coursework\project-config" />
+      <recent name="G:\Projects\Coursework\config" />
       <recent name="G:\Projects\Coursework\main\static\css" />
-      <recent name="G:\Projects\Coursework\main\static\js" />
-      <recent name="G:\Projects\Coursework\main\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -206,14 +199,7 @@
       <workItem from="1589260573645" duration="11166000" />
       <workItem from="1589370770957" duration="8581000" />
       <workItem from="1589443826179" duration="6894000" />
-      <workItem from="1589524930292" duration="16551000" />
-    </task>
-    <task id="LOCAL-00062" summary="Start to develop a courses manager app">
-      <created>1587059572425</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1587059572425</updated>
+      <workItem from="1589524930292" duration="17281000" />
     </task>
     <task id="LOCAL-00063" summary="Several models for content and items">
       <created>1587061209069</created>
@@ -551,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589551113181</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="Privacy policy (Law stonks)">
+      <created>1589575772627</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1589575772627</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +552,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Some bugs fixed and tasks removed from courses" />
     <MESSAGE value="Contest rating color at the all of project" />
     <MESSAGE value="Some design features" />
     <MESSAGE value="Account design" />
@@ -584,7 +576,8 @@
     <MESSAGE value="uWSGI and Nginx configuration in process" />
     <MESSAGE value="CSS for cms content" />
     <MESSAGE value="nginx conf" />
-    <option name="LAST_COMMIT_MESSAGE" value="nginx conf" />
+    <MESSAGE value="Privacy policy (Law stonks)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Privacy policy (Law stonks)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="779" y="250" key="#Deployment" timestamp="1589262131724">
@@ -611,10 +604,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588841485545" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1589551098827">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1589575765071">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1589551098827" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1589575765071" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1589065633232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -663,10 +656,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1589134512949" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1589551500580">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1589575777376">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589551500580" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589575777376" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
