@@ -1,7 +1,7 @@
 from django.contrib.postgres.search import TrigramSimilarity, SearchVector, SearchQuery, SearchRank
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
-from django.views.generic import ListView, DetailView, FormView
+from django.views.generic import ListView, DetailView, FormView, TemplateView
 from .models import Article, Comment
 from .forms import SearchForm, CommentForm
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -96,3 +96,7 @@ class ArticleDetailView(DetailView, FormView):
         else:
             form = self.form_class
         return render(request, self.template_name, {'article': article, 'form': form})
+
+
+class Privacy(TemplateView):
+    template_name = 'privacy.html'

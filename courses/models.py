@@ -121,23 +121,23 @@ class ItemBase(models.Model):
 
 
 class Text(ItemBase):
-    context = models.TextField()
+    context = models.TextField(verbose_name='Текст')
 
 
 class File(ItemBase):
-    file = models.FileField(upload_to='files')
+    file = models.FileField(upload_to='files', verbose_name='Файл')
 
 
 class Image(ItemBase):
-    file = models.FileField(upload_to='images')
+    file = models.FileField(upload_to='images', verbose_name='Картинка')
 
 
 class Video(ItemBase):
-    url = models.URLField()
+    url = models.URLField(verbose_name='Ссылка на видео (YouTube)')
 
 
 class Code(ItemBase):
-    code = models.TextField()
+    code = models.TextField(verbose_name='Код')
 
 
 # class Task(ItemBase, TaskBase):
