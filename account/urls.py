@@ -2,6 +2,8 @@
 
 from django.contrib.auth import views as authentication_views
 
+from Coursework.settings.base import LOGOUT_REDIRECT_URL
+
 # ...
 
 from django.urls import path
@@ -10,7 +12,7 @@ from . import views
 urlpatterns = [
     path('', authentication_views.LoginView.as_view(), name='login'),
     path('login/', authentication_views.LoginView.as_view(), name='login'),
-    path('logout/', authentication_views.LogoutView.as_view(), name='logout'),
+    path('logout/', authentication_views.LogoutView.as_view(), {'next_page': LOGOUT_REDIRECT_URL}, name='logout'),
     path('profile/', views.UserProfileView.as_view(), name='profile'),
     path('profile/<username>/', views.UserProfileView.as_view(), name='profile'),
     path('users/', views.UserListView.as_view(), name='user_list'),

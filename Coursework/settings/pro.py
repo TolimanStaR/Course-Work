@@ -1,6 +1,6 @@
 from .base import *
 
-DEBUG = False
+DEBUG = True
 
 # ADMINS = ('Даниил Дыряев', 'toliman.st4r@gmail.com')
 
@@ -19,3 +19,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+# STATIC_ROOT = '/root/project/main/static/'
+# MEDIA_ROOT = '/root/project/media/'

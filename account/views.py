@@ -85,7 +85,7 @@ class UserProfileView(DetailView, LoginRequiredMixin):
         if 'username' in kwargs:
             user = get_object_or_404(User, username=kwargs['username'])
         else:
-            user = User.objects.get(username=request.user.username)
+            user = get_object_or_404(User, username=request.user.username)
 
         return render(request, self.template_name, {'user': user})
 
