@@ -12,6 +12,8 @@ from account.models import UserProfile
 
 from management.task_manager import verdict, check_participant_solution
 
+from Coursework.settings.project_variables import solution_lang
+
 
 class TaskListView(ListView):
     template_name = 'archive_list.html'
@@ -39,6 +41,14 @@ class TaskDetailView(LoginRequiredMixin, FormView):
 
             user_file = form.cleaned_data['participant_file']
             language = form.cleaned_data['language']
+
+            sol_name = user_file.name.split('.')
+            if not (len(sol_name) == 2 and sol_name[-1] in solution_lang.values()):
+                print(sol_name)
+                print(len(sol_name))
+                print(sol_name[-1])
+                print(sol_name[-1] in language)
+                return exception()
 
             try:
                 code = user_file.open('r').read().decode('cp866')
@@ -92,3 +102,7 @@ class ArchivePackageView(LoginRequiredMixin, TemplateResponseMixin, View):
                 return render(request, 'packages/archive_package_detail.html', {'task': task, 'package': package})
             else:
                 return render(request, self.template_name, {'task': task, 'packages': packages})
+
+
+def exception():
+    return HttpResponseRedirect(reverse('archive_task_list', args=()))
