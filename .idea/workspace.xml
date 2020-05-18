@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Course-work.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~$urse-work.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/archive/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-config/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/project-config/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,21 +73,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programming" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\Projects\Coursework\main\static\css" />
-      <recent name="G:\Проекты\Coursework\media\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Projects\Coursework" />
       <recent name="G:\Projects\Coursework\Coursework\settings" />
       <recent name="G:\Projects\Coursework\Coursework" />
       <recent name="G:\Projects\Coursework\project-config" />
       <recent name="G:\Projects\Coursework\config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Projects\Coursework\main\static\css" />
+      <recent name="G:\Проекты\Coursework\media\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -198,14 +199,9 @@
       <workItem from="1589370770957" duration="8581000" />
       <workItem from="1589443826179" duration="6894000" />
       <workItem from="1589524930292" duration="20400000" />
-      <workItem from="1589634221028" duration="5622000" />
-    </task>
-    <task id="LOCAL-00065" summary="Mixins and base course manage handlers">
-      <created>1587067300480</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1587067300480</updated>
+      <workItem from="1589634221028" duration="7216000" />
+      <workItem from="1589732314744" duration="606000" />
+      <workItem from="1589792620015" duration="4414000" />
     </task>
     <task id="LOCAL-00066" summary="Group &quot;Instructor&quot; permissions and group required mixins from django-braces">
       <created>1587068577493</created>
@@ -543,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589578265874</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Added some protection&#10;&#10;(Protekt!)">
+      <created>1589659042832</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1589659042833</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +554,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Account design" />
     <MESSAGE value="Another design features" />
     <MESSAGE value="deEeEeEeEeEesign" />
     <MESSAGE value="100th commit congratulations to me" />
@@ -576,7 +578,8 @@
     <MESSAGE value="Privacy policy (Law stonks)" />
     <MESSAGE value="config file" />
     <MESSAGE value="bug in archive app fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug in archive app fixed" />
+    <MESSAGE value="Added some protection&#10;&#10;(Protekt!)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some protection&#10;&#10;(Protekt!)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="779" y="250" key="#Deployment" timestamp="1589262131724">
@@ -603,18 +606,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588841485545" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1589578259682">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1589659036087">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1589578259682" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1589659036087" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1589065633232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589065633232" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1589142300780">
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1589798060686">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1589142300780" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1589798060686" />
     <state width="1879" height="623" key="GridCell.Tab.0.bottom" timestamp="1589061342161">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -655,10 +658,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1589134512949" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1589636330077">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1589659045365">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589636330077" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589659045365" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

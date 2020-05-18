@@ -54,6 +54,7 @@ class TaskDetailView(LoginRequiredMixin, FormView):
                 code = user_file.open('r').read().decode('cp866')
             except Exception:
                 code = "<code>"
+                return exception()
 
             package = ArchiveSolutionCase.objects.create(
                 user=user,
