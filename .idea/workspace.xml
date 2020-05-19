@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Course-work.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/~$urse-work.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~WRL2029.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Course-work.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/script.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$urse-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/~$urse-work.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,14 +201,8 @@
       <workItem from="1589524930292" duration="20400000" />
       <workItem from="1589634221028" duration="7216000" />
       <workItem from="1589732314744" duration="606000" />
-      <workItem from="1589792620015" duration="4414000" />
-    </task>
-    <task id="LOCAL-00066" summary="Group &quot;Instructor&quot; permissions and group required mixins from django-braces">
-      <created>1587068577493</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1587068577493</updated>
+      <workItem from="1589792620015" duration="4492000" />
+      <workItem from="1589869229681" duration="732000" />
     </task>
     <task id="LOCAL-00067" summary="Course create, edit and delete templates">
       <created>1587155930373</created>
@@ -546,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589659042833</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="added coursework text (in process...)">
+      <created>1589816830148</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1589816830149</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +555,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Another design features" />
     <MESSAGE value="deEeEeEeEeEesign" />
     <MESSAGE value="100th commit congratulations to me" />
     <MESSAGE value="Packages form styles" />
@@ -579,7 +579,8 @@
     <MESSAGE value="config file" />
     <MESSAGE value="bug in archive app fixed" />
     <MESSAGE value="Added some protection&#10;&#10;(Protekt!)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some protection&#10;&#10;(Protekt!)" />
+    <MESSAGE value="added coursework text (in process...)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added coursework text (in process...)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="779" y="250" key="#Deployment" timestamp="1589262131724">
@@ -606,10 +607,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588841485545" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1589659036087">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1589904758615">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1589659036087" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1589904758615" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1589065633232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -658,10 +659,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1589134512949" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1589659045365">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1589816832542">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589659045365" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589816832542" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
