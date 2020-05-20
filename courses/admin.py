@@ -17,6 +17,7 @@ class CourseAdmin(admin.ModelAdmin):
         'title',
         'subject',
         'created',
+        'pk',
     ]
     list_filter = [
         'subject',

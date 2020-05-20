@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/~WRL2029.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Course-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Course-work.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/script.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$urse-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/~$urse-work.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/templates/courses/course/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/courses/course/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education/templates/courses/course/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/courses/course/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$urse-work.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/~WRL2029.tmp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,14 +206,8 @@
       <workItem from="1589634221028" duration="7216000" />
       <workItem from="1589732314744" duration="606000" />
       <workItem from="1589792620015" duration="4492000" />
-      <workItem from="1589869229681" duration="732000" />
-    </task>
-    <task id="LOCAL-00067" summary="Course create, edit and delete templates">
-      <created>1587155930373</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1587155930373</updated>
+      <workItem from="1589869229681" duration="4075000" />
+      <workItem from="1589995477055" duration="3519000" />
     </task>
     <task id="LOCAL-00068" summary="Fixed group permission mixins">
       <created>1587157146595</created>
@@ -547,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589816830149</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="Some changes in c-w text">
+      <created>1589904765716</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1589904765717</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,7 +560,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="deEeEeEeEeEesign" />
     <MESSAGE value="100th commit congratulations to me" />
     <MESSAGE value="Packages form styles" />
     <MESSAGE value="contest css styles (at most)" />
@@ -580,7 +584,8 @@
     <MESSAGE value="bug in archive app fixed" />
     <MESSAGE value="Added some protection&#10;&#10;(Protekt!)" />
     <MESSAGE value="added coursework text (in process...)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added coursework text (in process...)" />
+    <MESSAGE value="Some changes in c-w text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some changes in c-w text" />
   </component>
   <component name="WindowStateProjectService">
     <state x="779" y="250" key="#Deployment" timestamp="1589262131724">
@@ -659,10 +664,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1589134512949" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1589816832542">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1589904782390">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589816832542" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589904782390" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

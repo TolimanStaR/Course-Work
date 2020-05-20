@@ -4,13 +4,16 @@
 
 {% block content %}
     {% with subject=course.subject %}
-        <h3>{{ object.title }}</h3>
+        <h3>{{ object.title|truncatechars:60 }}</h3>
         <p><a href="{% url 'course_list_subject' subject.slug %}">{{ subject.title }}</a></p>
         <p>Преподаватель: {% include 'user_username.html' with user=course.owner %}</p>
-        <p>{{ object.overview|linebreaks }}</p>
+        <p>{{ object.overview|linebreaks|safe }}</p>
         {% if request.user.is_authenticated %}
             {% if is_subscribed %}
-                <p>Вы уже подписаны на этот курс!</p>
+                <p>Вы уже подписаны на этот курс!
+                    <!--<a href="{% url 'user_course_detail_module' pk=object.pk module_id=object.modules.all.0.id %}">Продолжить обучение</a> -->
+                </p>
+
             {% else %}
                 <form action="{% url 'user_subscribe_course' %}" method="post">
                     {{ subscribe_form }}

@@ -37,6 +37,10 @@ div.header {
     min-width: 1100px;
 }
 
+p {
+    overflow-wrap: break-word;
+}
+
 div.title {
     padding-left: 15%;
     padding-top: 20px;
@@ -466,17 +470,19 @@ div.comment-form input#submit {
     border: none;
     font-family: "Century Gothic", sans-serif;
     font-size: 16px;
-    margin-top: 94px;
+    /*margin-top: 94px;*/
 }
 
 div.comment-form textarea#id_body {
     margin-left: 70px;
+    margin-top: 0;
     width: 516px;
     height: 76px;
     color: white;
     background: rgba(0, 255, 255, 0.2);
     border: none;
-    position: absolute;
+    position: relative;
+    box-sizing: initial;
 }
 
 div.comment-form img {
@@ -651,7 +657,7 @@ a.adm-button {
 
 a.subj {
     text-decoration: none;
-    padding: 5px;
+    padding: 15px;
     display: block;
     transition: 0.5s ease;
 }
@@ -666,7 +672,6 @@ ul.subject-menu {
 
 ul.subject-menu li {
     background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
 }
 
 div.course-list {

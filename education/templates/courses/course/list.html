@@ -43,11 +43,11 @@
         {% for course in courses %}
             {% with subject=course.subject %}
                 <div class="course-list">
-                    <h3><a href="{% url 'course_detail' course.slug %}">{{ course.title }}</a> <a
+                    <h3><a href="{% url 'course_detail' course.slug %}">{{ course.title|truncatechars:30 }}</a> <a
                             class="article-tag">{{ course.subject }}</a></h3>
                     <p class="course-review">Модулей: {{ course.total_modules }},
                         Преподаватель: {% include 'user_username.html' with user=course.owner %}</p>
-                    <p>{{ course.overview|linebreaksbr|safe|truncatewords:100 }}</p>
+                    <p>{{ course.overview|linebreaksbr|safe|truncatewords:100|truncatechars:100 }}</p>
                 </div>
             {% endwith %}
         {% endfor %}

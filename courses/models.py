@@ -11,6 +11,8 @@ from management.fields import OrderField
 from django.template.loader import render_to_string
 from django.utils.safestring import mark_safe
 
+import uuid
+
 MAX_CHAR_LENGTH = 300
 
 
@@ -42,9 +44,10 @@ class Course(models.Model):
                                       blank=True)
 
     title = models.CharField(max_length=MAX_CHAR_LENGTH, verbose_name='Название курса')
-    slug = models.SlugField(max_length=MAX_CHAR_LENGTH, unique=True, blank=True,
-                            verbose_name='Уникальная ссылка. (Может содержать буквы латинского алфавита и тире)')
-    overview = models.TextField(verbose_name='Краткое описание курса')
+    slug = models.SlugField(max_length=MAX_CHAR_LENGTH, unique=True,
+                            verbose_name='Уникальная ссылка. (Может содержать буквы латинского алфавита и тире)',
+                            default=f'{str(uuid.uuid4())}')
+    overview = models.TextField(verbose_name='Краткое описание курса', max_length=5000)
     created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
