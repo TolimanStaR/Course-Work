@@ -35,6 +35,13 @@
             <li><a href="{% url 'course_main_page' %}">Преподавание</a></li>
         </ul>
     </div>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="messages">
+                {{ message|safe }}
+            </div>
+        {% endfor %}
+    {% endif %}
     <div class="content">
         {% block content %}
         {% endblock %}

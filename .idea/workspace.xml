@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Course-work.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coursework/settings/project_variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/settings/project_variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/templates/account/edit_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/edit_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/education/templates/courses/course/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/courses/course/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education/templates/courses/course/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/education/templates/courses/course/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$urse-work.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL2029.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,21 +77,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programming" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django social network" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Projects\Coursework\main\static\css" />
+      <recent name="G:\Проекты\Coursework\media\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Projects\Coursework" />
       <recent name="G:\Projects\Coursework\Coursework\settings" />
       <recent name="G:\Projects\Coursework\Coursework" />
       <recent name="G:\Projects\Coursework\project-config" />
       <recent name="G:\Projects\Coursework\config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\Projects\Coursework\main\static\css" />
-      <recent name="G:\Проекты\Coursework\media\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -207,14 +207,9 @@
       <workItem from="1589732314744" duration="606000" />
       <workItem from="1589792620015" duration="4492000" />
       <workItem from="1589869229681" duration="4075000" />
-      <workItem from="1589995477055" duration="3519000" />
-    </task>
-    <task id="LOCAL-00068" summary="Fixed group permission mixins">
-      <created>1587157146595</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1587157146595</updated>
+      <workItem from="1589995477055" duration="4819000" />
+      <workItem from="1590013275025" duration="597000" />
+      <workItem from="1590048747728" duration="8217000" />
     </task>
     <task id="LOCAL-00069" summary="Content manager for each module">
       <created>1587161024044</created>
@@ -552,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589904765717</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="Fixed some mistakes and bugs">
+      <created>1589999874223</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1589999874223</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +562,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="100th commit congratulations to me" />
     <MESSAGE value="Packages form styles" />
     <MESSAGE value="contest css styles (at most)" />
     <MESSAGE value="Contest styles almost ready" />
@@ -585,7 +586,8 @@
     <MESSAGE value="Added some protection&#10;&#10;(Protekt!)" />
     <MESSAGE value="added coursework text (in process...)" />
     <MESSAGE value="Some changes in c-w text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes in c-w text" />
+    <MESSAGE value="Fixed some mistakes and bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some mistakes and bugs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="779" y="250" key="#Deployment" timestamp="1589262131724">
@@ -612,18 +614,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588841485545" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1589904758615">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1589999865591">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1589904758615" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1589999865591" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1589065633232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589065633232" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1589798060686">
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1590050465722">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1589798060686" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1590050465722" />
     <state width="1879" height="623" key="GridCell.Tab.0.bottom" timestamp="1589061342161">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -664,10 +666,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1589134512949" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1589904782390">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1589999879341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589904782390" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589999879341" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -680,10 +682,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="982" y="322" key="ftp.server.browser/0.0.1920.1050@0.0.1920.1050" timestamp="1589221824406" />
-    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1589567929370">
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1590050041298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1589567929370" />
+    <state x="1103" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1590050041297" />
     <state x="202" y="442" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585768586733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

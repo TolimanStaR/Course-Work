@@ -11,7 +11,7 @@ class UserProfile(models.Model):
     )
     register_date = models.DateTimeField(auto_now_add=True)
     profile_image = models.ImageField(upload_to='users/%Y/%m/%d/', blank=True, null=True)
-    about = models.TextField(blank=True, max_length=500)
+    about = models.TextField(blank=True, max_length=500, verbose_name='О вас')
 
     is_staff = models.BooleanField(default=False)
 

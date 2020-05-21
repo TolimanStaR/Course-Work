@@ -41,6 +41,13 @@ p {
     overflow-wrap: break-word;
 }
 
+div.messages {
+    margin: 20px 15%;
+    padding: 15px;
+    background: rgba(0, 255, 255, 0.2);
+    color: white;
+}
+
 div.title {
     padding-left: 15%;
     padding-top: 20px;
@@ -176,6 +183,7 @@ div.account-image {
     padding: 15px 15px 30px;
     width: 300px;
     position: absolute;
+    margin-bottom: 20px;
 }
 
 div.account-image img {
@@ -696,7 +704,7 @@ input.std-button {
 
 div.course-list-user {
     background: rgb(0, 255, 162);
-    background: linear-gradient(90deg, rgba(0, 255, 162, 0.5970763305322129) 0%, rgba(0, 0, 0, 0.16010154061624648) 65%);
+    background: linear-gradient(90deg, rgba(0, 255, 162, 0.5970763305322129) 0%, rgba(0, 0, 0, 0) 36%);
     padding: 10px;
 }
 

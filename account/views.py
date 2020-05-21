@@ -4,8 +4,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse
 
 from django.views.generic import FormView, DetailView, ListView
 from django.views.generic.base import TemplateResponseMixin, View
@@ -14,6 +15,8 @@ from .forms import LoginForm, UserRegistrationForm, UserEditForm, UserProfileEdi
 from .models import UserProfile, User
 
 from archive.models import ArchiveSolutionCase
+
+from Coursework.settings.project_variables import valid_image_formats
 
 
 class UserRegistration(FormView):
@@ -50,15 +53,24 @@ class UserEditProfile(FormView, LoginRequiredMixin):
         )
 
         if user_form.is_valid() and user_profile_form.is_valid():
-            user_form.save()
-            user_profile_form.save()
-            messages.success(request, 'Профиль успешно обновлен')
 
-            return render(
-                request,
-                'account/edit_profile.html',
-                {'user_form': user_form, 'user_profile_form': user_profile_form}
-            )
+            profile_image = user_profile_form.cleaned_data['profile_image']
+
+            image_format = profile_image.name.split('.')[-1]
+
+            if image_format not in valid_image_formats:
+                messages.error(request, 'Возникла ошибка при обновлении профиля')
+                return HttpResponseRedirect(reverse('edit', args=()))
+            else:
+                user_form.save()
+                user_profile_form.save()
+                messages.success(request, 'Профиль успешно обновлен')
+
+                return render(
+                    request,
+                    'account/edit_profile.html',
+                    {'user_form': user_form, 'user_profile_form': user_profile_form}
+                )
 
         else:
             messages.error(request, 'Возникла ошибка при обновлении профиля')

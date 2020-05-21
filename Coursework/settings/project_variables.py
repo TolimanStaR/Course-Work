@@ -25,3 +25,9 @@ verdict = {
     'process': 'Выполняется проверка',
 
 }
+
+valid_image_formats = [
+    'png',
+    'jpg',
+    'jpeg',
+]

@@ -9,17 +9,21 @@
         <p>Преподаватель: {% include 'user_username.html' with user=course.owner %}</p>
         <p>{{ object.overview|linebreaks|safe }}</p>
         {% if request.user.is_authenticated %}
-            {% if is_subscribed %}
-                <p>Вы уже подписаны на этот курс!
-                    <!--<a href="{% url 'user_course_detail_module' pk=object.pk module_id=object.modules.all.0.id %}">Продолжить обучение</a> -->
-                </p>
-
+            {% if object.modules.all.count > 0 %}
+                {% if is_subscribed %}
+                    <p>Вы уже подписаны на этот курс!
+                        <a href="{% url 'user_course_detail_module' pk=object.pk module_id=object.modules.all.0.id %}">Продолжить
+                            обучение</a>
+                    </p>
+                {% else %}
+                    <form action="{% url 'user_subscribe_course' %}" method="post">
+                        {{ subscribe_form }}
+                        {% csrf_token %}
+                        <input type="submit" class="std-button" value="Записаться на курс!">
+                    </form>
+                {% endif %}
             {% else %}
-                <form action="{% url 'user_subscribe_course' %}" method="post">
-                    {{ subscribe_form }}
-                    {% csrf_token %}
-                    <input type="submit" class="std-button" value="Записаться на курс!">
-                </form>
+                <p>Пока модулей нет</p>
             {% endif %}
         {% else %}
             <p>Чтобы записаться на курс, <a href="{% url 'login' %}">Войдите в аккаунт</a></p>
