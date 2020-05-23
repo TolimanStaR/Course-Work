@@ -7,7 +7,7 @@ DEBUG = True
 # Для запуска на Linux:
 # python3.8 manage.py runserver --settings=Coursework.settings.pro
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['olymprog.ru', 'olymprog.online']
 
 DATABASES = {
     'default': {

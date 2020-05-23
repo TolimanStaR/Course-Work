@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/~$urse-work.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~WRL0003.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$urse-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/~$urse-work.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL2269.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Course-work.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coursework/settings/pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/settings/pro.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +90,7 @@
       <recent name="G:\Projects\Coursework\config" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Shell Script.script.sh">
     <configuration name="Coursework" type="Python.DjangoServer" factoryName="Django server">
       <module name="Coursework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,6 +115,19 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="script.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/script.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.script.sh" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -203,14 +218,9 @@
       <workItem from="1589869229681" duration="4075000" />
       <workItem from="1589995477055" duration="4819000" />
       <workItem from="1590013275025" duration="597000" />
-      <workItem from="1590048747728" duration="12809000" />
-    </task>
-    <task id="LOCAL-00071" summary="Content manage templates">
-      <created>1587219269265</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1587219269266</updated>
+      <workItem from="1590048747728" duration="13202000" />
+      <workItem from="1590161073075" duration="3399000" />
+      <workItem from="1590269811075" duration="2802000" />
     </task>
     <task id="LOCAL-00072" summary="CMS system is ready to battle?">
       <created>1587221033447</created>
@@ -548,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590082236012</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="++cw text">
+      <created>1590105239225</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1590105239225</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +573,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Contest styles almost ready" />
     <MESSAGE value="Fixed some mistakes" />
     <MESSAGE value="adding some to rating counter and complete contest managers" />
     <MESSAGE value="some DESIGN" />
@@ -581,7 +597,8 @@
     <MESSAGE value="Fixed some mistakes and bugs" />
     <MESSAGE value="Fixed bugs again" />
     <MESSAGE value="cw text ++" />
-    <option name="LAST_COMMIT_MESSAGE" value="cw text ++" />
+    <MESSAGE value="++cw text" />
+    <option name="LAST_COMMIT_MESSAGE" value="++cw text" />
   </component>
   <component name="WindowStateProjectService">
     <state x="779" y="250" key="#Deployment" timestamp="1589262131724">
@@ -660,10 +677,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1589134512949" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1590082240580">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1590105242647">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1590082240580" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1590105242647" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
