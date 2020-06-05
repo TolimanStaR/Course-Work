@@ -2,38 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/static/images/favicon (1).ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/images/favicon (2).ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/static/images/favicon (3).ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Course-work.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coursework/settings/project_variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/settings/project_variables.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/participant_output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/participant_solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/participant_solution.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/499c7d8a-0245-4d7c-af0d-848748dcae59/solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/participant_output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/participant_solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/participant_solution.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/77b63b9b-3748-4016-be54-07fb6b6925d7/solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/participant_output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/participant_solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/participant_solution.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/a0ad763e-6bb2-4c99-a001-1880ef6f8341/solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/ac44049c-ef89-4b40-aad4-4de727880315/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/ac44049c-ef89-4b40-aad4-4de727880315/participant_output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/ac44049c-ef89-4b40-aad4-4de727880315/participant_solution.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/ac44049c-ef89-4b40-aad4-4de727880315/participant_solution.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/task-check-env/ac44049c-ef89-4b40-aad4-4de727880315/solution.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/management/task_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/management/task_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$urse-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/~$urse-work.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL0003.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/~WRL0003.tmp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,14 +228,7 @@
       <workItem from="1590442275959" duration="599000" />
       <workItem from="1590742438769" duration="593000" />
       <workItem from="1590970473210" duration="285000" />
-      <workItem from="1591342438432" duration="730000" />
-    </task>
-    <task id="LOCAL-00073" summary="education app">
-      <created>1587222303107</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1587222303107</updated>
+      <workItem from="1591342438432" duration="3933000" />
     </task>
     <task id="LOCAL-00074" summary="Course catalog list and detail handlers">
       <created>1587229670178</created>
@@ -600,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590276655939</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="favicon seems not bad">
+      <created>1591346195859</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1591346195860</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding some to rating counter and complete contest managers" />
     <MESSAGE value="some DESIGN" />
     <MESSAGE value="Add highlight for code listings" />
     <MESSAGE value="Style Style Opa Gangnam Style" />
@@ -633,7 +605,8 @@
     <MESSAGE value="cw text ++" />
     <MESSAGE value="++cw text" />
     <MESSAGE value="cw text++" />
-    <option name="LAST_COMMIT_MESSAGE" value="cw text++" />
+    <MESSAGE value="favicon seems not bad" />
+    <option name="LAST_COMMIT_MESSAGE" value="favicon seems not bad" />
   </component>
   <component name="WindowStateProjectService">
     <state x="779" y="250" key="#Deployment" timestamp="1589262131724">
@@ -660,10 +633,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588841485545" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1590276648689">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1591346184295">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1590276648689" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591346184295" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1589065633232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -712,10 +685,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1589134512949" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1590276658383">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1591346224459">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1590276658383" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591346224459" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

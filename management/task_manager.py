@@ -7,7 +7,8 @@ import os
 from Coursework.settings.project_variables import WORKING_DIRECTORY, \
     LOCAL_WORKING_DIRECTORY, \
     solution_lang, \
-    verdict
+    verdict, \
+    annotation
 
 write_mode = 'w'
 read_mode = 'r'
@@ -16,14 +17,30 @@ debug = False
 LINUX = True
 
 
-def check_participant_solution(package, task, tests):
+def set_verdict(message, work_dir=None, env_dir=None) -> str:
+    os.chdir(work_dir)
+    try:
+        shutil.rmtree(env_dir)
+    except PermissionError:
+        return message
+
+    return message
+
+
+def check_participant_solution(package: 'It must be a class inherited from the class SolutionCaseBase',
+                               task: 'It must be a class inherited from the class TaskBase',
+                               tests: 'It must be a class inherited from the class TestBase') -> str:
     package.verdict = verdict['process']
     package.save()
 
     judge_solution_lang = task.solution.name.split('.')[-1]
 
     env_dir_name = get_unique_name()
-    work_path = WORKING_DIRECTORY
+
+    if not debug:
+        work_path = WORKING_DIRECTORY
+    else:
+        work_path = LOCAL_WORKING_DIRECTORY
 
     env_dir_abspath = f'{work_path}/management/task-check-env/{env_dir_name}'
 
@@ -139,7 +156,7 @@ def check_participant_solution(package, task, tests):
     return set_verdict(verdict[True], work_dir=work_path, env_dir=env_dir_abspath)
 
 
-def get_launch_command(env_part_sol_path, input_, output_):
+def get_launch_command(env_part_sol_path, input_, output_) -> str or None:
     command = None
     lang = get_solution_lang(env_part_sol_path)
 
@@ -181,7 +198,7 @@ def get_launch_command(env_part_sol_path, input_, output_):
     return command
 
 
-def get_judge_answer(test, judge_sol_abs_path, input_, output_):
+def get_judge_answer(test, judge_sol_abs_path, input_, output_) -> str:
     launch_command = get_launch_command(judge_sol_abs_path, input_, output_)
 
     process = subprocess.call(
@@ -204,7 +221,7 @@ def get_judge_answer(test, judge_sol_abs_path, input_, output_):
     return test.answer
 
 
-def get_solution_lang(solution_abs_path):
+def get_solution_lang(solution_abs_path) -> str or None:
     try:
         language = solution_abs_path.split('.')[-1]
     except Exception:
@@ -213,15 +230,5 @@ def get_solution_lang(solution_abs_path):
     return language
 
 
-def get_unique_name():
+def get_unique_name() -> str:
     return str(uuid.uuid4())
-
-
-def set_verdict(message, work_dir=None, env_dir=None):
-    os.chdir(work_dir)
-    try:
-        shutil.rmtree(env_dir)
-    except PermissionError:
-        return message
-
-    return message

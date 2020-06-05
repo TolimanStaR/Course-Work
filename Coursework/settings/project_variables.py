@@ -2,7 +2,7 @@ PROJECT_NAME = 'Olympus Programming'
 DEBUG_PROJECT_NAME = 'Coursework'
 
 IP = '185.255.132.221'
-PORT = '8000'
+PORT = '80'
 
 WORKING_DIRECTORY = '/root/project'  # Only for server
 LOCAL_WORKING_DIRECTORY = 'G://Projects/Coursework'  # On my pc
@@ -21,6 +21,7 @@ verdict = {
 
     # Codes of status of task checking:
     # WANNA ENUM...
+    # But I am too lazy to use it
 
     'process': 'Выполняется проверка',
 
@@ -31,3 +32,11 @@ valid_image_formats = [
     'jpg',
     'jpeg',
 ]
+
+annotation = {
+    'task_manager': {
+        'package': 'It must be a class inherited from the class SolutionCaseBase',
+        'task': 'It must be a class inherited from the class TaskBase',
+        'tests': 'It must be a class inherited from the class TestBase',
+    }
+}
