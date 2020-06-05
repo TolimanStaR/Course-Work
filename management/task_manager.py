@@ -13,6 +13,7 @@ write_mode = 'w'
 read_mode = 'r'
 
 debug = False
+LINUX = True
 
 
 def check_participant_solution(package, task, tests):
@@ -96,6 +97,7 @@ def check_participant_solution(package, task, tests):
         stdout, stderr = participant_solution_process.communicate()
 
         if stderr:
+            print(stderr.decode('cp866'))
             return set_verdict(f'Ошибка исполнения на тесте {test_number + 1}', work_dir=work_path,
                                env_dir=env_dir_abspath)
 
@@ -157,7 +159,10 @@ def get_launch_command(env_part_sol_path, input_, output_):
         )
 
         if create_exe == 0:
-            return f'participant_solution.exe < {input_} > {output_}'
+            if LINUX:
+                return f'./participant_solution < {input_} > {output_}'
+            else:
+                return f'participant_solution.exe < {input_} > {output_}'
 
     if lang == 'cpp':
         create_exe = subprocess.call(
@@ -168,7 +173,10 @@ def get_launch_command(env_part_sol_path, input_, output_):
             stderr=subprocess.PIPE,
         )
         if create_exe == 0:
-            return f'participant_solution.exe < {input_} > {output_}'
+            if LINUX:
+                return f'./participant_solution < {input_} > {output_}'
+            else:
+                return f'participant_solution.exe < {input_} > {output_}'
 
     return command
 
