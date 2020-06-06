@@ -4,9 +4,7 @@
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Course-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Course-work.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL1282.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL1539.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL2159.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/~WRL2398.tmp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/main/static/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -231,14 +229,7 @@
       <workItem from="1591342438432" duration="11172000" />
       <workItem from="1591393437203" duration="3000" />
       <workItem from="1591396554083" duration="17000" />
-      <workItem from="1591449666358" duration="1738000" />
-    </task>
-    <task id="LOCAL-00076" summary="Course subscribe handler">
-      <created>1587310283516</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1587310283520</updated>
+      <workItem from="1591449666358" duration="3048000" />
     </task>
     <task id="LOCAL-00077" summary="Courses list and detail handlers">
       <created>1587311943832</created>
@@ -576,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591370494882</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="(++cw_text)++; cw_text += 1;">
+      <created>1591456502356</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1591456502357</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Style Style Opa Gangnam Style" />
     <MESSAGE value="course delete, list styles css" />
     <MESSAGE value="Fixed errors with directories management" />
     <MESSAGE value="Start to work with REST Framework" />
@@ -609,7 +606,8 @@
     <MESSAGE value="favicon seems not bad" />
     <MESSAGE value="Some type annotations and cw text" />
     <MESSAGE value="(++cw_text)++;" />
-    <option name="LAST_COMMIT_MESSAGE" value="(++cw_text)++;" />
+    <MESSAGE value="(++cw_text)++; cw_text += 1;" />
+    <option name="LAST_COMMIT_MESSAGE" value="(++cw_text)++; cw_text += 1;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="779" y="250" key="#Deployment" timestamp="1589262131724">
@@ -636,10 +634,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588841485545" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1591370488832">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1591456495446">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591370488832" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591456495446" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1589065633232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -680,18 +678,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1879" height="349" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1587509649352" />
-    <state x="299" y="168" width="1435" height="711" key="SettingsEditor" timestamp="1589221836832">
+    <state x="299" y="168" width="1435" height="711" key="SettingsEditor" timestamp="1591457182496">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="299" y="168" width="1435" height="711" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1589221836832" />
+    <state x="299" y="168" width="1435" height="711" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1591457182496" />
     <state x="681" y="266" width="540" height="524" key="StructurePopup" timestamp="1589134512949">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1589134512949" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1591370497637">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1591456504317">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591370497637" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591456504317" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
