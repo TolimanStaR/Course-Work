@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/~WRL0004.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~WRL1157.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~WRL2703.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Course-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Course-work.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,14 +232,7 @@
       <workItem from="1591393437203" duration="3000" />
       <workItem from="1591396554083" duration="17000" />
       <workItem from="1591449666358" duration="3114000" />
-      <workItem from="1591475172763" duration="3729000" />
-    </task>
-    <task id="LOCAL-00078" summary="templates for list and detail">
-      <created>1587313989592</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1587313989592</updated>
+      <workItem from="1591475172763" duration="7480000" />
     </task>
     <task id="LOCAL-00079" summary="Fix bug with urls">
       <created>1587411079340</created>
@@ -575,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591459323267</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Working on text">
+      <created>1591481155981</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1591481155982</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +585,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed errors with directories management" />
     <MESSAGE value="Start to work with REST Framework" />
     <MESSAGE value="REST seems to be excess" />
     <MESSAGE value="Preparing for production" />
@@ -608,7 +609,8 @@
     <MESSAGE value="(++cw_text)++;" />
     <MESSAGE value="(++cw_text)++; cw_text += 1;" />
     <MESSAGE value="It's a long way to the top if you wanna course work text" />
-    <option name="LAST_COMMIT_MESSAGE" value="It's a long way to the top if you wanna course work text" />
+    <MESSAGE value="Working on text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on text" />
   </component>
   <component name="WindowStateProjectService">
     <state x="779" y="250" key="#Deployment" timestamp="1589262131724">
@@ -687,10 +689,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1589134512949" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1591459325414">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1591481164896">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591459325414" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591481164896" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

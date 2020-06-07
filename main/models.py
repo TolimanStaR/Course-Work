@@ -8,6 +8,7 @@ from taggit.managers import TaggableManager
 
 class Article(models.Model):
     title = models.CharField(max_length=300)
+
     author = models.ForeignKey(
         UserProfile,
         on_delete=models.CASCADE,
@@ -31,7 +32,7 @@ class Article(models.Model):
         return f'Статья {self.title}'
 
     class Meta:
-        ordering = ('-publish',)
+        ordering = ('-publish', )
 
 
 class Comment(models.Model):
