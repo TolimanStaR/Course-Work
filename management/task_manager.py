@@ -17,7 +17,7 @@ debug = False
 LINUX = True
 
 
-def set_verdict(message, work_dir=None, env_dir=None) -> str:
+def set_verdict(message: str, work_dir=None, env_dir=None) -> str:
     os.chdir(work_dir)
     try:
         shutil.rmtree(env_dir)
