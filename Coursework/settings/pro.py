@@ -14,7 +14,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'olympus',
         'USER': 'olympus',
-        'PASSWORD': '528491pisos',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
