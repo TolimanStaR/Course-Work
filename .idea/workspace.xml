@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8e38541e-9712-4b32-b15d-1cdcc372755f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coursework/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coursework/settings/pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coursework/settings/pro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL0904.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL1682.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL3571.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL3923.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course-work.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Course-work.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,14 +235,7 @@
       <workItem from="1591674491398" duration="737000" />
       <workItem from="1591808345808" duration="7836000" />
       <workItem from="1591886110006" duration="3243000" />
-      <workItem from="1591963674410" duration="414000" />
-    </task>
-    <task id="LOCAL-00086" summary="Some bugs fixed and tasks removed from courses">
-      <created>1587819404680</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1587819404681</updated>
+      <workItem from="1591963674410" duration="1646000" />
     </task>
     <task id="LOCAL-00087" summary="Contest rating color at the all of project">
       <created>1587822468376</created>
@@ -585,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591913219783</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="Safety changes">
+      <created>1591964138172</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1591964138173</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="nginx conf" />
     <MESSAGE value="Privacy policy (Law stonks)" />
     <MESSAGE value="config file" />
     <MESSAGE value="bug in archive app fixed" />
@@ -618,7 +612,8 @@
     <MESSAGE value="about 85% of cw text" />
     <MESSAGE value="about 95% of cw text" />
     <MESSAGE value="100 f*cking percents of course work text" />
-    <option name="LAST_COMMIT_MESSAGE" value="100 f*cking percents of course work text" />
+    <MESSAGE value="Safety changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Safety changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="779" y="250" key="#Deployment" timestamp="1589262131724">
@@ -645,10 +640,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588841485545" />
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1591913211754">
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2" timestamp="1591964130308">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591913211754" />
+    <state x="444" y="149" width="873" height="827" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591964130308" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1589065633232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -697,10 +692,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1589134512949" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1591913221401">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1591964141173">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591913221401" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591964141173" />
     <state x="614" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1587755706189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
